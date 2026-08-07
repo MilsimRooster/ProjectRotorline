@@ -4,11 +4,11 @@ Project Rotorline is a 25-mission Unreal Engine 5 helicopter operations Alpha fo
 
 ## Download for Windows
 
-**Recommended:** [Download ProjectRotorlineAlphaSetup.exe](https://github.com/MilsimRooster/ProjectRotorline/releases/download/alpha-setup-2026-08-05/ProjectRotorlineAlphaSetup.exe)
+**Recommended:** [Download ProjectRotorlineAlphaSetup.exe](https://github.com/MilsimRooster/ProjectRotorline/releases/download/alpha-setup-2026-08-07/ProjectRotorlineAlphaSetup.exe)
 
 The setup program downloads and assembles the complete packaged game, installs `Rotorline.exe`, and creates a desktop shortcut.
 
-**Manual package:** [Open the August 5 Windows Alpha release](https://github.com/MilsimRooster/ProjectRotorline/releases/tag/alpha-windows-2026-08-05)
+**Manual package:** [Open the August 7 Windows Alpha release](https://github.com/MilsimRooster/ProjectRotorline/releases/tag/alpha-windows-2026-08-07)
 
 The manual package requires the core ZIP and both UCAS parts. The setup program is easier and is the recommended path.
 
@@ -25,7 +25,14 @@ Select **Snail** graphics mode for lower-spec systems and **Turbo** for higher-s
 
 ## Alpha status
 
-This is an active Alpha build. The August 5 release includes all accumulated fixes through that date, including the complete 25-mission campaign and current aircraft, targeting, hangar, mission-data, audio, and environment corrections.
+This is an active Alpha build. The August 7 release is built from the verified
+Project Rotorline checkpoint `a180a21` and includes every accepted fix through
+that checkpoint, including the complete 25-mission campaign, current controller
+setup, combat aiming, reticle alignment, enemy tracers, and keyboard yaw controls.
+
+The installer downloads only the matching August 7 payload, verifies every
+part with SHA-256, assembles the complete game locally, and installs a standalone
+Windows build. It does not require another repository or an older Alpha.
 
 Source code and development assets are maintained privately and are not distributed in this repository.
 
