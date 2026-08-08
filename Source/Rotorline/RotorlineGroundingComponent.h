@@ -48,4 +48,3 @@ public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Rotorline|Grounding")
     ERotorlineGroundingFailure LastFailure = ERotorlineGroundingFailure::None;
 };
-
