@@ -9,6 +9,22 @@ the original Project Rotorline audio identified during the audit. No rights hold
 remains for those assets. Do not publish or link a playable build until the final
 package passes the complete release test.
 
+## Current qualified release
+
+- Tag: `alpha-windows-v1`
+- Published: August 8, 2026
+- Setup SHA-256: `5C56207909CC10B7CECA44FF691192D0CF249242C3475D179F180EFD2D7D7DC1`
+- Five same-tag assets: setup, manifest, core ZIP, and two UCAS parts
+- GitHub round-trip hashes and anonymous setup/manifest URLs: passed
+- Core archive membership: 44/44 files, no embedded UCAS
+- Reassembled UCAS: 2,205,772,016 bytes, canonical SHA-256 verified
+- Isolated real-payload install, forced rollback, second activation, shortcut
+  readback, exact Shipping startup, and runtime probe: passed
+- Installed acceptance tree: 45 files, 3,761,691,473 bytes
+
+The setup is not code-signed, so Windows SmartScreen may warn. Both packaged
+Microsoft prerequisites have valid Microsoft signatures.
+
 ## Required release assets
 
 Upload these assets to the single configured release tag:
