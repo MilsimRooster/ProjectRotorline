@@ -13,14 +13,17 @@ package passes the complete release test.
 
 - Tag: `alpha-windows-v1`
 - Published: August 8, 2026
-- Setup SHA-256: `5C56207909CC10B7CECA44FF691192D0CF249242C3475D179F180EFD2D7D7DC1`
+- Setup SHA-256: `821D7AA7163F40EF886C0ECB5D6AB6006106A8740E897EADB6B3EA240D1EE142`
 - Five same-tag assets: setup, manifest, core ZIP, and two UCAS parts
 - GitHub round-trip hashes and anonymous setup/manifest URLs: passed
 - Core archive membership: 44/44 files, no embedded UCAS
 - Reassembled UCAS: 2,205,772,016 bytes, canonical SHA-256 verified
 - Isolated real-payload install, forced rollback, second activation, shortcut
   readback, exact Shipping startup, and runtime probe: passed
-- Installed acceptance tree: 45 files, 3,761,691,473 bytes
+- Installed acceptance tree: 45 files, 3,761,445,813 bytes
+- Smooth Operator qualification correction included: practical 2+ m AGL hover,
+  up to 9 km/h modeled drift, 0.75-second jitter tolerance, and visible sortie
+  telemetry for safe landing and hover duration.
 
 The setup is not code-signed, so Windows SmartScreen may warn. Both packaged
 Microsoft prerequisites have valid Microsoft signatures.
