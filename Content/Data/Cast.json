@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "cast": [
+    {
+      "id": "overlord",
+      "callsign": "OVERLORD",
+      "role": "COMMAND",
+      "cardAsset": "/Game/UI/Cast/T_Cast_Overlord.T_Cast_Overlord",
+      "voiceAsset": "/Game/Audio/Cast/VO_Cast_Overlord_Profile.VO_Cast_Overlord_Profile"
+    },
+    {
+      "id": "ghost",
+      "callsign": "GHOST",
+      "role": "INSTRUCTOR",
+      "cardAsset": "/Game/UI/Cast/T_Cast_Ghost.T_Cast_Ghost",
+      "voiceAsset": "/Game/Audio/Cast/VO_Cast_Ghost_Profile.VO_Cast_Ghost_Profile"
+    },
+    {
+      "id": "angel",
+      "callsign": "ANGEL",
+      "role": "MEDIC",
+      "cardAsset": "/Game/UI/Cast/T_Cast_Angel.T_Cast_Angel",
+      "voiceAsset": "/Game/Audio/Cast/VO_Cast_Angel_Profile.VO_Cast_Angel_Profile"
+    },
+    {
+      "id": "viper",
+      "callsign": "VIPER",
+      "role": "GUNNER",
+      "cardAsset": "/Game/UI/Cast/T_Cast_Viper.T_Cast_Viper",
+      "voiceAsset": "/Game/Audio/Cast/VO_Cast_Viper_Profile.VO_Cast_Viper_Profile"
+    },
+    {
+      "id": "nomad",
+      "callsign": "NOMAD",
+      "role": "CREW MEMBER",
+      "cardAsset": "/Game/UI/Cast/T_Cast_Nomad.T_Cast_Nomad",
+      "voiceAsset": "/Game/Audio/Cast/VO_Cast_Nomad_Profile.VO_Cast_Nomad_Profile"
+    }
+  ]
+}

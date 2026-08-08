@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "thresholds": {
+    "bronze": 8000,
+    "silver": 14000,
+    "gold": 20000,
+    "elite": 26000,
+    "legendary": 35000
+  },
+  "awards": [
+    {
+      "id": "lift_off", "name": "Lift Off", "description": "Complete your first valid takeoff.",
+      "hint": "Bring a flight-ready aircraft cleanly into the air.", "patchAsset": "/Game/Awards/Patches/lift_off.lift_off",
+      "category": "Flight", "rarity": "Common", "hidden": false, "repeatable": false, "associatedStat": "career.ValidTakeoffs",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bValidTakeoff", "op": "eq", "value": 1, "text": "a valid takeoff"}]}]
+    },
+    {
+      "id": "rotor_rookie", "name": "Rotor Rookie", "description": "Complete your first fully controlled sortie.",
+      "hint": "Finish a tutorial or full flight with a valid takeoff and landing.", "patchAsset": "/Game/Awards/Patches/rotor_rookie.rotor_rookie",
+      "category": "Flight", "rarity": "Common", "hidden": false, "repeatable": false, "associatedStat": "career.MissionsCompleted",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bValidTakeoff", "op": "eq", "value": 1}, {"stat": "mission.bValidLanding", "op": "eq", "value": 1}, {"stat": "career.MissionsCompleted", "op": "gte", "value": 1, "text": "completed missions"}]}]
+    },
+    {
+      "id": "butter_landing", "name": "Butter Landing", "description": "Make an exceptionally smooth, accurate landing.",
+      "hint": "Touch down gently, level, centered, and without crashing.", "patchAsset": "/Game/Awards/Patches/butter_landing.butter_landing",
+      "category": "Flight", "rarity": "Skilled", "hidden": false, "repeatable": false, "associatedStat": "mission.LandingVerticalSpeedMps",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bSafeLanding", "op": "eq", "value": 1}, {"stat": "mission.bCrashed", "op": "eq", "value": 0}, {"stat": "mission.LandingVerticalSpeedMps", "op": "lte", "value": 1.0, "text": "touchdown vertical speed"}, {"stat": "mission.LandingLateralSpeedMps", "op": "lte", "value": 2.0, "text": "touchdown drift"}, {"stat": "mission.LandingAttitudeDegrees", "op": "lte", "value": 6.0, "text": "touchdown attitude"}, {"stat": "mission.LandingAccuracyMeters", "op": "lte", "value": 12.0, "text": "landing-zone error"}]}]
+    },
+    {
+      "id": "extraction_complete", "name": "Extraction Complete", "description": "Complete an extraction with every required person delivered safely.",
+      "hint": "Finish a rescue or medevac extraction without leaving required personnel behind.", "patchAsset": "/Game/Awards/Patches/extraction_complete.extraction_complete",
+      "category": "Rescue", "rarity": "Common", "hidden": false, "repeatable": false, "associatedStat": "mission.TotalPeopleRescued",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.RescueTargetsAvailable", "op": "gte", "value": 1, "text": "rescue targets recovered"}, {"stat": "mission.bAllRequiredPersonnelDelivered", "op": "eq", "value": 1, "text": "all required personnel delivered safely"}]}]
+    },
+    {
+      "id": "no_one_left_behind", "name": "No One Left Behind", "description": "Recover every available rescue target with zero losses.",
+      "hint": "Save everyone in a rescue operation.", "patchAsset": "/Game/Awards/Patches/no_one_left_behind.no_one_left_behind",
+      "category": "Rescue", "rarity": "Skilled", "hidden": false, "repeatable": false, "associatedStat": "mission.TotalPeopleRescued",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.RescueTargetsAvailable", "op": "gte", "value": 1}, {"stat": "mission.bAllRequiredPersonnelDelivered", "op": "eq", "value": 1}, {"stat": "mission.RescueLosses", "op": "eq", "value": 0, "text": "rescue losses"}]}]
+    },
+    {
+      "id": "last_hope", "name": "Last Hope", "description": "Complete M24, Last Lift, and return all three survivor groups without losses.",
+      "hint": "In M24, board all three survivor groups and return safely to base.", "patchAsset": "/Game/Awards/Patches/last_hope.last_hope",
+      "category": "Rescue", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.TotalPeopleRescued",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.id", "op": "equalsText", "text": "survivor-extraction"}, {"stat": "mission.RescueTargetsAvailable", "op": "gte", "value": 3, "text": "survivor groups boarded"}, {"stat": "mission.bAllRequiredPersonnelDelivered", "op": "eq", "value": 1, "text": "all survivor groups returned safely"}, {"stat": "mission.RescueLosses", "op": "eq", "value": 0, "text": "survivor losses"}]}]
+    },
+    {
+      "id": "living_legend", "name": "Living Legend", "description": "Sustain exceptional rescue performance across the campaign.",
+      "hint": "Build a large rescue record with repeated perfect recoveries.", "patchAsset": "/Game/Awards/Patches/living_legend.living_legend",
+      "category": "Legendary", "rarity": "Legendary", "hidden": false, "repeatable": false, "associatedStat": "career.TotalPeopleRescued",
+      "groups": [{"mode": "all", "conditions": [{"stat": "career.TotalPeopleRescued", "op": "gte", "value": 100, "text": "people rescued"}, {"stat": "career.RescueSuccessPercent", "op": "gte", "value": 90, "text": "rescue success rate"}, {"stat": "career.PerfectRescueMissions", "op": "gte", "value": 10, "text": "perfect rescue missions"}, {"stat": "career.CampaignCompletionPercent", "op": "gte", "value": 75, "text": "campaign completion"}]}]
+    },
+    {
+      "id": "air_cavalry", "name": "Air Cavalry", "description": "Complete coordinated combat support for ground forces.",
+      "hint": "Finish a troop insertion, suppression, or ground-support mission.", "patchAsset": "/Game/Awards/Patches/air_cavalry.air_cavalry",
+      "category": "Combat", "rarity": "Skilled", "hidden": false, "repeatable": false, "associatedStat": "mission.GroundEnemiesDestroyed",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bCombatSupportMission", "op": "eq", "value": 1}, {"stat": "mission.GroundEnemiesDestroyed", "op": "gte", "value": 1, "text": "ground threats destroyed"}]}]
+    },
+    {
+      "id": "death_from_above", "name": "Death From Above", "description": "Complete M22, Enemy Foothold, with at least 35 percent weapon accuracy.",
+      "hint": "Win Enemy Foothold and finish with weapon accuracy of 35% or higher.", "patchAsset": "/Game/Awards/Patches/death_from_above.death_from_above",
+      "category": "Combat", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.AccuracyPercent",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.id", "op": "equalsText", "text": "enemy-foothold"}, {"stat": "mission.GroundEnemiesDestroyed", "op": "gte", "value": 6, "text": "ground targets destroyed"}, {"stat": "mission.EnemyHelicoptersDestroyed", "op": "gte", "value": 3, "text": "hostile aircraft destroyed"}, {"stat": "mission.AccuracyPercent", "op": "gte", "value": 35, "text": "weapon accuracy"}]}]
+    },
+    {
+      "id": "come_get_some", "name": "Come Get Some", "description": "Survive sustained enemy engagement and finish the objective.",
+      "hint": "Stay in the fight under prolonged enemy fire and still win.", "patchAsset": "/Game/Awards/Patches/come_get_some.come_get_some",
+      "category": "Combat", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.TimeUnderEnemyFireSeconds",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.TimeUnderEnemyFireSeconds", "op": "gte", "value": 45, "text": "time under enemy fire"}, {"stat": "mission.HealthPercent", "op": "gt", "value": 0, "text": "surviving aircraft condition"}]}]
+    },
+    {
+      "id": "untouchable", "name": "Untouchable", "description": "Complete an armed combat sortie without taking damage.",
+      "hint": "Finish a combat sortie with zero valid damage taken.", "patchAsset": "/Game/Awards/Patches/untouchable.untouchable",
+      "category": "Combat", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.DamageTaken", "groupMode": "all",
+      "groups": [
+        {"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.DamageTaken", "op": "eq", "value": 0, "text": "damage taken"}]},
+        {"mode": "any", "conditions": [{"stat": "mission.WeaponShotsFired", "op": "gte", "value": 1}, {"stat": "mission.bCombatSupportMission", "op": "eq", "value": 1}]}
+      ]
+    },
+    {
+      "id": "all_your_base", "name": "All Your Base", "description": "Complete M22, Enemy Foothold, and break the enemy island base.",
+      "hint": "Complete Enemy Foothold successfully.", "patchAsset": "/Game/Awards/Patches/all_your_base.all_your_base",
+      "category": "Combat", "rarity": "Skilled", "hidden": false, "repeatable": false, "associatedStat": "mission.bMissionSucceeded",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.id", "op": "equalsText", "text": "enemy-foothold"}]}]
+    },
+    {
+      "id": "built_different", "name": "Built Different", "description": "Deliver extreme performance under extreme conditions.",
+      "hint": "Earn an elite score on high difficulty while carrying a serious disadvantage.", "patchAsset": "/Game/Awards/Patches/built_different.built_different",
+      "category": "Meme", "rarity": "Secret", "hidden": true, "repeatable": false, "associatedStat": "mission.FinalScore", "groupMode": "all",
+      "groups": [
+        {"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.Difficulty", "op": "gte", "value": 4, "text": "difficulty"}, {"stat": "mission.FinalScore", "op": "gte", "value": 26000, "text": "mission score"}]},
+        {"mode": "any", "conditions": [{"stat": "mission.FuelRemainingPercent", "op": "lte", "value": 15, "text": "fuel remaining"}, {"stat": "mission.HealthPercent", "op": "lte", "value": 35, "text": "aircraft condition"}, {"stat": "mission.OptionalObjectivesCompleted", "op": "gte", "value": 2, "text": "optional objectives"}]}
+      ]
+    },
+    {
+      "id": "task_failed_successfully", "name": "Task Failed Successfully", "description": "Fail the stated objective but produce a meaningful positive outcome.",
+      "hint": "Salvage lives, combat value, or a remarkable score from a failed mission.", "patchAsset": "/Game/Awards/Patches/task_failed_successfully.task_failed_successfully",
+      "category": "Meme", "rarity": "Secret", "hidden": true, "repeatable": false, "associatedStat": "mission.FinalScore", "groupMode": "all",
+      "groups": [
+        {"mode": "all", "conditions": [{"stat": "mission.bMissionFailed", "op": "eq", "value": 1}, {"stat": "mission.bMeaningfulPartialSuccess", "op": "eq", "value": 1}]},
+        {"mode": "any", "conditions": [{"stat": "mission.TotalPeopleRescued", "op": "gte", "value": 1, "text": "people rescued"}, {"stat": "mission.GroundEnemiesDestroyed", "op": "gte", "value": 3, "text": "enemy force eliminated"}, {"stat": "mission.FinalScore", "op": "gte", "value": 12000, "text": "partial-success score"}]}
+      ]
+    },
+    {
+      "id": "construction_crew", "name": "Construction Crew", "description": "Complete a construction, supply, or infrastructure operation.",
+      "hint": "Finish a mission that builds, supplies, or restores infrastructure.", "patchAsset": "/Game/Awards/Patches/construction_crew.construction_crew",
+      "category": "Cargo", "rarity": "Common", "hidden": false, "repeatable": false, "associatedStat": "mission.CargoDelivered",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bConstructionMission", "op": "eq", "value": 1}, {"stat": "mission.CargoDelivered", "op": "gte", "value": 1, "text": "cargo loads delivered"}]}]
+    },
+    {
+      "id": "sling_king", "name": "Sling King", "description": "Complete a highly accurate, damage-free sling-load delivery.",
+      "hint": "Deliver a sling load precisely, quickly, and without cargo damage.", "patchAsset": "/Game/Awards/Patches/sling_king.sling_king",
+      "category": "Cargo", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.SlingLoadAccuracyPercent",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bSlingLoadTracked", "op": "eq", "value": 1, "text": "a completed sling-load delivery"}, {"stat": "mission.CargoDelivered", "op": "gte", "value": 1}, {"stat": "mission.SlingLoadAccuracyPercent", "op": "gte", "value": 95, "text": "delivery accuracy"}, {"stat": "mission.CargoDamage", "op": "eq", "value": 0, "text": "cargo damage"}]}]
+    },
+    {
+      "id": "cargo_whisperer", "name": "Cargo Whisperer", "description": "Build a career of precise, damage-free cargo work.",
+      "hint": "Complete many cargo deliveries with exceptional precision and no damage.", "patchAsset": "/Game/Awards/Patches/cargo_whisperer.cargo_whisperer",
+      "category": "Cargo", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "career.CargoLoadsTransported",
+      "groups": [{"mode": "all", "conditions": [{"stat": "career.CargoLoadsTransported", "op": "gte", "value": 10, "text": "cargo loads"}, {"stat": "career.PrecisionCargoDeliveries", "op": "gte", "value": 8, "text": "precision deliveries"}, {"stat": "career.CargoDamage", "op": "eq", "value": 0, "text": "career cargo damage"}]}]
+    },
+    {
+      "id": "scenic_route", "name": "Scenic Route", "description": "Complete a controlled sortie by a demanding low-altitude route.",
+      "hint": "Fly a long, controlled low-level route and land safely.", "patchAsset": "/Game/Awards/Patches/scenic_route.scenic_route",
+      "category": "Exploration", "rarity": "Skilled", "hidden": false, "repeatable": false, "associatedStat": "mission.TimeBelowSafeAltitudeSeconds",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.TimeBelowSafeAltitudeSeconds", "op": "gte", "value": 60, "text": "controlled low-altitude time"}, {"stat": "mission.DistanceFlownMeters", "op": "gte", "value": 5000, "text": "route distance"}, {"stat": "mission.bSafeLanding", "op": "eq", "value": 1}, {"stat": "mission.bCrashed", "op": "eq", "value": 0}]}]
+    },
+    {
+      "id": "cartographer", "name": "Cartographer", "description": "Discover most of Rotorline's named world regions.",
+      "hint": "Explore the island broadly instead of repeating the same corridor.", "patchAsset": "/Game/Awards/Patches/cartographer.cartographer",
+      "category": "Exploration", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "career.UniqueRegionsExplored",
+      "groups": [{"mode": "all", "conditions": [{"stat": "career.UniqueRegionsExplored", "op": "gte", "value": 40, "text": "unique regions explored"}, {"stat": "career.CampaignCompletionPercent", "op": "gte", "value": 50, "text": "campaign completion"}]}]
+    },
+    {
+      "id": "island_hopper", "name": "Island Hopper", "description": "Land on five distinct island sectors.",
+      "hint": "Visit and land on unique offshore or remote island sectors.", "patchAsset": "/Game/Awards/Patches/island_hopper.island_hopper",
+      "category": "Exploration", "rarity": "Skilled", "hidden": false, "repeatable": false, "associatedStat": "career.UniqueIslandsVisited",
+      "groups": [{"mode": "all", "conditions": [{"stat": "career.UniqueIslandsVisited", "op": "gte", "value": 5, "text": "unique island sectors"}]}]
+    },
+    {
+      "id": "not_today", "name": "Not Today", "description": "Narrowly escape destruction and still finish the mission.",
+      "hint": "Hidden patch.", "patchAsset": "/Game/Awards/Patches/not_today.not_today",
+      "category": "Survival", "rarity": "Secret", "hidden": true, "repeatable": false, "associatedStat": "mission.HealthPercent", "groupMode": "all",
+      "groups": [
+        {"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}]},
+        {"mode": "any", "conditions": [{"stat": "mission.HealthPercent", "op": "lte", "value": 10, "text": "critical aircraft condition"}, {"stat": "mission.MissilesDodged", "op": "gte", "value": 1, "text": "missiles dodged"}, {"stat": "mission.SecondsFromFailureAtCompletion", "op": "lte", "value": 5, "text": "seconds from failure"}]}
+      ]
+    },
+    {
+      "id": "smoke_and_mirrors", "name": "Smoke and Mirrors", "description": "Complete a mission through stealth, decoys, or minimal direct engagement.",
+      "hint": "Hidden patch.", "patchAsset": "/Game/Awards/Patches/smoke_and_mirrors.smoke_and_mirrors",
+      "category": "Meme", "rarity": "Secret", "hidden": true, "repeatable": false, "associatedStat": "mission.WeaponShotsFired", "groupMode": "all",
+      "groups": [
+        {"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.WeaponShotsFired", "op": "lte", "value": 3, "text": "shots fired"}]},
+        {"mode": "any", "conditions": [{"stat": "mission.bStealthApproach", "op": "eq", "value": 1, "text": "stealth approach"}, {"stat": "mission.bSmokeOrDecoyUsed", "op": "eq", "value": 1, "text": "decoy or smoke cover"}]}
+      ]
+    },
+    {
+      "id": "running_on_fumes", "name": "Running on Fumes", "description": "Complete the mission and land safely with critically low fuel.",
+      "hint": "Return safely with no more than ten percent fuel.", "patchAsset": "/Game/Awards/Patches/running_on_fumes.running_on_fumes",
+      "category": "Survival", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.FuelRemainingPercent",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bSafeLanding", "op": "eq", "value": 1}, {"stat": "mission.FuelRemainingPercent", "op": "lte", "value": 10, "text": "fuel remaining"}]}]
+    },
+    {
+      "id": "thread_the_needle", "name": "Thread the Needle", "description": "Complete M19, The Hidden Machine, by flying the Bell 222 safely out through the concealed mesa shaft.",
+      "hint": "Complete The Hidden Machine successfully without crashing during the cave escape.", "patchAsset": "/Game/Awards/Patches/thread_the_needle.thread_the_needle",
+      "category": "Flight", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.bMissionSucceeded",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.id", "op": "equalsText", "text": "final-discovery"}, {"stat": "mission.bCrashed", "op": "eq", "value": 0}]}]
+    },
+    {
+      "id": "smooth_operator", "name": "Smooth Operator", "description": "Complete any mission with a safe landing, zero damage, ten stable-hover seconds, and at least four stars.",
+      "hint": "Succeed, land safely, take 0 damage, hold a stable hover for 10 seconds, and earn 4+ stars.", "patchAsset": "/Game/Awards/Patches/smooth_operator.smooth_operator",
+      "category": "Flight", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.StarRating",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bSafeLanding", "op": "eq", "value": 1}, {"stat": "mission.DamageTaken", "op": "eq", "value": 0, "text": "damage taken"}, {"stat": "mission.StableHoverSeconds", "op": "gte", "value": 10, "text": "stable-hover time"}, {"stat": "mission.StarRating", "op": "gte", "value": 4, "text": "mission rating"}]}]
+    },
+    {
+      "id": "rotorline_veteran", "name": "Rotorline Veteran", "description": "Build a broad and dependable Rotorline service record.",
+      "hint": "Complete 25 missions across several mission types with meaningful flight time.", "patchAsset": "/Game/Awards/Patches/rotorline_veteran.rotorline_veteran",
+      "category": "Veteran", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "career.MissionsCompleted",
+      "groups": [{"mode": "all", "conditions": [{"stat": "career.MissionsCompleted", "op": "gte", "value": 25, "text": "completed missions"}, {"stat": "career.CompletedMissionTypes", "op": "gte", "value": 4, "text": "mission types"}, {"stat": "career.TotalFlightTimeSeconds", "op": "gte", "value": 7200, "text": "total flight time"}, {"stat": "career.SuccessRatePercent", "op": "gte", "value": 70, "text": "mission success rate"}]}]
+    },
+    {
+      "id": "the_last_sortie", "name": "The Last Sortie", "description": "Complete the final campaign operation.",
+      "hint": "Reach and complete Rotorline's final campaign mission.", "patchAsset": "/Game/Awards/Patches/the_last_sortie.the_last_sortie",
+      "category": "Legendary", "rarity": "Legendary", "hidden": false, "repeatable": false, "associatedStat": "mission.CampaignCompletionPercent",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bFinalCampaignMission", "op": "eq", "value": 1}]}]
+    },
+    {
+      "id": "bell_222", "name": "Bell 222", "description": "Complete M19, The Hidden Machine, and uncover Rotorline's classified Bell 222 conversion.",
+      "hint": "Complete The Hidden Machine.", "patchAsset": "/Game/Awards/Patches/bell_222.bell_222",
+      "category": "Legendary", "rarity": "Legendary", "hidden": true, "repeatable": false, "associatedStat": "mission.bMissionSucceeded",
+      "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.id", "op": "equalsText", "text": "final-discovery"}]}]
+    },
+    {
+      "id": "master_of_rotorline", "name": "Master of Rotorline", "description": "Achieve near-complete mastery of the campaign and its disciplines.",
+      "hint": "Complete the campaign, master its mission types, and earn most other patches.", "patchAsset": "/Game/Awards/Patches/master_of_rotorline.master_of_rotorline",
+      "category": "Legendary", "rarity": "Legendary", "hidden": false, "repeatable": false, "associatedStat": "career.AwardsEarned",
+      "groups": [{"mode": "all", "conditions": [{"stat": "career.CampaignCompletionPercent", "op": "gte", "value": 100, "text": "campaign completion"}, {"stat": "career.CompletedMissionTypes", "op": "gte", "value": 6, "text": "mission types completed"}, {"stat": "career.AwardsEarned", "op": "gte", "value": 20, "text": "patches earned"}, {"stat": "career.FiveStarMissions", "op": "gte", "value": 5, "text": "five-star missions"}]}]
+    }
+  ]
+}

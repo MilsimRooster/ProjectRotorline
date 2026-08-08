@@ -1,0 +1,2405 @@
+{
+    "schemaVersion":  1,
+    "statScale":  {
+                      "minimum":  1,
+                      "maximum":  5
+                  },
+    "previewPolicy":  {
+                          "discoverAllMeshPartsUnderAssetRoot":  true,
+                          "autoNormalizeCombinedBounds":  true,
+                          "fallbackMainRotorWhenMissing":  true,
+                          "fallbackTailRotorWhenMissing":  true,
+                          "maximumMeshParts":  220
+                      },
+    "hangarSequence":  [
+                           "uh1_huey",
+                           "md500_defender",
+                           "ah64_apache",
+                           "mi24_hind",
+                           "uh60m_blackhawk",
+                           "marine_uh1",
+                           "ka27_helix",
+                           "oh58_kiowa",
+                           "bell_222x",
+                           "ch47_chinook"
+                       ],
+    "airfieldPropSequence":  [
+
+                             ],
+    "aircraft":  [
+                     {
+                         "id":  "uh1_huey",
+                         "displayName":  "UH-1 HUEY",
+                         "manufacturer":  "Bell",
+                         "role":  "Support / rescue",
+                         "summary":  "Proven utility airframe with the best early-game mix of lift, survivability, and rescue capability.",
+                         "fuelEnduranceMinutes":  10.5,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "ready",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  3,
+                                       "armor":  3,
+                                       "cargo":  4
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  5,
+                                                    "cargo":  4,
+                                                    "recon":  3,
+                                                    "attack":  2,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/bell_huey_helicopter.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/bell_huey_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Duane\u0027s Mind",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/bell-huey-helicopter-755d"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  1,
+                                       "rotorNodeHints":  [
+                                                              "Back_Rotor",
+                                                              "Top_Rotor"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Candidates/BellHuey/bell_huey_helicopter",
+                                        "bodyAsset":  "/Game/Vehicles/Candidates/BellHuey/bell_huey_helicopter/StaticMeshes/Bell_Huey_lambert1_0.Bell_Huey_lambert1_0",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/Candidates/BellHuey/bell_huey_helicopter/SkeletalMeshes/Top_Rotor_lambert1_0.Top_Rotor_lambert1_0",
+                                                            "/Game/Vehicles/Candidates/BellHuey/bell_huey_helicopter/SkeletalMeshes/Back_Rotor_lambert1_0.Back_Rotor_lambert1_0"
+                                                        ],
+                                        "animationAsset":  "/Game/Vehicles/Candidates/BellHuey/bell_huey_helicopter/SkeletalMeshes/bell_huey_helicopter_Anim.bell_huey_helicopter_Anim",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  1.05,
+                                         "plumeLength":  1.0,
+                                         "velocityMultiplier":  0.95,
+                                         "vaporAmount":  0.7,
+                                         "distortionIntensity":  0.9,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -105.0,
+                                                                              0.0,
+                                                                              88.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              5.0,
+                                                                              180.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  34.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/BellHuey/SFX_BellHuey_EngineStart.SFX_BellHuey_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/BellHuey/SFX_BellHuey_EngineFlight_Loop.SFX_BellHuey_EngineFlight_Loop",
+                                       "inflight":  "/Game/Audio/Vehicles/BellHuey/SC_BellHuey_EngineFlight_Loop.SC_BellHuey_EngineFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/bell-huey-engine-start.wav",
+                                                           "assets/audio/bell-huey-engine-takeoff-flying.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "md500_defender",
+                         "displayName":  "MD-500 DEFENDER",
+                         "manufacturer":  "Hughes / McDonnell Douglas",
+                         "role":  "Light attack / scout",
+                         "summary":  "Fast, highly responsive attack helicopter built for low-level strikes and armed reconnaissance.",
+                         "fuelEnduranceMinutes":  9.5,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "ready",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  5,
+                                       "armor":  2,
+                                       "cargo":  1
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  2,
+                                                    "medevac":  1,
+                                                    "cargo":  1,
+                                                    "recon":  5,
+                                                    "attack":  5,
+                                                    "escort":  4
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/mh-6_little_bird_helicopter_animated.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/mh-6_little_bird_helicopter_animated.glb"
+                                                     ],
+                                        "license":  "Sketchfab Standard",
+                                        "credit":  "OmegaRedZA",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/mh-6-little-bird-helicopter-animated-ff51e655d05d4a05b2c0d9b274c00ed7"
+                                    },
+                         "model":  {
+                                       "axis":  "Imported MH-6 authored axes",
+                                       "expectedAnimations":  1,
+                                       "rotorNodeHints":  [
+                                                               "Rot_08 - Default_0",
+                                                               "Rot_09 - Default_0",
+                                                               "Cylinder001_09 - Default_0",
+                                                               "Rot2_08 - Default_0"
+                                                          ],
+                                       "presentationScale":  0.0133,
+                                       "presentationYaw":  0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated",
+                                        "bodyAsset":  "/Game/Vehicles/Playable/MH6/SM_SM_MH6_LittleBird_Body.SM_SM_MH6_LittleBird_Body",
+                                        "rotorAssets":  [
+                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_08_-_Default_0.Rot_08_-_Default_0",
+                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_09_-_Default_0.Rot_09_-_Default_0",
+                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Cylinder001_09_-_Default_0.Cylinder001_09_-_Default_0",
+                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot2_08_-_Default_0.Rot2_08_-_Default_0"
+                                                        ],
+                                        "rotorGroups":  [
+
+                                                        ],
+                                        "animationAsset":  "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/mh-6_little_bird_helicopter_animated_Anim.mh-6_little_bird_helicopter_animated_Anim",
+                                        "readyForHangar":  true,
+                                        "stationaryRotorAssets":  [
+                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_08_-_Default_0.Rot_08_-_Default_0",
+                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_09_-_Default_0.Rot_09_-_Default_0",
+                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Cylinder001_09_-_Default_0.Cylinder001_09_-_Default_0",
+                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot2_08_-_Default_0.Rot2_08_-_Default_0"
+                                                                  ]
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  0.78,
+                                         "plumeLength":  0.78,
+                                         "velocityMultiplier":  0.82,
+                                         "vaporAmount":  0.48,
+                                         "distortionIntensity":  0.76,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -62.0,
+                                                                              0.0,
+                                                                              64.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              4.0,
+                                                                              180.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  20.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/MD500/SFX_MD500_EngineStart.SFX_MD500_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/MD500/SFX_MD500_Takeoff.SFX_MD500_Takeoff",
+                                       "inflight":  "/Game/Audio/Vehicles/MD500/SC_MD500_EngineInFlight_Loop.SC_MD500_EngineInFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/MD-500-startup.wav",
+                                                           "assets/audio/MD-500-takeoff.wav",
+                                                           "assets/audio/MD-500-inflight.wav"
+                                                       ]
+                                   },
+                         "weaponLoadout":  {
+                                               "enabled":  true,
+                                               "convergenceDistanceMeters":  900.0,
+                                               "leftGunMount":  [
+                                                                    70.0,
+                                                                    -88.0,
+                                                                    -48.0
+                                                                ],
+                                               "rightGunMount":  [
+                                                                     70.0,
+                                                                     88.0,
+                                                                     -48.0
+                                                                 ],
+                                               "bellyPodMount":  [
+                                                                     45.0,
+                                                                     82.0,
+                                                                     -52.0
+                                                                 ],
+                                               "modes":  [
+                                                             {
+                                                                 "id":  "m134",
+                                                                 "displayName":  "M134 MINIGUN",
+                                                                 "targetClass":  "any",
+                                                                 "ammo":  300,
+                                                                 "damage":  18.0,
+                                                                 "fireInterval":  0.095,
+                                                                 "spreadDegrees":  0.82,
+                                                                 "maxRangeMeters":  1800.0,
+                                                                 "projectileSpeed":  43000.0
+                                                             },
+                                                             {
+                                                                 "id":  "hydra70",
+                                                                 "displayName":  "HYDRA 70 ROCKETS",
+                                                                 "targetClass":  "any",
+                                                                 "ammo":  12,
+                                                                 "damage":  92.0,
+                                                                 "minimumBlastDamage":  20.0,
+                                                                 "blastRadius":  680.0,
+                                                                 "fireInterval":  0.75,
+                                                                 "spreadDegrees":  0.3,
+                                                                 "maxRangeMeters":  3200.0,
+                                                                 "projectileSpeed":  30000.0
+                                                             }
+                                                         ]
+                                           },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "ah64_apache",
+                         "displayName":  "AH-64 APACHE",
+                         "manufacturer":  "Boeing",
+                         "role":  "Heavy attack / hunter-killer",
+                         "summary":  "Armored attack platform suited to high-threat anti-armor and escort work.",
+                         "fuelEnduranceMinutes":  10.0,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  true,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  4,
+                                       "armor":  5,
+                                       "cargo":  1
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  1,
+                                                    "medevac":  1,
+                                                    "cargo":  1,
+                                                    "recon":  4,
+                                                    "attack":  5,
+                                                    "escort":  5
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/ah_mk.1_apache.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/ah_mk.1_apache.glb",
+                                                         "assets/actors/vehicles/ah-64_helicopter.glb",
+                                                         "browser:public/assets/models/ah-64_apache_attack_helicopter_low_poly.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Jeyhun1985",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/ah-mk1-apache-d1311204b76542388fd6be5fd47cce68"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up converted to Unreal Z-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "Object_7",
+                                                              "Object_5"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Hostile/CombatReady/EnemyApacheMk1_Body",
+                                        "previewAssembly":  "processed_merged_body_plus_rotor",
+                                        "previewSourceVariant":  "assets/actors/vehicles/ah_mk.1_apache.glb",
+                                        "bodyAsset":  "/Game/Vehicles/Hostile/CombatReady/EnemyApacheMk1_Body/EnemyApacheMk1_Body/StaticMeshes/EnemyApacheMk1_Body.EnemyApacheMk1_Body",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/Hostile/CombatReady/EnemyApacheMk1_MainRotor/EnemyApacheMk1_MainRotor/StaticMeshes/EnemyApacheMk1_MainRotor.EnemyApacheMk1_MainRotor",
+                                                            "/Game/Vehicles/Hostile/CombatReady/EnemyApacheMk1_TailRotor/EnemyApacheMk1_TailRotor/StaticMeshes/EnemyApacheMk1_TailRotor.EnemyApacheMk1_TailRotor"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              -0.117,
+                                                                              -2.527,
+                                                                              192.58
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Hostile/CombatReady/EnemyApacheMk1_MainRotor/EnemyApacheMk1_MainRotor/StaticMeshes/EnemyApacheMk1_MainRotor.EnemyApacheMk1_MainRotor"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "pivot":  [
+                                                                              69.163,
+                                                                              -922.332,
+                                                                              102.102
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Hostile/CombatReady/EnemyApacheMk1_TailRotor/EnemyApacheMk1_TailRotor/StaticMeshes/EnemyApacheMk1_TailRotor.EnemyApacheMk1_TailRotor"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  1.0,
+                                         "plumeLength":  1.08,
+                                         "velocityMultiplier":  1.18,
+                                         "vaporAmount":  0.52,
+                                         "distortionIntensity":  1.12,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -26.0,
+                                                                              -103.0,
+                                                                              43.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              2.0,
+                                                                              198.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  31.0
+                                                         },
+                                                         {
+                                                             "location":  [
+                                                                              -26.0,
+                                                                              103.0,
+                                                                              43.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              2.0,
+                                                                              162.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  31.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "preIgnition":  "/Game/Audio/Vehicles/AH64/SFX_AH64_EnginePreIgnition.SFX_AH64_EnginePreIgnition",
+                                       "startup":  "/Game/Audio/Vehicles/AH64/SFX_AH64_RotorSpoolUp.SFX_AH64_RotorSpoolUp",
+                                       "takeoff":  "",
+                                       "inflight":  "/Game/Audio/Vehicles/AH64/SC_AH64_EngineInFlight_Loop.SC_AH64_EngineInFlight_Loop",
+                                       "autocannon":  "/Game/Audio/Vehicles/AH64/SFX_AH64_30mm_Autocannon.SFX_AH64_30mm_Autocannon",
+                                       "sourceFiles":  [
+                                                           "assets/audio/ah_mk.1_apache-engine-pre-ignition.wav",
+                                                           "assets/audio/ah_mk.1_apache-rotor-spool-up.wav",
+                                                           "assets/audio/ah_mk.1_apache-in-flight.wav",
+                                                           "assets/audio/ah_mk.1_apache-30mm-autocannon.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "mi24_hind",
+                         "displayName":  "MI-24 HIND",
+                         "manufacturer":  "Mil",
+                         "role":  "Assault gunship / troop lift",
+                         "summary":  "Armored assault gunship combining heavy weapons with limited troop-carrying capability.",
+                         "fuelEnduranceMinutes":  9.0,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  true,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  3,
+                                       "armor":  5,
+                                       "cargo":  2
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  2,
+                                                    "medevac":  2,
+                                                    "cargo":  2,
+                                                    "recon":  2,
+                                                    "attack":  5,
+                                                    "escort":  4
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/hind_attack_helicopter.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/hind_attack_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Ashley Aslett",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/hind-attack-helicopter-bb65"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "rotor"
+                                                          ],
+                                       "presentationScale":  0.01,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/mi24_hind",
+                                        "previewAssembly":  "source_multipart",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/helicopterbody_low__0.helicopterbody_low__0",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorblades_low__0.rotorblades_low__0",
+                                                            "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorblades_low__0.tailrotorblades_low__0"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              -53.442,
+                                                                              -769.264,
+                                                                              42094.08
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorbladeblockjoint_low__0.rotorbladeblockjoint_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorbladecap_low__0.rotorbladecap_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorbladeclamps_low__0.rotorbladeclamps_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorbladehinge_low__0.rotorbladehinge_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorbladehub_low__0.rotorbladehub_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorblades_low__0.rotorblades_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorbolts_low__0.rotorbolts_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorconnectingrods_low__0.rotorconnectingrods_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorcrown_low__0.rotorcrown_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorhinges_low__0.rotorhinges_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorring_low__0.rotorring_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorrods_low__0.rotorrods_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/rotorshaft_low__0.rotorshaft_low__0"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "pivot":  [
+                                                                              7203.761,
+                                                                              -106196.396,
+                                                                              37264.333
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorblades_low__0.tailrotorblades_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorblocks_low__0.tailrotorblocks_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorconnectingrods_low__0.tailrotorconnectingrods_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorhub_low__0.tailrotorhub_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorring_low__0.tailrotorring_low__0",
+                                                                               "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorshaft_low__0.tailrotorshaft_low__0"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "stationaryRotorAssets":  [
+                                                                      "/Game/Vehicles/Roster/mi24_hind/hind_attack_helicopter/StaticMeshes/tailrotorstub_low__0.tailrotorstub_low__0"
+                                                                  ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  1.12,
+                                         "plumeLength":  1.12,
+                                         "velocityMultiplier":  1.06,
+                                         "vaporAmount":  0.68,
+                                         "distortionIntensity":  1.08,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -35.0,
+                                                                              -45.0,
+                                                                              86.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              4.0,
+                                                                              187.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  35.0
+                                                         },
+                                                         {
+                                                             "location":  [
+                                                                              -35.0,
+                                                                              45.0,
+                                                                              86.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              4.0,
+                                                                              173.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  35.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/MI24/SFX_MI24_EngineStart.SFX_MI24_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/MI24/SFX_MI24_Takeoff.SFX_MI24_Takeoff",
+                                       "inflight":  "/Game/Audio/Vehicles/MI24/SC_MI24_EngineInFlight_Loop.SC_MI24_EngineInFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/MI-24-HIND-engine-takeoff.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+                                  ]
+                     },
+                     {
+                         "id":  "sh60b_seahawk",
+                         "displayName":  "SH-60B SEAHAWK",
+                         "manufacturer":  "Sikorsky",
+                         "role":  "Naval utility / anti-submarine",
+                         "summary":  "Versatile naval helicopter with strong sensor, rescue, and medium-lift utility.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  3,
+                                       "armor":  3,
+                                       "cargo":  4
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  4,
+                                                    "cargo":  4,
+                                                    "recon":  5,
+                                                    "attack":  3,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/sh-60b_seahawk_helicopter (1).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/sh-60b_seahawk_helicopter (1).glb",
+                                                         "assets/actors/vehicles/sh-60b_seahawk_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Muhamad Mirza Arrafi",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/sh-60b-seahawk-helicopter-558"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+
+                                                          ],
+                                       "presentationScale":  0.0095,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/sh60b_seahawk",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/sh60b_seahawk/sh-60b_seahawk_helicopter__1_/StaticMeshes/Object_20.Object_20",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Visually qualify assembled imported parts",
+                                      "Rotor extraction or procedural rotor",
+                                      "Airframe-specific engine audio"
+                                  ]
+                     },
+                     {
+                         "id":  "westland_lynx",
+                         "displayName":  "WESTLAND LYNX",
+                         "manufacturer":  "Westland",
+                         "role":  "Fast utility / scout",
+                         "summary":  "Compact high-performance utility helicopter suited to recon, escort, and shipboard operations.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  5,
+                                       "maneuverability":  5,
+                                       "armor":  2,
+                                       "cargo":  3
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  4,
+                                                    "medevac":  3,
+                                                    "cargo":  3,
+                                                    "recon":  5,
+                                                    "attack":  4,
+                                                    "escort":  4
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/lynx_helicopter (2).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/lynx_helicopter (2).glb",
+                                                         "assets/actors/vehicles/lynx_helicopter (1).glb",
+                                                         "assets/actors/vehicles/lynx_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "artfletch",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/lynx-helicopter-9028"
+                                    },
+                         "model":  {
+                                       "axis":  "source Z-up with baked tilt",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+
+                                                          ],
+                                       "presentationScale":  25.0,
+                                       "presentationPitch":  -3.7,
+                                       "presentationYaw":  87.7,
+                                       "presentationRoll":  19.4
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/westland_lynx",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/westland_lynx/lynx_helicopter__2_/StaticMeshes/LynxHelicopter_lambert3_0.LynxHelicopter_lambert3_0",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Visually qualify imported mesh",
+                                      "Rotor extraction or procedural rotor",
+                                      "Airframe-specific engine audio"
+                                  ]
+                     },
+                     {
+                         "id":  "merlin_mk2",
+                         "displayName":  "MERLIN MK2",
+                         "manufacturer":  "AgustaWestland",
+                         "role":  "Heavy naval utility",
+                         "summary":  "Large all-weather naval helicopter with excellent rescue and cargo capability.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  3,
+                                       "armor":  4,
+                                       "cargo":  5
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  5,
+                                                    "cargo":  5,
+                                                    "recon":  4,
+                                                    "attack":  2,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/merlin_mk2_helicopter (1).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/merlin_mk2_helicopter (1).glb",
+                                                         "assets/actors/vehicles/merlin_mk2_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "sudreyskr",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/merlin-mk2-helicopter-c8d"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, nose -X",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "Low-Prop",
+                                                              "Low-BackPropHolder"
+                                                          ],
+                                       "presentationScale":  0.0105,
+                                       "presentationPitch":  6.3,
+                                       "presentationYaw":  -90.7,
+                                       "presentationRoll":  -0.5
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/merlin_mk2",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/merlin_mk2/merlin_mk2_helicopter__1_/StaticMeshes/Low-Body_Body_0.Low-Body_Body_0",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/Roster/merlin_mk2/merlin_mk2_helicopter__1_/StaticMeshes/Low-Prop_Prop_0.Low-Prop_Prop_0",
+                                                            "/Game/Vehicles/Roster/merlin_mk2/merlin_mk2_helicopter__1_/StaticMeshes/Low-BackPropHolder_BackProp_0.Low-BackPropHolder_BackProp_0"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              -37024.979,
+                                                                              -947.491,
+                                                                              34121.35
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/merlin_mk2/merlin_mk2_helicopter__1_/StaticMeshes/Low-Prop_Prop_0.Low-Prop_Prop_0"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "Y",
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/merlin_mk2/merlin_mk2_helicopter__1_/StaticMeshes/Low-BackPropHolder_BackProp_0.Low-BackPropHolder_BackProp_0"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Visually qualify assembled imported parts",
+                                      "Calibrate rotor pivots",
+                                      "Airframe-specific engine audio"
+                                  ]
+                     },
+                     {
+                         "id":  "mi6_hook",
+                         "displayName":  "MI-6 HOOK",
+                         "manufacturer":  "Mil",
+                         "role":  "Heavy transport",
+                         "summary":  "Massive lift helicopter intended for cargo, vehicle transport, and long-range support.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  1,
+                                       "armor":  3,
+                                       "cargo":  5
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  3,
+                                                    "medevac":  4,
+                                                    "cargo":  5,
+                                                    "recon":  1,
+                                                    "attack":  2,
+                                                    "escort":  1
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/mi-6_soviet_helicopter (1).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/mi-6_soviet_helicopter (1).glb",
+                                                         "assets/actors/vehicles/mi-6_soviet_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Savy",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/mi-6-soviet-helicopter-fe7"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+
+                                                          ],
+                                       "presentationScale":  3.2,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/mi6_hook",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/mi6_hook/mi-6_soviet_helicopter__1_/StaticMeshes/Object_4.Object_4",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/mi6_hook/mi-6_soviet_helicopter__1_/StaticMeshes/Object_6.Object_6"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Visually qualify imported mesh",
+                                      "Procedural rotor setup",
+                                      "Heavy-rotor audio set"
+                                  ]
+                     },
+                     {
+                         "id":  "alh_dhruv",
+                         "displayName":  "ALH DHRUV",
+                         "manufacturer":  "HAL",
+                         "role":  "Multirole utility",
+                         "summary":  "Balanced modern utility helicopter able to cover transport, rescue, recon, and light attack.",
+                         "fuelEnduranceMinutes":  11.0,
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  4,
+                                       "armor":  3,
+                                       "cargo":  4
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  4,
+                                                    "medevac":  4,
+                                                    "cargo":  4,
+                                                    "recon":  4,
+                                                    "attack":  3,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/helicopter (2).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/helicopter (2).glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "mohamed ouartassi",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/alh-dhruv-helicopter-1172"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  1,
+                                       "rotorNodeHints":  [
+                                                              "blade"
+                                                          ],
+                                       "presentationScale":  1.6,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/alh_dhruv",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/StaticMeshes/Object_226.Object_226",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "alignmentRoll":  4.524,
+                                                                "pivot":  [
+                                                                              -462.098,
+                                                                              0.452,
+                                                                              113.604
+                                                                          ],
+                                                                "meshPivot":  [
+                                                                                  -462.098,
+                                                                                  0.452,
+                                                                                  113.604
+                                                                              ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/mesh_40.mesh_40",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/mesh_49.mesh_49",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/mesh_50.mesh_50",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/mesh_51.mesh_51",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_90.Object_90",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_92.Object_92",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_94.Object_94",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_96.Object_96",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_98.Object_98",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_100.Object_100",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_102.Object_102",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_104.Object_104",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_112.Object_112",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_114.Object_114",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_116.Object_116",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_118.Object_118",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_120.Object_120",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_122.Object_122",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_124.Object_124",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_126.Object_126",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_128.Object_128",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_130.Object_130",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_132.Object_132",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_134.Object_134",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_136.Object_136",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_138.Object_138",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_140.Object_140",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_142.Object_142",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_144.Object_144",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_146.Object_146",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_148.Object_148",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_150.Object_150",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_152.Object_152",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_154.Object_154",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_156.Object_156",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_158.Object_158",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_160.Object_160",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_162.Object_162",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_164.Object_164",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_166.Object_166",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_168.Object_168"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "alignmentPitch":  -0.107,
+                                                                "alignmentYaw":  -10.982,
+                                                                "pivot":  [
+                                                                              -534.771,
+                                                                              -880.185,
+                                                                              130.534
+                                                                          ],
+                                                                "meshPivot":  [
+                                                                                  -534.771,
+                                                                                  -880.185,
+                                                                                  130.534
+                                                                              ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_6.Object_6",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_8.Object_8",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_10.Object_10",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_12.Object_12",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_14.Object_14",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_16.Object_16",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_18.Object_18",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_20.Object_20",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_22.Object_22",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_24.Object_24",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_26.Object_26",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_28.Object_28",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_30.Object_30",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_32.Object_32",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_34.Object_34",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_36.Object_36",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_38.Object_38",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_40.Object_40",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_42.Object_42",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_44.Object_44",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_46.Object_46",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_48.Object_48",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_50.Object_50",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_52.Object_52",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_54.Object_54",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_56.Object_56",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_58.Object_58",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_60.Object_60",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_62.Object_62",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_64.Object_64",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_66.Object_66",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_68.Object_68",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_70.Object_70",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_72.Object_72",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_74.Object_74",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_76.Object_76",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_78.Object_78",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_80.Object_80",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_82.Object_82",
+                                                                               "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/Object_84.Object_84"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "/Game/Vehicles/Roster/alh_dhruv/helicopter__2_/SkeletalMeshes/helicopter__2__Anim.helicopter__2__Anim",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/ALHDhruv/SFX_ALHDhruv_EngineStart.SFX_ALHDhruv_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/ALHDhruv/SFX_ALHDhruv_Takeoff.SFX_ALHDhruv_Takeoff",
+                                       "inflight":  "/Game/Audio/Vehicles/ALHDhruv/SC_ALHDhruv_EngineInFlight_Loop.SC_ALHDhruv_EngineInFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/ALH-DHRUV-engine-takeoff.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "uh60m_blackhawk",
+                         "displayName":  "UH-60M BLACK HAWK",
+                         "manufacturer":  "Sikorsky",
+                         "role":  "Utility / transport / medevac",
+                         "summary":  "Fast, durable twin-engine utility helicopter built for troop lift, rescue, medevac, and special operations.",
+                         "fuelEnduranceMinutes":  10.5,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  4,
+                                       "armor":  4,
+                                       "cargo":  5
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  5,
+                                                    "cargo":  5,
+                                                    "recon":  3,
+                                                    "attack":  3,
+                                                    "escort":  4
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/us_army_uh-60m_black_hawk_low_poly_model.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/us_army_uh-60m_black_hawk_low_poly_model.glb",
+                                                         "assets/actors/vehicles/sikorsky_uh-60m_blackhawk.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Yi Tsung Lee",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/us-army-uh-60m-black-hawk-low-poly-model-854bf0feee5b42dc92ac5329976f7942"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "main rotor prop_7",
+                                                              "TAIL ROTOR_4"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/uh60m_blackhawk_lowpoly",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/uh60m_blackhawk_lowpoly/us_army_uh-60m_black_hawk_low_poly_model/StaticMeshes/Object_8.Object_8",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/Roster/uh60m_blackhawk_lowpoly/us_army_uh-60m_black_hawk_low_poly_model/StaticMeshes/Object_10.Object_10",
+                                                            "/Game/Vehicles/Roster/uh60m_blackhawk_lowpoly/us_army_uh-60m_black_hawk_low_poly_model/StaticMeshes/Object_4.Object_4"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/uh60m_blackhawk_lowpoly/us_army_uh-60m_black_hawk_low_poly_model/StaticMeshes/Object_10.Object_10"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/uh60m_blackhawk_lowpoly/us_army_uh-60m_black_hawk_low_poly_model/StaticMeshes/Object_4.Object_4"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  true,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  1.04,
+                                         "plumeLength":  1.06,
+                                         "velocityMultiplier":  1.1,
+                                         "vaporAmount":  0.56,
+                                         "distortionIntensity":  1.04,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -12.0,
+                                                                              -73.0,
+                                                                              73.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              1.0,
+                                                                              205.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  32.0
+                                                         },
+                                                         {
+                                                             "location":  [
+                                                                              -12.0,
+                                                                              73.0,
+                                                                              73.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              1.0,
+                                                                              155.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  32.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/BellHuey/SFX_BellHuey_EngineStart.SFX_BellHuey_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/BellHuey/SFX_BellHuey_EngineFlight_Loop.SFX_BellHuey_EngineFlight_Loop",
+                                       "inflight":  "/Game/Audio/Vehicles/BellHuey/SC_BellHuey_EngineFlight_Loop.SC_BellHuey_EngineFlight_Loop",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "marine_uh1",
+                         "displayName":  "MARINE UH-1",
+                         "manufacturer":  "Bell",
+                         "role":  "Utility / rescue",
+                         "summary":  "Marine utility Huey configured for troop lift, rescue, and low-level support work.",
+                         "fuelEnduranceMinutes":  10.5,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  3,
+                                       "armor":  3,
+                                       "cargo":  4
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  5,
+                                                    "cargo":  4,
+                                                    "recon":  3,
+                                                    "attack":  2,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/3d_modeled_marine_uh-1_huey_helicopter.glb",
+                                        "variants":  [
+                                                         "assets/actors/3d_modeled_marine_uh-1_huey_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "bunnellrl1",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/3d-modeled-marine-uh-1-huey-helicopter-29ae1fb161a04128b006089b95ab1017"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, nose +Y",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "Mainrotor",
+                                                              "TailRotor"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/UserAdded/CombatReady/MarineHuey_Body",
+                                        "bodyAsset":  "/Game/Vehicles/UserAdded/CombatReady/MarineHuey_Body/MarineHuey_Body/StaticMeshes/MarineHuey_Body.MarineHuey_Body",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/UserAdded/CombatReady/MarineHuey_MainRotor/MarineHuey_MainRotor/StaticMeshes/MarineHuey_MainRotor.MarineHuey_MainRotor",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/MarineHuey_TailRotor/MarineHuey_TailRotor/StaticMeshes/MarineHuey_TailRotor.MarineHuey_TailRotor"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              0.0,
+                                                                              118.683,
+                                                                              316.408
+                                                                          ],
+                                                                "alignmentRoll":  -10.4,
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/MarineHuey_MainRotor/MarineHuey_MainRotor/StaticMeshes/MarineHuey_MainRotor.MarineHuey_MainRotor"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "pivot":  [
+                                                                              15.655,
+                                                                              -535.162,
+                                                                              396.605
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/MarineHuey_TailRotor/MarineHuey_TailRotor/StaticMeshes/MarineHuey_TailRotor.MarineHuey_TailRotor"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "previewAssembly":  "processed_merged_body_plus_rotor",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  1.05,
+                                         "plumeLength":  1.0,
+                                         "velocityMultiplier":  0.95,
+                                         "vaporAmount":  0.7,
+                                         "distortionIntensity":  0.9,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -105.0,
+                                                                              0.0,
+                                                                              88.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              5.0,
+                                                                              180.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  34.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/BellHuey/SFX_BellHuey_EngineStart.SFX_BellHuey_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/BellHuey/SFX_BellHuey_EngineFlight_Loop.SFX_BellHuey_EngineFlight_Loop",
+                                       "inflight":  "/Game/Audio/Vehicles/BellHuey/SC_BellHuey_EngineFlight_Loop.SC_BellHuey_EngineFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/bell-huey-engine-start.wav",
+                                                           "assets/audio/bell-huey-engine-takeoff-flying.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "ka27_helix",
+                         "displayName":  "KA-27 HELIX",
+                         "manufacturer":  "Kamov",
+                         "role":  "Naval utility / rescue",
+                         "summary":  "Compact coaxial naval helicopter suited to rescue, cargo, and confined-area operations.",
+                         "fuelEnduranceMinutes":  10.0,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  4,
+                                       "armor":  3,
+                                       "cargo":  4
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  4,
+                                                    "cargo":  4,
+                                                    "recon":  4,
+                                                    "attack":  2,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/kamov_ka-27_soviet_military_helicopter.glb",
+                                        "variants":  [
+                                                         "assets/actors/kamov_ka-27_soviet_military_helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "MaX3Dd",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/kamov-ka-27-soviet-military-helicopter-054f00ec16eb4f1d94cd1b65324107d6"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, nose +Y",
+                                       "expectedAnimations":  1,
+                                       "rotorNodeHints":  [
+                                                              "ka27_lower_propellar",
+                                                              "ka27_lower_propellar1"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/UserAdded/CombatReady/KamovKa27_Body",
+                                        "bodyAsset":  "/Game/Vehicles/UserAdded/CombatReady/KamovKa27_Body/KamovKa27_Body/StaticMeshes/KamovKa27_Body.KamovKa27_Body",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/UserAdded/CombatReady/KamovKa27_LowerRotor/KamovKa27_LowerRotor/StaticMeshes/KamovKa27_LowerRotor.KamovKa27_LowerRotor",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/KamovKa27_UpperRotor/KamovKa27_UpperRotor/StaticMeshes/KamovKa27_UpperRotor.KamovKa27_UpperRotor"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              8.797,
+                                                                              -9.747,
+                                                                              348.654
+                                                                          ],
+                                                                "meshPivot":  [
+                                                                                  92.487,
+                                                                                  22.143,
+                                                                                  348.654
+                                                                              ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/KamovKa27_LowerRotor/KamovKa27_LowerRotor/StaticMeshes/KamovKa27_LowerRotor.KamovKa27_LowerRotor"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "-Z",
+                                                                "pivot":  [
+                                                                              8.797,
+                                                                              16.958,
+                                                                              520.014
+                                                                          ],
+                                                                "meshPivot":  [
+                                                                                  137.784,
+                                                                                  4.78,
+                                                                                  520.014
+                                                                              ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/KamovKa27_UpperRotor/KamovKa27_UpperRotor/StaticMeshes/KamovKa27_UpperRotor.KamovKa27_UpperRotor"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "previewAssembly":  "processed_merged_body_plus_rotor",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  1.08,
+                                         "plumeLength":  0.95,
+                                         "velocityMultiplier":  1.02,
+                                         "vaporAmount":  0.62,
+                                         "distortionIntensity":  0.98,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -18.0,
+                                                                              -43.0,
+                                                                              91.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              4.0,
+                                                                              190.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  31.0
+                                                         },
+                                                         {
+                                                             "location":  [
+                                                                              -18.0,
+                                                                              43.0,
+                                                                              91.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              4.0,
+                                                                              170.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  31.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/MI24/SFX_MI24_EngineStart.SFX_MI24_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/MI24/SFX_MI24_Takeoff.SFX_MI24_Takeoff",
+                                       "inflight":  "/Game/Audio/Vehicles/MI24/SC_MI24_EngineInFlight_Loop.SC_MI24_EngineInFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/MI-24-HIND-engine-takeoff.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "oh58_kiowa",
+                         "displayName":  "OH-58 KIOWA",
+                         "manufacturer":  "Bell",
+                         "role":  "Light observation / scout",
+                         "summary":  "Agile observation helicopter built for reconnaissance, route scouting, and low-level insertion.",
+                         "fuelEnduranceMinutes":  9.5,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  4,
+                                       "maneuverability":  5,
+                                       "armor":  2,
+                                       "cargo":  1
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  2,
+                                                    "medevac":  1,
+                                                    "cargo":  1,
+                                                    "recon":  5,
+                                                    "attack":  3,
+                                                    "escort":  3
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/helicopter.glb",
+                                        "variants":  [
+                                                         "assets/actors/helicopter.glb"
+                                                     ],
+                                        "license":  "COPYRIGHT TO Sujal Patil - public release rights unresolved",
+                                        "credit":  "Sujal Patil",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/helicopter-81c02919782f4b6d986eb76c11d0e5fd"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, nose +Y",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/UserAdded/CombatReady/Helicopter_Body",
+                                        "bodyAsset":  "/Game/Vehicles/UserAdded/CombatReady/Helicopter_Body/Helicopter_Body/StaticMeshes/Helicopter_Body.Helicopter_Body",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/UserAdded/CombatReady/Helicopter_MainRotor/Helicopter_MainRotor/StaticMeshes/Helicopter_MainRotor.Helicopter_MainRotor",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/Helicopter_TailRotor/Helicopter_TailRotor/StaticMeshes/Helicopter_TailRotor.Helicopter_TailRotor"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              0.8,
+                                                                              125.783,
+                                                                              297.538
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/Helicopter_MainRotor/Helicopter_MainRotor/StaticMeshes/Helicopter_MainRotor.Helicopter_MainRotor"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "X",
+                                                                "pivot":  [
+                                                                              16.754,
+                                                                              -507.955,
+                                                                              199.413
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/Helicopter_TailRotor/Helicopter_TailRotor/StaticMeshes/Helicopter_TailRotor.Helicopter_TailRotor"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "previewAssembly":  "processed_merged_body_plus_rotor",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  0.74,
+                                         "plumeLength":  0.82,
+                                         "velocityMultiplier":  0.88,
+                                         "vaporAmount":  0.42,
+                                         "distortionIntensity":  0.78,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -58.0,
+                                                                              0.0,
+                                                                              66.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              4.0,
+                                                                              180.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  19.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/MD500/SFX_MD500_EngineStart.SFX_MD500_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/MD500/SFX_MD500_Takeoff.SFX_MD500_Takeoff",
+                                       "inflight":  "/Game/Audio/Vehicles/MD500/SC_MD500_EngineInFlight_Loop.SC_MD500_EngineInFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/MD-500-startup.wav",
+                                                           "assets/audio/MD-500-takeoff.wav",
+                                                           "assets/audio/MD-500-inflight.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "bell_222x",
+                         "displayName":  "BELL 222",
+                         "manufacturer":  "Bell",
+                         "role":  "Special operations / attack",
+                         "summary":  "High-speed Bell 222 conversion with concealed weapons, precision targeting, and super-boost capability.",
+                         "fuelEnduranceMinutes":  10.0,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  5,
+                                       "maneuverability":  4,
+                                       "armor":  1,
+                                       "cargo":  4
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  4,
+                                                    "medevac":  4,
+                                                    "cargo":  2,
+                                                    "recon":  5,
+                                                    "attack":  5,
+                                                    "escort":  5
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/bell_222_x.glb",
+                                        "variants":  [
+                                                         "assets/actors/bell_222_x.glb"
+                                                     ],
+                                        "license":  "Sketchfab Standard",
+                                        "credit":  "helijah",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/bell-222-x-65e868d0d8934ef999d870471e4358e3"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, nose -X",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "Object_23",
+                                                              "Object_10"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  -90.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/UserAdded/CombatReady/Bell222X",
+                                        "bodyAsset":  "/Game/Vehicles/UserAdded/CombatReady/Bell222X/Bell222X_Body/Bell222X_Body/StaticMeshes/Object_28.Object_28",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/UserAdded/CombatReady/Bell222X/Bell222X_MainRotor/Bell222X_MainRotor/StaticMeshes/Bell222X_MainRotor.Bell222X_MainRotor",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/Bell222X/Bell222X_TailRotor/Bell222X_TailRotor/StaticMeshes/Bell222X_TailRotor.Bell222X_TailRotor"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              -83.1,
+                                                                              0.0,
+                                                                              172.799
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/Bell222X/Bell222X_MainRotor/Bell222X_MainRotor/StaticMeshes/Bell222X_MainRotor.Bell222X_MainRotor"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "tail",
+                                                                "spinAxis":  "Y",
+                                                                "pivot":  [
+                                                                              734.8,
+                                                                              46.1,
+                                                                              65.9
+                                                                          ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/Bell222X/Bell222X_TailRotor/Bell222X_TailRotor/StaticMeshes/Bell222X_TailRotor.Bell222X_TailRotor"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "previewAssembly":  "lossless_body_plus_independent_rotors",
+                                        "readyForHangar":  true
+                                    },
+                         "exhaust":  {
+                                         "enabled":  true,
+                                         "plumeWidth":  0.9,
+                                         "plumeLength":  1.15,
+                                         "velocityMultiplier":  1.24,
+                                         "vaporAmount":  0.38,
+                                         "distortionIntensity":  1.18,
+                                         "startupPuff":  true,
+                                         "outlets":  [
+                                                         {
+                                                             "location":  [
+                                                                              -24.0,
+                                                                              -52.0,
+                                                                              73.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              1.0,
+                                                                              187.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  25.0
+                                                         },
+                                                         {
+                                                             "location":  [
+                                                                              -24.0,
+                                                                              52.0,
+                                                                              73.0
+                                                                          ],
+                                                             "rotation":  [
+                                                                              1.0,
+                                                                              173.0,
+                                                                              0.0
+                                                                          ],
+                                                             "diameter":  25.0
+                                                         }
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "startup":  "/Game/Audio/Vehicles/Bell222X/SFX_Bell222X_EngineStart.SFX_Bell222X_EngineStart",
+                                       "takeoff":  "/Game/Audio/Vehicles/Bell222X/SC_Bell222X_EngineInFlight_Loop.SC_Bell222X_EngineInFlight_Loop",
+                                       "inflight":  "/Game/Audio/Vehicles/Bell222X/SC_Bell222X_EngineInFlight_Loop.SC_Bell222X_EngineInFlight_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/bell-222-startup.wav",
+                                                           "assets/audio/bell-222-in-flight.wav"
+                                                       ]
+                                   },
+                         "weaponLoadout":  {
+                                               "enabled":  true,
+                                               "gunDeploymentDuration":  0.85,
+                                               "gunDeploymentDistance":  90.0,
+                                               "podDeploymentDuration":  0.95,
+                                               "podDeploymentDistance":  12.0,
+                                               "podArcDegrees":  90.0,
+                                               "retractionDelay":  0.25,
+                                               "convergenceDistanceMeters":  1200.0,
+                                               "leftGunMount":  [
+                                                                    20.0,
+                                                                    -105.0,
+                                                                    -40.0
+                                                                ],
+                                               "rightGunMount":  [
+                                                                     20.0,
+                                                                     105.0,
+                                                                     -40.0
+                                                                 ],
+                                               "bellyPodMount":  [
+                                                                     -5.0,
+                                                                     0.0,
+                                                                     -18.0
+                                                                 ],
+                                               "modes":  [
+                                                             {
+                                                                 "id":  "chain50",
+                                                                 "displayName":  ".50 CHAIN GUNS",
+                                                                 "targetClass":  "any",
+                                                                 "ammo":  1200,
+                                                                 "damage":  10.0,
+                                                                 "fireInterval":  0.075,
+                                                                 "spreadDegrees":  0.72,
+                                                                 "maxRangeMeters":  2600.0,
+                                                                 "projectileSpeed":  52000.0
+                                                             },
+                                                             {
+                                                                 "id":  "cannon40",
+                                                                 "displayName":  "40MM CANNONS",
+                                                                 "targetClass":  "any",
+                                                                 "ammo":  160,
+                                                                 "damage":  62.0,
+                                                                 "minimumBlastDamage":  18.0,
+                                                                 "blastRadius":  420.0,
+                                                                 "fireInterval":  0.42,
+                                                                 "spreadDegrees":  0.24,
+                                                                 "maxRangeMeters":  3200.0,
+                                                                 "projectileSpeed":  39000.0
+                                                             },
+                                                             {
+                                                                 "id":  "linked",
+                                                                 "displayName":  "LINKED GUNS",
+                                                                 "targetClass":  "any",
+                                                                 "ammo":  0,
+                                                                 "damage":  0.0,
+                                                                 "fireInterval":  0.16,
+                                                                 "spreadDegrees":  0.55,
+                                                                 "maxRangeMeters":  2800.0,
+                                                                 "projectileSpeed":  48000.0
+                                                             },
+                                                             {
+                                                                 "id":  "aim9",
+                                                                 "displayName":  "AIM-9 A2A",
+                                                                 "targetClass":  "air",
+                                                                 "projectileAsset":  "/Game/Vehicles/UserAdded/Weapons/AIM9/SM_AIM9_Sidewinder.SM_AIM9_Sidewinder",
+                                                                 "ammo":  4,
+                                                                 "damage":  118.0,
+                                                                 "minimumBlastDamage":  24.0,
+                                                                 "blastRadius":  760.0,
+                                                                 "fireInterval":  1.2,
+                                                                 "lockSeconds":  1.2,
+                                                                 "maxRangeMeters":  4200.0,
+                                                                 "projectileSpeed":  39000.0
+                                                             },
+                                                             {
+                                                                 "id":  "hellfire",
+                                                                 "displayName":  "AGM-114 HELLFIRE",
+                                                                 "targetClass":  "ground",
+                                                                 "ammo":  6,
+                                                                 "damage":  155.0,
+                                                                 "minimumBlastDamage":  32.0,
+                                                                 "blastRadius":  900.0,
+                                                                 "fireInterval":  1.45,
+                                                                 "lockSeconds":  1.6,
+                                                                 "maxRangeMeters":  5000.0,
+                                                                 "projectileSpeed":  34500.0
+                                                             },
+                                                             {
+                                                                 "id":  "maverick",
+                                                                 "displayName":  "AGM-65 MAVERICK",
+                                                                 "targetClass":  "major_ground",
+                                                                 "projectileAsset":  "/Game/Vehicles/UserAdded/Weapons/AGM65/SM_AGM65_Maverick.SM_AGM65_Maverick",
+                                                                 "ammo":  2,
+                                                                 "damage":  245.0,
+                                                                 "minimumBlastDamage":  55.0,
+                                                                 "blastRadius":  1450.0,
+                                                                 "fireInterval":  2.8,
+                                                                 "lockSeconds":  2.75,
+                                                                 "maxRangeMeters":  5600.0,
+                                                                 "projectileSpeed":  31500.0
+                                                             }
+                                                         ]
+                                           },
+                         "gaps":  [
+
+                                  ]
+                     },
+                     {
+                         "id":  "civilian_animated",
+                         "displayName":  "CIVILIAN UTILITY",
+                         "manufacturer":  "Civilian",
+                         "role":  "Light utility / sightseeing",
+                         "summary":  "An agile civilian platform for familiarization, liaison, and low-threat rescue work.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  4,
+                                       "armor":  1,
+                                       "cargo":  3
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  3,
+                                                    "medevac":  3,
+                                                    "cargo":  2,
+                                                    "recon":  4,
+                                                    "attack":  1,
+                                                    "escort":  1
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/animated_civilian_helicopter (1).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/animated_civilian_helicopter (1).glb",
+                                                         "assets/actors/vehicles/animated_civilian_helicopter.glb"
+                                                     ],
+                                        "license":  "Sketchfab Standard",
+                                        "credit":  "assetfactory",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/animated-civilian-helicopter-f25c"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  1,
+                                       "rotorNodeHints":  [
+                                                              "Blades_01",
+                                                              "Blades_end_03"
+                                                          ],
+                                       "presentationScale":  4.2,
+                                       "presentationPitch":  0.0,
+                                       "presentationYaw":  -90.0,
+                                       "presentationRoll":  90.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Candidates/AnimatedCivilian/animated_civilian_helicopter__1_",
+                                        "bodyAsset":  "/Game/Vehicles/Candidates/AnimatedCivilian/animated_civilian_helicopter__1_/SkeletalMeshes/Object_22.Object_22",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "animationAsset":  "/Game/Vehicles/Candidates/AnimatedCivilian/animated_civilian_helicopter__1_/SkeletalMeshes/animated_civilian_helicopter__1__Anim.animated_civilian_helicopter__1__Anim",
+                                        "readyForHangar":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Confirm Object_22 is the correct assembled presentation mesh",
+                                      "Review packaging rights before distribution",
+                                      "Civilian engine audio"
+                                  ]
+                     },
+                     {
+                         "id":  "generic_light_utility",
+                         "displayName":  "LIGHT UTILITY PROTOTYPE",
+                         "manufacturer":  "Unspecified",
+                         "role":  "Light utility / trainer",
+                         "summary":  "Detailed cockpit-equipped utility prototype reserved for a future trainer or custom airframe.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  4,
+                                       "armor":  1,
+                                       "cargo":  2
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  3,
+                                                    "medevac":  2,
+                                                    "cargo":  2,
+                                                    "recon":  4,
+                                                    "attack":  2,
+                                                    "escort":  2
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/helicopter (4).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/helicopter (4).glb",
+                                                         "assets/actors/vehicles/helicopter (3).glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Coder123123",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/helicopter-75f"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "TailRotor",
+                                                              "RotorBlade"
+                                                          ],
+                                       "presentationScale":  5.4,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/generic_light_utility",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/generic_light_utility/helicopter__4_/StaticMeshes/defaultMaterial_199801ea2e71a1e454ee67e111b4f380.defaultMaterial_199801ea2e71a1e454ee67e111b4f380",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Identify real-world airframe",
+                                      "Visually qualify assembled imported parts",
+                                      "Set rotor pivots and audio"
+                                  ]
+                     },
+                     {
+                         "id":  "generic_irs1182",
+                         "displayName":  "UTILITY PROTOTYPE 1182",
+                         "manufacturer":  "Unspecified",
+                         "role":  "Utility / trainer",
+                         "summary":  "Low-complexity helicopter model retained as a performance-friendly trainer candidate.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  3,
+                                       "armor":  1,
+                                       "cargo":  2
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  3,
+                                                    "medevac":  2,
+                                                    "cargo":  2,
+                                                    "recon":  3,
+                                                    "attack":  1,
+                                                    "escort":  1
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/helicopter (1).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/helicopter (1).glb",
+                                                         "assets/actors/vehicles/helicopter.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "irs1182",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/helicopter-913664"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, nose -X",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+
+                                                          ],
+                                       "presentationScale":  0.0082,
+                                       "presentationPitch":  9.5,
+                                       "presentationYaw":  -89.0,
+                                       "presentationRoll":  -0.1
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/generic_irs1182",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/generic_irs1182/helicopter__1_/StaticMeshes/Object_4.Object_4",
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Identify real-world airframe",
+                                      "Visually qualify imported mesh",
+                                      "Set rotor pivots and audio"
+                                  ]
+                     },
+                     {
+                         "id":  "jeep_cj5",
+                         "displayName":  "JEEP CJ-5",
+                         "manufacturer":  "Jeep",
+                         "role":  "Ground utility",
+                         "summary":  "Open-top cabin transport for exploring the island road network.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "source_only",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  4,
+                                       "armor":  1,
+                                       "cargo":  2
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  1,
+                                                    "medevac":  1,
+                                                    "cargo":  2,
+                                                    "recon":  2,
+                                                    "attack":  1,
+                                                    "escort":  1
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/ground/jeeps/jeep_cj5.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/ground/jeeps/jeep_cj5.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "LuisFilipeSilvaSantos",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/jeep-cj5-high-detail-wrangler-style-luis-view-8c541b15664b4273ac61b95fbb2e0f70"
+                                    },
+                         "model":  {
+                                       "expectedAnimations":  0,
+                                       "presentationScale":  1.95,
+                                       "presentationYaw":  -90.0,
+                                       "sourceCenter":  [
+                                                            -0.27,
+                                                            -0.29,
+                                                            0.0
+                                                        ],
+                                       "sourceMinimumZ":  -47.63
+                                   },
+                         "unreal":  {
+                                        "deploymentClass":  "ground",
+                                        "assetRoot":  "/Game/Vehicles/Playable/Jeeps/CJ5",
+                                        "bodyAsset":  "/Game/Vehicles/Playable/Jeeps/CJ5/jeep_cj5/StaticMeshes/SM_Jeep_CJ5.SM_Jeep_CJ5",
+                                        "bodyAssets":  [
+                                                           "/Game/Vehicles/Playable/Jeeps/CJ5/jeep_cj5/StaticMeshes/SM_Jeep_CJ5.SM_Jeep_CJ5"
+                                                       ],
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "readyForHangar":  false
+                                    },
+                         "gaps":  [
+                                      "Cave-to-lair transition deferred"
+                                  ]
+                     },
+                     {
+                         "id":  "jeep_wrangler",
+                         "displayName":  "JEEP CJ-5",
+                         "manufacturer":  "Jeep",
+                         "role":  "Ground utility",
+                         "summary":  "Classic open-body utility vehicle used for island transport and cave access.",
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "ready",
+                         "stats":  {
+                                       "speed":  3,
+                                       "maneuverability":  4,
+                                       "armor":  2,
+                                       "cargo":  3
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  1,
+                                                    "medevac":  1,
+                                                    "cargo":  2,
+                                                    "recon":  2,
+                                                    "attack":  1,
+                                                    "escort":  1
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/ground/jeeps/jeep_wrangler.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/ground/jeeps/jeep_wrangler.glb"
+                                                     ],
+                                        "license":  "User supplied",
+                                        "credit":  "User supplied",
+                                        "sourceUrl":  ""
+                                    },
+                         "model":  {
+                                       "expectedAnimations":  0,
+                                       "presentationScale":  0.009,
+                                       "presentationYaw":  -90.0,
+                                       "sourceCenter":  [
+                                                            574.02,
+                                                            5046.09,
+                                                            0.0
+                                                        ],
+                                       "sourceMinimumZ":  53.61
+                                   },
+                         "unreal":  {
+                                        "deploymentClass":  "ground",
+                                        "assetRoot":  "/Game/Vehicles/Playable/Jeeps/Wrangler",
+                                        "bodyAsset":  "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/1_low_001_Plane_011_Base_0.1_low_001_Plane_011_Base_0",
+                                        "bodyAssets":  [
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/1_low_001_Plane_011_Base_0.1_low_001_Plane_011_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/1_low_Plane_077_Base_0.1_low_Plane_077_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/2_low_001_Plane_002_Base_0.2_low_001_Plane_002_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/2_low_Plane_050_Base_0.2_low_Plane_050_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/3_low_001_Plane_012_Base_0.3_low_001_Plane_012_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/3_low_Plane_003_Base_0.3_low_Plane_003_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/4_low_001_Plane_010_Base_0.4_low_001_Plane_010_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/4_low_002_Plane_013_Base_0.4_low_002_Plane_013_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/4_low_003_Plane_047_Base_0.4_low_003_Plane_047_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/4_low_004_Plane_008_Base_0.4_low_004_Plane_008_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/4_low_Plane_052_Base_0.4_low_Plane_052_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/5_low_Plane_065_Base_0.5_low_Plane_065_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/6_low_001_Plane_006_Base_0.6_low_001_Plane_006_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/6_low_003_Plane_022_Base_0.6_low_003_Plane_022_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/6_low_004_Plane_015_Base_0.6_low_004_Plane_015_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/6_low_005_Plane_017_Base_0.6_low_005_Plane_017_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/6_low_Plane_061_Base_0.6_low_Plane_061_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/7_low_001_Plane_014_Base_0.7_low_001_Plane_014_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/7_low_002_Plane_016_Base_0.7_low_002_Plane_016_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/7_low_003_Plane_028_Base_0.7_low_003_Plane_028_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/7_low_004_Plane_030_Base_0.7_low_004_Plane_030_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/7_low_005_Plane_023_Base_0.7_low_005_Plane_023_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/7_low_Plane_083_Base_0.7_low_Plane_083_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/8_low_001_Plane_037_Base_0.8_low_001_Plane_037_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/8_low_002_Plane_038_Base_0.8_low_002_Plane_038_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/8_low_003_Plane_039_Base_0.8_low_003_Plane_039_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/8_low_004_Plane_040_Base_0.8_low_004_Plane_040_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/8_low_005_Plane_048_Base_0.8_low_005_Plane_048_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/8_low_Plane_067_Base_0.8_low_Plane_067_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/9_low_001_Plane_031_Base_0.9_low_001_Plane_031_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/9_low_002_Plane_035_Base_0.9_low_002_Plane_035_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/9_low_003_Plane_036_Base_0.9_low_003_Plane_036_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/9_low_Plane_070_Base_0.9_low_Plane_070_Base_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/glass_001_Cube_001_GLASS_0.glass_001_Cube_001_GLASS_0",
+                                                           "/Game/Vehicles/Playable/Jeeps/Wrangler/jeep_wrangler/StaticMeshes/glass_Cube_026_GLASS_0.glass_Cube_026_GLASS_0"
+                                                       ],
+                                        "rotorAssets":  [
+
+                                                        ],
+                                        "readyForHangar":  true
+                                    },
+                         "gaps":  [
+                                  ]
+                     },
+                     {
+                         "id":  "simulus_rc",
+                         "displayName":  "SIMULUS NX-1065 RC",
+                         "manufacturer":  "Simulus",
+                         "role":  "RC bonus / training",
+                         "summary":  "Small radio-control helicopter retained as a bonus challenge craft, not a full-size mission aircraft.",
+                         "hangarVisible":  false,
+                         "alphaSelectable":  false,
+                         "deploymentReady":  false,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "removed_from_alpha",
+                         "stats":  {
+                                       "speed":  5,
+                                       "maneuverability":  5,
+                                       "armor":  1,
+                                       "cargo":  1
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  1,
+                                                    "medevac":  1,
+                                                    "cargo":  1,
+                                                    "recon":  4,
+                                                    "attack":  1,
+                                                    "escort":  1
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/simulus_rc_helicopter_nx-1065-675 (1).glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/simulus_rc_helicopter_nx-1065-675 (1).glb",
+                                                         "assets/actors/vehicles/simulus_rc_helicopter_nx-1065-675.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "AleixoAlonso",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/simulus-rc-helicopter-nx-1065-675-c22"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "rotor"
+                                                          ],
+                                       "presentationScale":  25.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/Roster/simulus_rc",
+                                        "bodyAsset":  "/Game/Vehicles/Roster/simulus_rc/simulus_rc_helicopter_nx-1065-675__1_/StaticMeshes/1.1",
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/Roster/simulus_rc/simulus_rc_helicopter_nx-1065-675__1_/StaticMeshes/_TOY0004_Rotor_002__TOY0004_Textures_0._TOY0004_Rotor_002__TOY0004_Textures_0",
+                                                            "/Game/Vehicles/Roster/simulus_rc/simulus_rc_helicopter_nx-1065-675__1_/StaticMeshes/_TOY0004_Rotor_003__TOY0004_Textures_0._TOY0004_Rotor_003__TOY0004_Textures_0"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/simulus_rc/simulus_rc_helicopter_nx-1065-675__1_/StaticMeshes/_TOY0004_Rotor_001__TOY0004_Textures_0._TOY0004_Rotor_001__TOY0004_Textures_0",
+                                                                               "/Game/Vehicles/Roster/simulus_rc/simulus_rc_helicopter_nx-1065-675__1_/StaticMeshes/_TOY0004_Rotor_002__TOY0004_Textures_0._TOY0004_Rotor_002__TOY0004_Textures_0"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/Roster/simulus_rc/simulus_rc_helicopter_nx-1065-675__1_/StaticMeshes/_TOY0004_Rotor_003__TOY0004_Textures_0._TOY0004_Rotor_003__TOY0004_Textures_0"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "readyForHangar":  false,
+                                        "airfieldDisplayProp":  false
+                                    },
+                         "audio":  {
+                                       "status":  "missing",
+                                       "startup":  "",
+                                       "takeoff":  "",
+                                       "inflight":  "",
+                                       "sourceFiles":  [
+
+                                                       ]
+                                   },
+                         "gaps":  [
+                                      "Visually qualify imported parts",
+                                      "Create bonus-mode flight tuning",
+                                      "Electric motor audio"
+                                  ]
+                     },
+                     {
+                         "id":  "ch47_chinook",
+                         "displayName":  "CH-47 CHINOOK",
+                         "manufacturer":  "Boeing Vertol",
+                         "role":  "Heavy lift / transport",
+                         "summary":  "Fast tandem-rotor transport built for heavy lift, extraction, and battlefield support.",
+                         "fuelEnduranceMinutes":  11.0,
+                         "hangarVisible":  true,
+                         "alphaSelectable":  true,
+                         "deploymentReady":  true,
+                         "enemyEligible":  false,
+                         "spawnStatus":  "alpha_ready",
+                         "stats":  {
+                                       "speed":  5,
+                                       "maneuverability":  1,
+                                       "armor":  4,
+                                       "cargo":  5
+                                   },
+                         "missionSuitability":  {
+                                                    "rescue":  5,
+                                                    "medevac":  5,
+                                                    "cargo":  5,
+                                                    "recon":  1,
+                                                    "attack":  1,
+                                                    "escort":  2
+                                                },
+                         "source":  {
+                                        "preferredGlb":  "assets/actors/vehicles/ch-47-chinook.glb",
+                                        "variants":  [
+                                                         "assets/actors/vehicles/ch-47-chinook.glb"
+                                                     ],
+                                        "license":  "CC-BY-4.0",
+                                        "credit":  "Muhamad Mirza Arrafi",
+                                        "sourceUrl":  "https://sketchfab.com/3d-models/boeing-ch-47-chinook-military-transport-aircraft-cdac73e931f6482e86960a326fef73bf"
+                                    },
+                         "model":  {
+                                       "axis":  "glTF Y-up, tandem rotors",
+                                       "expectedAnimations":  0,
+                                       "rotorNodeHints":  [
+                                                              "Object_6",
+                                                              "Object_7"
+                                                          ],
+                                       "presentationScale":  1.0,
+                                       "presentationYaw":  0.0
+                                   },
+                         "unreal":  {
+                                        "assetRoot":  "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2",
+                                        "bodyAsset":  "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/Body/CH47Chinook_Body/StaticMeshes/Object_2.Object_2",
+                                        "bodyAssets":  [
+                                                           "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/Body/CH47Chinook_Body/StaticMeshes/Object_2.Object_2",
+                                                           "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/Body/CH47Chinook_Body/StaticMeshes/Object_3.Object_3",
+                                                           "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/Body/CH47Chinook_Body/StaticMeshes/Object_4.Object_4",
+                                                           "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/Body/CH47Chinook_Body/StaticMeshes/Object_5.Object_5"
+                                                       ],
+                                        "rotorAssets":  [
+                                                            "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/FrontRotor/CH47Chinook_FrontRotor/StaticMeshes/Object_6.Object_6",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/FrontRotor/CH47Chinook_FrontRotor/StaticMeshes/Object_9.Object_9",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/RearRotor/CH47Chinook_RearRotor/StaticMeshes/Object_7.Object_7",
+                                                            "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/RearRotor/CH47Chinook_RearRotor/StaticMeshes/Object_8.Object_8"
+                                                        ],
+                                        "rotorGroups":  [
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "Z",
+                                                                "pivot":  [
+                                                                              6.92,
+                                                                              847.038,
+                                                                              610.822
+                                                                          ],
+                                                                "meshPivot":  [
+                                                                                  6.92,
+                                                                                  847.038,
+                                                                                  610.822
+                                                                              ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/FrontRotor/CH47Chinook_FrontRotor/StaticMeshes/Object_6.Object_6",
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/FrontRotor/CH47Chinook_FrontRotor/StaticMeshes/Object_9.Object_9"
+                                                                           ]
+                                                            },
+                                                            {
+                                                                "role":  "main",
+                                                                "spinAxis":  "-Z",
+                                                                "pivot":  [
+                                                                              3.541,
+                                                                              -685.006,
+                                                                              747.479
+                                                                          ],
+                                                                "meshPivot":  [
+                                                                                  3.541,
+                                                                                  -685.006,
+                                                                                  747.479
+                                                                              ],
+                                                                "assets":  [
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/RearRotor/CH47Chinook_RearRotor/StaticMeshes/Object_7.Object_7",
+                                                                               "/Game/Vehicles/UserAdded/CombatReady/CH47ChinookV2/RearRotor/CH47Chinook_RearRotor/StaticMeshes/Object_8.Object_8"
+                                                                           ]
+                                                            }
+                                                        ],
+                                        "animationAsset":  "",
+                                        "allowProceduralRotorFallback":  false,
+                                        "readyForHangar":  true,
+                                        "previewAssembly":  "lossless_body_plus_counter_rotating_tandem_rotors"
+                                    },
+                         "exhaust":  {
+                                         "enabled":  false,
+                                         "outlets":  [
+
+                                                     ]
+                                     },
+                         "audio":  {
+                                       "status":  "ready",
+                                       "preIgnition":  "",
+                                       "startup":  "/Game/Audio/Vehicles/CH47Chinook/SFX_CH47_EngineStart.SFX_CH47_EngineStart",
+                                       "takeoff":  "",
+                                       "inflight":  "/Game/Audio/Vehicles/CH47Chinook/SC_CH47_FlightProfile_Loop.SC_CH47_FlightProfile_Loop",
+                                       "sourceFiles":  [
+                                                           "assets/audio/chinook-engine-start.wav",
+                                                           "assets/audio/chinook-flight-profile.wav"
+                                                       ]
+                                   },
+                         "gaps":  [
+                                  ]
+                     }
+                 ],
+    "accessories":  [
+                        {
+                            "id":  "dcs_cargo_module",
+                            "displayName":  "EXTERNAL CARGO MODULE",
+                            "role":  "Cargo accessory",
+                            "variants":  [
+                                             "assets/actors/vehicles/helicopter_cargo_mod_for_dcs (1).glb",
+                                             "assets/actors/vehicles/helicopter_cargo_mod_for_dcs.glb"
+                                         ],
+                            "status":  "source_only"
+                        },
+                        {
+                            "id":  "heliport_helicopter_complex",
+                            "displayName":  "HELIPORT COMPLEX",
+                            "role":  "Airfield environment dressing",
+                            "variants":  [
+                                             "assets/actors/vehicles/heliport_helicopter-45mb (1).glb",
+                                             "assets/actors/vehicles/heliport_helicopter-45mb.glb"
+                                         ],
+                            "status":  "imported_environment_asset",
+                            "evidence":  "Four square 27.7m/20.3m meshes and no rotor/body nodes; not a flyable airframe"
+                        }
+                    ]
+}

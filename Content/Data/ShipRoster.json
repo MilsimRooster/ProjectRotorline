@@ -1,0 +1,49 @@
+{
+  "ships": [
+    {
+      "id": "pacific_dawn",
+      "displayName": "Pacific Dawn",
+      "sourceFile": "assets/actors/vehicles/ships/pacific_dawn_cruise_ship.glb",
+      "credit": "Gman The Cruise Dude",
+      "license": "CC-BY-ND-4.0",
+      "sourceUrl": "https://sketchfab.com/3d-models/pacific-dawn-cruise-ship-29b86e72224048f79c84a2157f4911a4",
+      "placement": "docked"
+    },
+    {
+      "id": "battle_ship",
+      "displayName": "Battle Ship",
+      "sourceFile": "assets/actors/vehicles/ships/battle_ship.glb",
+      "credit": "gogiart",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://sketchfab.com/3d-models/battle-ship-a413939c4d9f4192b720df857d40cff8",
+      "placement": "docked"
+    },
+    {
+      "id": "low_poly_frigate",
+      "displayName": "Low Poly Frigate with Helicopter",
+      "sourceFile": "assets/actors/vehicles/ships/low_poly_frigate_ship_with_helicopter.glb",
+      "credit": "Duane's Mind",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://sketchfab.com/3d-models/low-poly-frigate-ship-with-helicopter-e35dab813fe34035b66ac15989b1e2be",
+      "placement": "docked"
+    },
+    {
+      "id": "type_054a",
+      "displayName": "Type-054A Class Frigate",
+      "sourceFile": "assets/actors/vehicles/ships/type-054a_class_frigate.glb",
+      "credit": "Muhamad Mirza Arrafi",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://sketchfab.com/3d-models/type-054a-class-frigate-948cca64a5274644a35e4600e023d61d",
+      "placement": "offshore"
+    },
+    {
+      "id": "hms_invincible",
+      "displayName": "HMS Invincible",
+      "sourceFile": "assets/actors/vehicles/ships/aircraft_carrier_-_hms_invincible_lowpoly.glb",
+      "credit": "Machine Meza",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://sketchfab.com/3d-models/aircraft-carrier-hms-invincible-lowpoly-12183310779843179ee29880d104b0d9",
+      "placement": "offshore"
+    }
+  ]
+}

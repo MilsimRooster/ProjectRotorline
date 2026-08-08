@@ -1,40 +1,73 @@
-﻿# Project Rotorline Alpha
+﻿# Project Rotorline
 
-Project Rotorline is a 25-mission Unreal Engine 5 helicopter operations Alpha focused on hands-on rotary-wing flight, combat, rescue, transport, and island operations.
+![Project Rotorline Alpha](media/splash.png)
 
-## Download for Windows
+> **ALPHA SOFTWARE:** Project Rotorline is actively being developed. Missions, balance, performance, controls, and presentation may change.
 
-**Recommended:** [Download ProjectRotorlineAlphaSetup.exe](https://github.com/MilsimRooster/ProjectRotorline/releases/download/alpha-setup-2026-08-07-r2/ProjectRotorlineAlphaSetup.exe)
+Project Rotorline is a helicopter-focused Unreal Engine 5.8 action game created by Keith League (Rooster). Its current Alpha campaign spans 25 missions across rescue, reconnaissance, escort, strike, extraction, heavy-lift, and final evacuation operations.
 
-The setup program downloads and assembles the complete packaged game, installs `Rotorline.exe`, and creates a desktop shortcut.
+## Source Snapshot and Alpha Download Status
 
-**Manual package:** [Open the current August 7 Windows Alpha release](https://github.com/MilsimRooster/ProjectRotorline/releases/tag/alpha-windows-2026-08-07-r2)
+This repository is a standalone Project Rotorline source snapshot. It is a
+normal independent repository, not a fork, submodule, redirect, or pointer back
+to an older Rotorline repository.
 
-The manual package requires the core ZIP and both UCAS parts. The setup program is easier and is the recommended path.
+Licensed binary assets are intentionally excluded, so a fresh clone is not a
+build-complete Unreal project and is not presented as a playable distribution.
 
-## System guidance
+The playable Windows Alpha download is temporarily withheld. There is no
+currently supported public installer or game-package link. Binary distribution
+will resume only after the OH-58 model rights and unresolved supplied-audio
+provenance are cleared and the final installer, manifest, package, prerequisites,
+shortcut, and launch flow pass release verification together.
 
-- Windows 10 or Windows 11, 64-bit
-- Microsoft Visual C++ 2015-2022 Redistributable
-- 16 GB RAM recommended
-- DirectX 12-capable GPU
-- RTX 2060-class GPU is the tested lower-end baseline
-- Approximately 8 GB free disk space for download, assembly, and installation
+Older installer and payload links are intentionally not offered because they do
+not represent the current verified Alpha.
 
-Select **Snail** graphics mode for lower-spec systems and **Turbo** for higher-spec systems.
+## Alpha Highlights
 
-## Alpha status
+- 25-mission campaign with progression and aircraft unlocks
+- Multiple flyable aircraft including the UH-1 Huey, MD-500/MH-6, OH-58 Kiowa, AH-64 Apache, Bell 222, and CH-47 Chinook
+- Helicopter-focused flight, combat, countermeasures, resupply, extraction, convoy, and sling-load gameplay
+- Handcrafted island, summit, hidden lair, enemy island, offshore carrier, airfields, towns, roads, and mission locations
+- Controller-first input with in-game calibration and remapping
+- Simple `Snail` and `Turbo` graphics presets for a wider range of Windows PCs
+- Mission audio, radio callouts, music, cinematics, and progression systems
 
-This is an active Alpha build. The August 7 release is built from the verified
-Project Rotorline checkpoint `4b37c8b` and includes every accepted fix through
-that checkpoint, including the complete 25-mission campaign, current controller
-setup, combat aiming, reticle alignment, enemy tracers, keyboard yaw controls,
-the official Rotorline Bell 222 achievement patch, and Bell-only identity naming.
+## Alpha Demo
 
-The installer downloads only the matching August 7 payload, verifies every
-part with SHA-256, assembles the complete game locally, and installs a standalone
-Windows build. It does not require another repository or an older Alpha.
+[Download or watch Rotorline-Demo.mp4](https://github.com/MilsimRooster/ProjectRotorline/releases/download/alpha-demo-2026-07-29/Rotorline-Demo.mp4)
 
-Source code and development assets are maintained privately and are not distributed in this repository.
+## Technology
 
-See [CREDITS.md](CREDITS.md) for project and third-party acknowledgements and [LICENSE.md](LICENSE.md) for usage terms.
+- Unreal Engine 5.8
+- C++ and Unreal project configuration
+- Windows 64-bit target
+- Current campaign data under `Content/Data`
+
+## Current Status
+
+Project Rotorline remains in Alpha. The current development campaign reaches
+Mission 25, but the public playable package is withheld as described above.
+Testing, optimization, content polish, accessibility, and hardware coverage are
+ongoing.
+
+Performance targets and minimum requirements are provisional. Testing has included an RTX 2060-class system at approximately 30 FPS under reduced settings, but results vary by mission, resolution, and hardware.
+
+## Controls
+
+Project Rotorline supports keyboard, gamepad, and flight-control hardware. Use the in-game Flight Controls menu for device selection, axis calibration, and bindings; exact mappings may differ between devices and player profiles.
+
+## Campaign
+
+See [docs/MISSIONS.md](docs/MISSIONS.md) for the current 25-mission catalog.
+
+## Credits and Rights
+
+See [CREDITS.md](CREDITS.md) for project and third-party attribution.
+
+Original Project Rotorline code, writing, mission design, branding, and media are copyright Keith League. All rights reserved. Third-party assets remain subject to their respective creators and licenses.
+
+## Contact
+
+Project updates and public demonstrations are published by MilsimRooster.

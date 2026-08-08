@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "target_gpu": "NVIDIA RTX 5070",
+  "visual_identity": "Approved Maple01 mature trees, Maple04 saplings, Fern01 undergrowth, generated grass clumps",
+  "regionalization": {
+    "nominal_region_size_cm": 100000,
+    "maximum_simultaneously_dense_regions": 4,
+    "maximum_hism_components_per_region": 13,
+    "maximum_island_part_instances": 33100
+  },
+  "profiles": {
+    "mature_maple01": {
+      "assembly_parts": 5,
+      "source_triangles_per_assembly": 111097,
+      "target_instances_per_dense_region": 18,
+      "hard_instances_per_region": 60,
+      "hard_visible_instances": 120,
+      "hard_island_instances": 360,
+      "start_cull_distance_cm": 100000,
+      "end_cull_distance_cm": 200000,
+      "density_scaling": false,
+      "collision": "trunk_only",
+      "cast_shadow": true,
+      "nanite": true,
+      "nanite_fallback_percent_triangles": 0.25,
+      "mesh_paths": [
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple01_01__Shape_Trunk_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple01_01__Shape_Branch_1_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple01_01__Shape_Branch_2_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple01_01__Shape_Branch_3_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple01_01__Shape_Leaf_0"
+      ],
+      "leaf_mesh_paths": [
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple01_01__Shape_Leaf_0"
+      ]
+    },
+    "sapling_maple04": {
+      "assembly_parts": 4,
+      "source_triangles_per_assembly": 8106,
+      "target_instances_per_dense_region": 90,
+      "hard_instances_per_region": 180,
+      "hard_visible_instances": 720,
+      "hard_island_instances": 2400,
+      "start_cull_distance_cm": 60000,
+      "end_cull_distance_cm": 140000,
+      "density_scaling": true,
+      "collision": "none",
+      "cast_shadow": true,
+      "nanite": true,
+      "nanite_fallback_percent_triangles": 0.5,
+      "mesh_paths": [
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple04_01_Shape_Trunk_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple04_01_Shape_Branch_2_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple04_01_Shape_Branch_3_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple04_01_Shape_Leaf_0"
+      ],
+      "leaf_mesh_paths": [
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/WGJ_Maple04_01_Shape_Leaf_0"
+      ]
+    },
+    "fern01": {
+      "assembly_parts": 2,
+      "source_triangles_per_assembly": 12180,
+      "target_instances_per_dense_region": 220,
+      "hard_instances_per_region": 400,
+      "hard_visible_instances": 800,
+      "hard_island_instances": 4800,
+      "start_cull_distance_cm": 20000,
+      "end_cull_distance_cm": 60000,
+      "density_scaling": true,
+      "collision": "none",
+      "cast_shadow": false,
+      "nanite": true,
+      "nanite_fallback_percent_triangles": 0.35,
+      "mesh_paths": [
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/MH_Fern01_01_Shape_Stem_0",
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/MH_Fern01_01_Shape_Leaf_0"
+      ],
+      "leaf_mesh_paths": [
+        "/Game/Environment/Benchmark/SourceTreesVegetationPack/trees_vegetation_pack/StaticMeshes/MH_Fern01_01_Shape_Leaf_0"
+      ]
+    },
+    "generated_grass": {
+      "assembly_parts": 1,
+      "source_triangles_per_assembly": 126,
+      "target_instances_per_dense_region": 500,
+      "hard_instances_per_region": 1000,
+      "hard_visible_instances": 3000,
+      "hard_island_instances": 12000,
+      "start_cull_distance_cm": 10000,
+      "end_cull_distance_cm": 40000,
+      "density_scaling": true,
+      "collision": "none",
+      "cast_shadow": false,
+      "nanite": false,
+      "nanite_fallback_percent_triangles": 1.0,
+      "mesh_paths": [
+        "/Game/Environment/Nature/Grass/GeneratedMesh/SM_GrassClump/StaticMeshes/SM_GrassClump"
+      ],
+      "leaf_mesh_paths": []
+    },
+    "scarce_rocks": {
+      "assembly_parts": 1,
+      "target_instances_per_dense_region": 2,
+      "hard_instances_per_region": 6,
+      "hard_visible_instances": 24,
+      "hard_island_instances": 80,
+      "start_cull_distance_cm": 100000,
+      "end_cull_distance_cm": 220000,
+      "density_scaling": false,
+      "collision": "simple",
+      "cast_shadow": true,
+      "mesh_paths": [
+        "/Game/Environment/Imported/StandaloneRocks/low-poly-grey-boulder/StaticMeshes/low-poly-grey-boulder"
+      ],
+      "leaf_mesh_paths": []
+    }
+  }
+}

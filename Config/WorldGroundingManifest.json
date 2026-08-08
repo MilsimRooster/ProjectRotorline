@@ -1,0 +1,3705 @@
+{
+  "map": "/Game/Maps/RotorlineIsland",
+  "policy": "Exact reviewed actor paths; exclusions are persisted and do not depend on runtime name matching",
+  "actors": [
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_14",
+      "guid": "",
+      "label": "AMBIENCE_DistantGulls_01",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_15",
+      "guid": "",
+      "label": "AMBIENCE_DistantGulls_02",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_16",
+      "guid": "",
+      "label": "AMBIENCE_DistantGulls_03",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_0",
+      "guid": "",
+      "label": "AMBIENCE_Global_CoastalWind",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_17",
+      "guid": "",
+      "label": "AMBIENCE_HarborMachinery",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_11",
+      "guid": "",
+      "label": "AMBIENCE_MeadowInsects_01",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_12",
+      "guid": "",
+      "label": "AMBIENCE_MeadowInsects_02",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_13",
+      "guid": "",
+      "label": "AMBIENCE_MeadowInsects_03",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_1",
+      "guid": "",
+      "label": "AMBIENCE_Surf_01",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_2",
+      "guid": "",
+      "label": "AMBIENCE_Surf_02",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_3",
+      "guid": "",
+      "label": "AMBIENCE_Surf_03",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_4",
+      "guid": "",
+      "label": "AMBIENCE_Surf_04",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_5",
+      "guid": "",
+      "label": "AMBIENCE_Surf_05",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_6",
+      "guid": "",
+      "label": "AMBIENCE_Surf_06",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_7",
+      "guid": "",
+      "label": "AMBIENCE_Surf_07",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_8",
+      "guid": "",
+      "label": "AMBIENCE_Surf_08",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_9",
+      "guid": "",
+      "label": "AMBIENCE_Surf_09",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.AmbientSound_10",
+      "guid": "",
+      "label": "AMBIENCE_Surf_10",
+      "class": "AmbientSound",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_115",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0001",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_116",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0002",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_117",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0003",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_118",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0004",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_119",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0005",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_195",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0006",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_196",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0007",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_197",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0008",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_198",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0009",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_199",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0010",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_200",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0011",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_201",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0012",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_202",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0013",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_203",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0014",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_204",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0015",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_205",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0016",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_236",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0017",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_237",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0018",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_238",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0019",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_239",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0020",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_240",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0021",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_241",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0022",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_242",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0023",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_243",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0024",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_244",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0025",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_245",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0026",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_246",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0027",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_247",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0028",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_248",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0029",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_249",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0030",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_250",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0031",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_251",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0032",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_282",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0033",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_283",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0034",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_284",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0035",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_285",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0036",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_286",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0037",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_287",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0038",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_288",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0039",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_289",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0040",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_290",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0041",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_291",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0042",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_292",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0043",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_293",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0044",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_294",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0045",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_295",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0046",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_296",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0047",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_297",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0048",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_328",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0049",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_329",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0050",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_330",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0051",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_331",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0052",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_332",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0053",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_333",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0054",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_334",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0055",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_335",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0056",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_336",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0057",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_337",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0058",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_338",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0059",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_339",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0060",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_340",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0061",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_341",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0062",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_342",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0063",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_343",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0064",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_374",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0065",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_375",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0066",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_376",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0067",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_377",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0068",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_378",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0069",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_379",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0070",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_380",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0071",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_381",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0072",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_382",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0073",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_383",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0074",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_384",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0075",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_385",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0076",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_386",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0077",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_387",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0078",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_388",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0079",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_389",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0080",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_420",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0081",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_421",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0082",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_422",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0083",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_423",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0084",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_424",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0085",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_425",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0086",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_426",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0087",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_427",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0088",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_428",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0089",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_429",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0090",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_430",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0091",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_431",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0092",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_432",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0093",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_433",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0094",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_434",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0095",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_435",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0096",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_466",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0097",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_467",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0098",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_468",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0099",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_469",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0100",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_470",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0101",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_471",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0102",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_472",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0103",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_473",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0104",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_474",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0105",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_475",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0106",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_476",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0107",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_477",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0108",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_478",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0109",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_479",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0110",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_480",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0111",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_481",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0112",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_512",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0113",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_513",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0114",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_514",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0115",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_515",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0116",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_516",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0117",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_517",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0118",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_518",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0119",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_519",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0120",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_520",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0121",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_521",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0122",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_522",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0123",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_523",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0124",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_524",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0125",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_525",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0126",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_526",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0127",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_527",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0128",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_558",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0129",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_559",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0130",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_560",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0131",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_561",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0132",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_562",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0133",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_563",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0134",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_564",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0135",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_565",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0136",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_566",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0137",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_567",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0138",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_568",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0139",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_569",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0140",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_570",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0141",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_571",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0142",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_572",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0143",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_573",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0144",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_604",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0145",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_605",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0146",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_606",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0147",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_607",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0148",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_608",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0149",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_609",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0150",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_610",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0151",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_611",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0152",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_612",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0153",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_613",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0154",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_614",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0155",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_615",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0156",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_616",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0157",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_617",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0158",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_618",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0159",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_619",
+      "guid": "",
+      "label": "ASSETLIB_Shrub_0160",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "SurfaceAligned",
+      "reason": "Independent decorative vegetation with imported off-center pivot"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_105",
+      "guid": "",
+      "label": "CHURCH_SITE_Helipad",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "Mounted",
+      "reason": "Mounted to the dedicated church pad foundation with an authored 8 cm seating offset"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_77",
+      "guid": "",
+      "label": "CITY_SERVICE_TurnoutPavement",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_76",
+      "guid": "",
+      "label": "CITY_SERVICE_TurnoutShoulder",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.District_Air_Operations_Base_0",
+      "guid": "",
+      "label": "District_Air_Operations_Base",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.District_Central_Valley_0",
+      "guid": "",
+      "label": "District_Central_Valley",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.District_Eastern_Plateau_0",
+      "guid": "",
+      "label": "District_Eastern_Plateau",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.District_Harbor_City_0",
+      "guid": "",
+      "label": "District_Harbor_City",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.District_Northern_Ridge_0",
+      "guid": "",
+      "label": "District_Northern_Ridge",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.District_Western_Wild_Coast_0",
+      "guid": "",
+      "label": "District_Western_Wild_Coast",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_46",
+      "guid": "",
+      "label": "ENV_Air_Main_Apron",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_1",
+      "guid": "",
+      "label": "ENV_Air_Runway_01",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_2",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_00",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_3",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_01",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_4",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_02",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_5",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_03",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_6",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_04",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_7",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_05",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_8",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_06",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_9",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_07",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_10",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_08",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_11",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_09",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_12",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_10",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_13",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_11",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_14",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_12",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_15",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_13",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_16",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_14",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_17",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_15",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_18",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_16",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_19",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_17",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_20",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_18",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_21",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_19",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_22",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_20",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_23",
+      "guid": "",
+      "label": "ENV_Air_Runway_Centerline_21",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_42",
+      "guid": "",
+      "label": "ENV_Air_Taxiway_Alpha",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_43",
+      "guid": "",
+      "label": "ENV_Air_Taxiway_Connector_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_44",
+      "guid": "",
+      "label": "ENV_Air_Taxiway_Connector_1",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_45",
+      "guid": "",
+      "label": "ENV_Air_Taxiway_Connector_2",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_24",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_00",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_25",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_01",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_26",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_02",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_27",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_03",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_28",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_04",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_29",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_05",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_30",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_06",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_31",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_07",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_32",
+      "guid": "",
+      "label": "ENV_Air_Threshold_0_08",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_33",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_00",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_34",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_01",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_35",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_02",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_36",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_03",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_37",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_04",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_38",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_05",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_39",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_06",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_40",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_07",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_41",
+      "guid": "",
+      "label": "ENV_Air_Threshold_1_08",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_179",
+      "guid": "",
+      "label": "ENV_East_Cargo_0_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_180",
+      "guid": "",
+      "label": "ENV_East_Cargo_0_1",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_181",
+      "guid": "",
+      "label": "ENV_East_Cargo_0_2",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_182",
+      "guid": "",
+      "label": "ENV_East_Cargo_0_3",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_183",
+      "guid": "",
+      "label": "ENV_East_Cargo_1_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_184",
+      "guid": "",
+      "label": "ENV_East_Cargo_1_1",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_185",
+      "guid": "",
+      "label": "ENV_East_Cargo_1_2",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_186",
+      "guid": "",
+      "label": "ENV_East_Cargo_1_3",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_190",
+      "guid": "",
+      "label": "ENV_East_Relay_Crossarm",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_189",
+      "guid": "",
+      "label": "ENV_East_Relay_Mast",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_173",
+      "guid": "",
+      "label": "ENV_East_Vehicle_Bay_01",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_174",
+      "guid": "",
+      "label": "ENV_East_Vehicle_Bay_Roof_01",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_121",
+      "guid": "",
+      "label": "ENV_Harbor_Crane_Boom_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_123",
+      "guid": "",
+      "label": "ENV_Harbor_Crane_Boom_1",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_125",
+      "guid": "",
+      "label": "ENV_Harbor_Crane_Boom_2",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_120",
+      "guid": "",
+      "label": "ENV_Harbor_Crane_Mast_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_122",
+      "guid": "",
+      "label": "ENV_Harbor_Crane_Mast_1",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_124",
+      "guid": "",
+      "label": "ENV_Harbor_Crane_Mast_2",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_81",
+      "guid": "",
+      "label": "ENV_Harbor_Main_Quay",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_82",
+      "guid": "",
+      "label": "ENV_Harbor_Pier_01",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_83",
+      "guid": "",
+      "label": "ENV_Harbor_Pier_02",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_84",
+      "guid": "",
+      "label": "ENV_Harbor_Pier_03",
+      "class": "StaticMeshActor",
+      "decision": "approved_ground",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Authored paved or dock surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.HeightFog_Coastal_0",
+      "guid": "",
+      "label": "HeightFog_Coastal",
+      "class": "ExponentialHeightFog",
+      "decision": "excluded",
+      "mode_or_exclusion": "Suspended",
+      "reason": "Intentional atmospheric or suspended world actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_2739",
+      "guid": "",
+      "label": "IMPORTED_Heliport_Airbase_Hero",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "MultiPointFootprint",
+      "reason": "Independent physical helipad"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_2741",
+      "guid": "",
+      "label": "IMPORTED_Heliport_East_Compact",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "MultiPointFootprint",
+      "reason": "Independent physical helipad"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_2740",
+      "guid": "",
+      "label": "IMPORTED_Heliport_North_Compact",
+      "class": "StaticMeshActor",
+      "decision": "ground_actor",
+      "mode_or_exclusion": "MultiPointFootprint",
+      "reason": "Independent physical helipad"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_16",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_AirbasePerimeter",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_22",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_EasternCoast",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_21",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_EasternPlateau",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_31",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_FarNorthSAR",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_20",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_HarborHinterland",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_28",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_InnerWestValley",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_24",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_NorthSpine",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_23",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_NortheastRidge",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_25",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_NorthernStationRing",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_26",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_NorthwestRidge",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_30",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_RazorGorge",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_18",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_SouthCoast",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_19",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_SoutheastLowlands",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_17",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_SouthwestHills",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_27",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_WestHighlands",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandApprovedBiomeRegion_C_29",
+      "guid": "",
+      "label": "ISLAND_BIOME_Region_WesternWildCoast",
+      "class": "BP_IslandApprovedBiomeRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_0",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_AirbasePerimeter",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_6",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_EasternCoast",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_5",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_EasternPlateau",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_15",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_FarNorthSAR",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_4",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_HarborHinterland",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_12",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_InnerWestValley",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_8",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_NorthSpine",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_7",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_NortheastRidge",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_9",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_NorthernStationRing",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_10",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_NorthwestRidge",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_14",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_RazorGorge",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_2",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_SouthCoast",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_3",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_SoutheastLowlands",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_1",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_SouthwestHills",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_11",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_WestHighlands",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_IslandEnvironmentRegion_C_13",
+      "guid": "",
+      "label": "ISLAND_ENV_Region_WesternWildCoast",
+      "class": "BP_IslandEnvironmentRegion_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_78",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_00_Base_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_79",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_01_Cube_003_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_80",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_02_Cube_007_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_86",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_03_Cube_008_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_87",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_04_Cube_009_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_88",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_05_Cylinder_003_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_89",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_06_Cylinder_004_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_90",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_07_Cylinder_005_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_91",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_08_Cylinder_006_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_92",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_09_Cylinder_007_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_93",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_10_Cylinder_008_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_94",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_11_Fins_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_95",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_12_Hatch_001_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_96",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_13_Icosphere_001_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_97",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_14_Icosphere_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_98",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_15_ObservationDeck_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_99",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_16_Platforms_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_100",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_17_Tower_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_101",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_18_TowerWindows_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_102",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_19_UpperRails_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_103",
+      "guid": "",
+      "label": "LANDMARK_AirControlTower_20_Windows_AirTower01MAT_0",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_4",
+      "guid": "",
+      "label": "LANDMARK_AirOperations",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_0",
+      "guid": "",
+      "label": "LANDMARK_FieldHospital",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_106",
+      "guid": "",
+      "label": "LANDMARK_NorthCabin_00_Object_4",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_107",
+      "guid": "",
+      "label": "LANDMARK_NorthCabin_01_Object_5",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_108",
+      "guid": "",
+      "label": "LANDMARK_NorthCabin_02_Object_6",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_109",
+      "guid": "",
+      "label": "LANDMARK_NorthCabin_03_Object_7",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_110",
+      "guid": "",
+      "label": "LANDMARK_NorthCabin_04_Object_8",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_104",
+      "guid": "",
+      "label": "LANDMARK_TownWaterTower_00_water_tower",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Reviewed member of an authored landmark, runway-marking, crane, cabin, cargo, or utility assembly"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_7",
+      "guid": "",
+      "label": "LANDMARK_WesternChurch",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_10",
+      "guid": "",
+      "label": "LANDMARK_WesternChurchSite",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.Landscape_RotorlineIsland_8km_0",
+      "guid": "",
+      "label": "Landscape_RotorlineIsland_8km",
+      "class": "Landscape",
+      "decision": "approved_ground",
+      "mode_or_exclusion": null,
+      "reason": "Authoritative playable-island terrain"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_2",
+      "guid": "",
+      "label": "NATURE_AUDIO_SLOT_CentralMeadow",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_1",
+      "guid": "",
+      "label": "NATURE_AUDIO_SLOT_Coast_NE",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_0",
+      "guid": "",
+      "label": "NATURE_AUDIO_SLOT_Coast_SW",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_3",
+      "guid": "",
+      "label": "NATURE_AUDIO_SLOT_Harbor",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_4",
+      "guid": "",
+      "label": "NATURE_AUDIO_SLOT_NorthRidge",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_6",
+      "guid": "",
+      "label": "NATURE_BIRD_SLOT_HarborCoast",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.TargetPoint_5",
+      "guid": "",
+      "label": "NATURE_BIRD_SLOT_NorthCliffs",
+      "class": "TargetPoint",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.StaticMeshActor_0",
+      "guid": "",
+      "label": "NATURE_Ocean_Dynamic_24km",
+      "class": "StaticMeshActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "Waterborne",
+      "reason": "Intentional water surface"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.PCGWorldActor_0",
+      "guid": "",
+      "label": "PCGWorldActor0",
+      "class": "PCGWorldActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "PCG management actor has no physical ground contact"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.PostProcess_Global_0",
+      "guid": "",
+      "label": "PostProcess_Global",
+      "class": "PostProcessVolume",
+      "decision": "excluded",
+      "mode_or_exclusion": "InvisibleGameplayVolume",
+      "reason": "Non-physical gameplay, audio, or editor control actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_0",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_00",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_1",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_01",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_2",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_02",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_3",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_03",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_4",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_04",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_5",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_05",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_6",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_06",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_7",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_07",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_8",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_08",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_9",
+      "guid": "",
+      "label": "ROADHISM_Airbase_Service_Road_09",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_10",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_00",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_11",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_01",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_12",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_02",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_13",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_03",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_14",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_04",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_15",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_05",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_16",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_06",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_17",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_07",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_18",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_08",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_19",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_09",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_20",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_10",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_21",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_11",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_22",
+      "guid": "",
+      "label": "ROADHISM_Eastern_Plateau_Road_12",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_23",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_00",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_24",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_01",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_25",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_02",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_26",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_03",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_27",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_04",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_28",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_05",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_29",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_06",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_30",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_07",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_31",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_08",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_32",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_09",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_33",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_10",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_34",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_11",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_35",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_12",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_36",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_13",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_37",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_14",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_38",
+      "guid": "",
+      "label": "ROADHISM_Harbor_Expressway_15",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_39",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_00",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_40",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_01",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_41",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_02",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_42",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_03",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_43",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_04",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_44",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_05",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_45",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_06",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_46",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_07",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_47",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_08",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_48",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_09",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_49",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_10",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_50",
+      "guid": "",
+      "label": "ROADHISM_Northern_Ridge_Road_11",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_51",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_00",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_52",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_01",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_53",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_02",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_54",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_03",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_55",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_04",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_56",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_05",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_57",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_06",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_58",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_07",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_59",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_08",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_60",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_09",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_61",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_10",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_62",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_11",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_63",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_12",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_RoadNetworkChunk_C_64",
+      "guid": "",
+      "label": "ROADHISM_Southwest_Trunk_13",
+      "class": "BP_RoadNetworkChunk_C",
+      "decision": "excluded",
+      "mode_or_exclusion": "RoadSurface",
+      "reason": "Road surface assembly; Pavement and Shoulders are approved per component"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.SkyAtmosphere_0",
+      "guid": "",
+      "label": "SkyAtmosphere",
+      "class": "SkyAtmosphere",
+      "decision": "excluded",
+      "mode_or_exclusion": "Suspended",
+      "reason": "Intentional atmospheric or suspended world actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.Sky_RealTime_0",
+      "guid": "",
+      "label": "Sky_RealTime",
+      "class": "SkyLight",
+      "decision": "excluded",
+      "mode_or_exclusion": "Suspended",
+      "reason": "Intentional atmospheric or suspended world actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.Sun_Directional_0",
+      "guid": "",
+      "label": "Sun_Directional",
+      "class": "DirectionalLight",
+      "decision": "excluded",
+      "mode_or_exclusion": "Suspended",
+      "reason": "Intentional atmospheric or suspended world actor"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlinePersistentHawkSite_2",
+      "guid": "",
+      "label": "THREAT_HAWK_MainValleyRidge_ALPHA",
+      "class": "RotorlinePersistentHawkSite",
+      "decision": "runtime_managed",
+      "mode_or_exclusion": "MultiPointFootprint",
+      "reason": "Persistent threat owns a RotorlineGroundingComponent and GroundCombatEmplacement profile"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlinePersistentHawkSite_3",
+      "guid": "",
+      "label": "THREAT_HAWK_MainValleyRidge_BRAVO",
+      "class": "RotorlinePersistentHawkSite",
+      "decision": "runtime_managed",
+      "mode_or_exclusion": "MultiPointFootprint",
+      "reason": "Persistent threat owns a RotorlineGroundingComponent and GroundCombatEmplacement profile"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_2",
+      "guid": "",
+      "label": "URBAN_CLUSTER_CentralTown",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_1",
+      "guid": "",
+      "label": "URBAN_CLUSTER_HarborCity",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.RotorlineBuildingClusterActor_3",
+      "guid": "",
+      "label": "URBAN_CLUSTER_HarborIndustrial",
+      "class": "RotorlineBuildingClusterActor",
+      "decision": "excluded",
+      "mode_or_exclusion": "AuthoredAssemblyPart",
+      "reason": "Authored multi-piece building assembly; foundations audited without detaching architecture"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.PCGVolume_1",
+      "guid": "",
+      "label": "URBAN_PCG_CentralTown",
+      "class": "PCGVolume",
+      "decision": "excluded",
+      "mode_or_exclusion": "RooftopPCG",
+      "reason": "PCG graph is explicitly rooftop-mounted equipment"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.PCGVolume_0",
+      "guid": "",
+      "label": "URBAN_PCG_HarborCity",
+      "class": "PCGVolume",
+      "decision": "excluded",
+      "mode_or_exclusion": "RooftopPCG",
+      "reason": "PCG graph is explicitly rooftop-mounted equipment"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.PCGVolume_2",
+      "guid": "",
+      "label": "URBAN_PCG_HarborIndustrial",
+      "class": "PCGVolume",
+      "decision": "excluded",
+      "mode_or_exclusion": "RooftopPCG",
+      "reason": "PCG graph is explicitly rooftop-mounted equipment"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.BP_CentralValleyVisualBenchmarkCluster_C_0",
+      "guid": "",
+      "label": "VISUALBENCH_CV_BiomeCluster",
+      "class": "BP_CentralValleyVisualBenchmarkCluster_C",
+      "decision": "managed_instances",
+      "mode_or_exclusion": null,
+      "reason": "Foliage families use exact persisted transforms and shared instance grounding"
+    },
+    {
+      "path": "/Game/Maps/RotorlineIsland.RotorlineIsland:PersistentLevel.VolumetricClouds_0",
+      "guid": "",
+      "label": "VolumetricClouds",
+      "class": "VolumetricCloud",
+      "decision": "excluded",
+      "mode_or_exclusion": "Suspended",
+      "reason": "Intentional atmospheric or suspended world actor"
+    }
+  ]
+}

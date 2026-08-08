@@ -1,5 +1,3 @@
-﻿# Project Rotorline Credits and Attribution
-
 # Rotorline credits
 
 ## Project
@@ -14,7 +12,20 @@
 
 Dedicated to CW5 J.V. Spahn, Callsign Fro.
 
+## Publication holds
+
+- **OH-58 Kiowa source:** the embedded model metadata says `COPYRIGHT TO Sujal
+  Patil`; it does not provide a redistribution license. Public release rights
+  must be cleared or this model must be replaced before distributing the alpha.
+- Source and license provenance must still be confirmed for the supplied
+  environment ambience, Bell Huey engine recordings, MD-500 engine recordings,
+  and startup mission briefing before public distribution.
+
 ## Asset credits
+
+This section lists current runtime assets. Retired/source-only vehicles,
+including the AH-1W SuperCobra, are not presented as active roster assets here;
+their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 ## Driver 80
 
@@ -78,12 +89,11 @@ Dedicated to CW5 J.V. Spahn, Callsign Fro.
 
 ## MD-500 Defender helicopter
 
-- Creator: [Duane's Mind](https://sketchfab.com/duanesmind)
-- Source: [Sketchfab model](https://sketchfab.com/3d-models/md-500-defender-helicopter-da5daae0fe354269895b58c2ed72e2b8)
-- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
-- Changes: copied unchanged from the credited browser-game source, imported
-  through UE Interchange, and assembled as the attack/scout player airframe.
-  Its supplied main- and tail-rotor animation is used at runtime.
+- Creator: [OmegaRedZA](https://sketchfab.com/OmegaRedZA)
+- Source: [MH-6 Little Bird Helicopter Animated](https://sketchfab.com/3d-models/mh-6-little-bird-helicopter-animated-ff51e655d05d4a05b2c0d9b274c00ed7)
+- License: [Sketchfab Standard License](https://sketchfab.com/licenses)
+- Changes: imported and used by Rotorline's active `md500_defender` roster
+  entry; supplied rotor animation is used at runtime.
 
 ## MD-500 engine recordings
 
@@ -98,8 +108,8 @@ Dedicated to CW5 J.V. Spahn, Callsign Fro.
 
 ## AH-64 Apache
 
-- Creator: Arion Digital
-- Source: [Sketchfab model](https://sketchfab.com/3d-models/ah-64-helicopter-56f54d3865d247c78b49c2b47454da86)
+- Creator: [Jeyhun1985](https://sketchfab.com/Jeyhun1985)
+- Source: [AH Mk.1 Apache](https://sketchfab.com/3d-models/ah-mk1-apache-d1311204b76542388fd6be5fd47cce68)
 - License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
 - Changes: body, main rotor, and tail rotor prepared as separate runtime parts.
 
@@ -112,6 +122,37 @@ Dedicated to CW5 J.V. Spahn, Callsign Fro.
   source scale corrected, and configured as a moving rocket gunship with a
   procedurally animated rotor.
 
+## UH-60M Black Hawk
+
+- Creator: [Yi Tsung Lee](https://sketchfab.com/WTigerTw)
+- Source: [US Army UH-60M Black Hawk low poly model](https://sketchfab.com/3d-models/us-army-uh-60m-black-hawk-low-poly-model-854bf0feee5b42dc92ac5329976f7942)
+- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Changes: imported and assembled as the active UH-60M utility helicopter.
+
+## Marine UH-1
+
+- Creator: [bunnellrl1](https://sketchfab.com/bunnellrl1)
+- Source: [3D Modeled Marine UH-1 Huey Helicopter](https://sketchfab.com/3d-models/3d-modeled-marine-uh-1-huey-helicopter-29ae1fb161a04128b006089b95ab1017)
+- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Changes: body and rotor parts prepared for the active Marine UH-1 airframe.
+
+## Kamov Ka-27
+
+- Creator: [MaX3Dd](https://sketchfab.com/MaX3Dd)
+- Source: [Kamov Ka-27 Soviet Military Helicopter](https://sketchfab.com/3d-models/kamov-ka-27-soviet-military-helicopter-054f00ec16eb4f1d94cd1b65324107d6)
+- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Changes: body and coaxial rotor parts prepared for the active Ka-27 airframe.
+
+## OH-58 Kiowa source model
+
+- Creator: [Sujal Patil](https://sketchfab.com/sujalpatil150)
+- Source: [Helicopter](https://sketchfab.com/3d-models/helicopter-81c02919782f4b6d986eb76c11d0e5fd)
+- Rights notice: embedded metadata states `COPYRIGHT TO Sujal Patil`; no
+  redistribution license is supplied.
+- Changes: body and rotor parts prepared for the active OH-58 Kiowa airframe.
+- **Release status:** blocked pending explicit public-release rights or model
+  replacement.
+
 ## Bell 222
 
 - Creator: [helijah](https://sketchfab.com/helijah)
@@ -119,6 +160,28 @@ Dedicated to CW5 J.V. Spahn, Callsign Fro.
 - License: Sketchfab Standard License
 - Changes: body, landing gear, weapons, main rotor, and tail rotor prepared as
   separate runtime parts for the playable aircraft.
+
+## Jeep Wrangler
+
+- Creator: [3DFU_XXX](https://sketchfab.com/3DFU_XXX)
+- Source: [Jeep Wrangler (free)](https://sketchfab.com/3d-models/jeep-wrangler-free-4528c95e2c0c425585fc3a3f49f6bad9)
+- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Changes: imported and assembled as Rotorline's separately playable Jeep CJ-5.
+
+## Boeing CH-47 Chinook
+
+- Creator: [Muhamad Mirza Arrafi](https://sketchfab.com/nazidefenseforceofficial)
+- Source: [Boeing CH-47 Chinook Military Transport Aircraft](https://sketchfab.com/3d-models/boeing-ch-47-chinook-military-transport-aircraft-cdac73e931f6482e86960a326fef73bf)
+- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Changes: body and tandem rotor parts prepared for the active heavy-lift
+  airframe.
+
+## Type-004 Aircraft Carrier
+
+- Creator: [Muhamad Mirza Arrafi](https://sketchfab.com/nazidefenseforceofficial)
+- Source: [Type-004 Aircraft Carrier](https://sketchfab.com/3d-models/type-004-aircraft-carrier-0953bebe3ae34d7582fe0e2bcff0925f)
+- License: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Changes: imported and used as the Pacific Dawn carrier.
 
 ## Ukrainian M142 HIMARS
 
@@ -140,26 +203,17 @@ Dedicated to CW5 J.V. Spahn, Callsign Fro.
 
 ## Mission-world models used at runtime
 
-- Military Supply Crate by [MaX3Dd](https://sketchfab.com/MaX3Dd) â€”
+- Military Supply Crate by [MaX3Dd](https://sketchfab.com/MaX3Dd) —
   [source](https://sketchfab.com/3d-models/military-supply-crate-00814d950f8f40c9b5e1153201cb8186), CC BY 4.0.
-- Low poly crashed plane by [lesmanthDev](https://sketchfab.com/lesmanthDev) â€”
+- Low poly crashed plane by [lesmanthDev](https://sketchfab.com/lesmanthDev) —
   [source](https://sketchfab.com/3d-models/low-poly-crashed-plane-c582b66103094290ac51875e71a0a2a9), CC BY 4.0.
-- Pilot Low Poly Character by [00amza](https://sketchfab.com/00amza) â€”
+- Pilot Low Poly Character by [00amza](https://sketchfab.com/00amza) —
   [source](https://sketchfab.com/3d-models/pilot-low-poly-character-86708494989346178943cc79b5218555), CC BY 4.0.
-- Mobile Tower by [LadyLionStudios](https://sketchfab.com/LadyLionStudios) â€”
+- Mobile Tower by [LadyLionStudios](https://sketchfab.com/LadyLionStudios) —
   [source](https://sketchfab.com/3d-models/mobile-tower-free-low-poly-08db7d5108924d8caaaa023f9551e9d9), CC BY 4.0.
-- 1S91 Straight Flush by Rhine_Lab_Muelsyse â€”
+- 1S91 Straight Flush by Rhine_Lab_Muelsyse —
   [source](https://sketchfab.com/3d-models/1s91-straight-flushlow-poly-fbc875a89b5146f592ae91e8bec191f0), CC BY 4.0.
-- Flak Cannon with ADATS Missiles by SkyeShark â€”
+- Flak Cannon with ADATS Missiles by SkyeShark —
   [source](https://sketchfab.com/3d-models/flak-cannon-with-adats-missiles-914b9edb98b540c0a4e70c172ce918fc), CC BY 4.0.
 
 Only models referenced by the current Unreal runtime are listed above.
-
-## Additional Aircraft
-
-- MH-6 / MD-500 replacement aircraft
-- CH-47 Chinook aircraft
-
-## Rights
-
-Original Project Rotorline code, writing, mission design, branding, and media are copyright Keith League. All rights reserved. Third-party works remain governed by their listed licenses and creators.

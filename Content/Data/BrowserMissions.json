@@ -1,0 +1,4128 @@
+{
+  "source": "C:\\Users\\KDLEA\\OneDrive\\Documents\\Rotorline\\src\\data\\missions.ts",
+  "version": 1,
+  "missions": [
+    {
+      "id": "tutorial",
+      "title": "First Rotation",
+      "callsign": "ROOKIE ONE",
+      "type": "tutorial",
+      "difficulty": 1,
+      "weather": "clear",
+      "time": "day",
+      "timeTarget": 300,
+      "reward": 100,
+      "unlock": 0,
+      "briefing": "Ground school is over. Start the turbine, lift into a hover, fly the six-gate circuit around the airfield, manage your momentum through each turn, and bring the UH-1 Huey home in one piece.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start engine [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Hold E and climb above 12 m"
+        },
+        {
+          "kind": "reach",
+          "text": "Clear the southwest training gate",
+          "location": {
+            "x": -307.6923076923077,
+            "y": 0,
+            "z": 550
+          },
+          "radius": 42,
+          "site": "training-gate-southwest",
+          "worldLocation": {
+            "x": -120000,
+            "y": -275000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Bank west around the airfield perimeter",
+          "location": {
+            "x": -525.6410256410256,
+            "y": 0,
+            "z": 600
+          },
+          "radius": 42,
+          "site": "training-gate-west",
+          "worldLocation": {
+            "x": -205000,
+            "y": -300000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Turn east through the southern marker",
+          "location": {
+            "x": -205.12820512820514,
+            "y": 0,
+            "z": 550
+          },
+          "radius": 42,
+          "site": "training-gate-south",
+          "worldLocation": {
+            "x": -80000,
+            "y": -275000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Carry momentum through the eastern gate",
+          "location": {
+            "x": -89.74358974358974,
+            "y": 0,
+            "z": 410
+          },
+          "radius": 42,
+          "site": "training-gate-east",
+          "worldLocation": {
+            "x": -35000,
+            "y": -205000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the northern orientation gate",
+          "location": {
+            "x": -269.2307692307692,
+            "y": 0,
+            "z": 260
+          },
+          "radius": 42,
+          "site": "training-gate-north",
+          "worldLocation": {
+            "x": -105000,
+            "y": -130000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Line up with the home-pad approach",
+          "location": {
+            "x": -500,
+            "y": 0,
+            "z": 310
+          },
+          "radius": 42,
+          "site": "training-gate-final",
+          "worldLocation": {
+            "x": -195000,
+            "y": -155000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land gently on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 24,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 0,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "supply",
+      "title": "Cabin Lifeline",
+      "callsign": "PACKHORSE",
+      "type": "supply",
+      "difficulty": 1,
+      "weather": "wind",
+      "time": "sunset",
+      "timeTarget": 420,
+      "reward": 180,
+      "unlock": 0,
+      "briefing": "High winds cut off the ridge cabin. Pick up the emergency crate, cross the saddle, and deliver it to the marked clearing.",
+      "objectives": [
+        {
+          "kind": "interact",
+          "text": "Load emergency supplies at base [F]",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 28,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Carry supplies to the ridge cabin",
+          "location": {
+            "x": 499.244,
+            "y": 0,
+            "z": -229.564
+          },
+          "radius": 48,
+          "site": "ridge-cabin",
+          "worldLocation": {
+            "x": 192244,
+            "y": 131234,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Set down in the cabin clearing",
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 26,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Unload supplies [F]",
+          "cargoDeliveryCount": 1,
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 30,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 28,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 1,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "medevac",
+      "title": "Golden Hour",
+      "callsign": "LIFELINE",
+      "type": "medevac",
+      "difficulty": 2,
+      "weather": "overcast",
+      "time": "day",
+      "timeTarget": 660,
+      "reward": 260,
+      "unlock": 100,
+      "briefing": "A road accident survivor needs immediate evacuation, and a ranger at the ridge cabin has deteriorated while waiting for weather clearance. Stabilize both patients through the field hospital, then recover the aircraft.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Proceed to the accident site",
+          "location": {
+            "x": 4.716,
+            "y": 0,
+            "z": 671.354
+          },
+          "radius": 48,
+          "site": "south-valley-lz",
+          "worldLocation": {
+            "x": -500,
+            "y": -318500,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land inside the rescue zone",
+          "location": {
+            "x": 15.382,
+            "y": 0,
+            "z": 665.789
+          },
+          "radius": 26,
+          "site": "south-valley-inland-lz",
+          "worldLocation": {
+            "x": 3657,
+            "y": -315722,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Load the accident survivor [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 15.382,
+            "y": 0,
+            "z": 665.789
+          },
+          "radius": 28,
+          "site": "south-valley-inland-lz",
+          "worldLocation": {
+            "x": 3657,
+            "y": -315722,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Transport the first patient to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 42,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land at the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 24,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the first patient to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 28,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Respond to the ridge cabin medevac call",
+          "location": {
+            "x": 499.244,
+            "y": 0,
+            "z": -229.564
+          },
+          "radius": 50,
+          "site": "ridge-cabin",
+          "worldLocation": {
+            "x": 192244,
+            "y": 131234,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the cabin clearing",
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 27,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Bring the ranger aboard [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 31,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Return the second patient to the hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 48,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad again",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 25,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the ranger to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 30,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Recover the aircraft to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 36,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 2,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "search",
+      "title": "Lost Signal",
+      "callsign": "SEEKER",
+      "type": "search",
+      "difficulty": 2,
+      "weather": "overcast",
+      "time": "sunset",
+      "timeTarget": 720,
+      "reward": 320,
+      "unlock": 300,
+      "briefing": "A hiker missed radio check-in as daylight fades. Triangulate the weak beacon through the island relay points, locate the survivor, and deliver them to the field hospital before returning home.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Check the western coastal repeater",
+          "location": {
+            "x": -827.861,
+            "y": 0,
+            "z": -16.754
+          },
+          "radius": 48,
+          "site": "western-coast-checkpoint",
+          "worldLocation": {
+            "x": -325000,
+            "y": 25000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Triangulate the signal from the summit tower",
+          "location": {
+            "x": -14.691,
+            "y": 0,
+            "z": 49.481
+          },
+          "radius": 52,
+          "site": "central-town",
+          "worldLocation": {
+            "x": -8064,
+            "y": -8064,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Search the southern valley",
+          "location": {
+            "x": -378.86,
+            "y": 0,
+            "z": -577.657
+          },
+          "radius": 90,
+          "site": "north-ridge-search",
+          "worldLocation": {
+            "x": -150000,
+            "y": 305000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Locate the missing hiker",
+          "location": {
+            "x": 174.249,
+            "y": 0,
+            "z": -326.941
+          },
+          "radius": 36,
+          "site": "north-relief",
+          "worldLocation": {
+            "x": 65576,
+            "y": 179844,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land close to the survivor",
+          "location": {
+            "x": 199.413,
+            "y": 0,
+            "z": -330.85
+          },
+          "radius": 26,
+          "site": "north-relief-lz",
+          "worldLocation": {
+            "x": 75384,
+            "y": 181795,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Bring the survivor aboard [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 199.413,
+            "y": 0,
+            "z": -330.85
+          },
+          "radius": 28,
+          "site": "north-relief-lz",
+          "worldLocation": {
+            "x": 75384,
+            "y": 181795,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Transport the survivor to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 50,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 25,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the survivor to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 30,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return the aircraft to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 36,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 3,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "fire",
+      "title": "Red Ridge",
+      "callsign": "FIREBIRD",
+      "type": "fire",
+      "difficulty": 3,
+      "weather": "wind",
+      "time": "day",
+      "timeTarget": 780,
+      "reward": 400,
+      "unlock": 600,
+      "briefing": "A wildfire has split into two fronts. Suppress the western edge, return for a fresh load, knock down the eastern front, then inspect the threatened church and fuel depot before recovering.",
+      "objectives": [
+        {
+          "kind": "interact",
+          "text": "Load the first suppressant canister [F]",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 28,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Approach the west fire front",
+          "location": {
+            "x": -378.86,
+            "y": 0,
+            "z": 123.472
+          },
+          "radius": 48,
+          "site": "western-fire-front",
+          "worldLocation": {
+            "x": -150000,
+            "y": -45000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Deploy suppressant over the western front [X]",
+          "location": {
+            "x": -378.86,
+            "y": 0,
+            "z": 123.472
+          },
+          "radius": 52,
+          "site": "western-fire-front",
+          "worldLocation": {
+            "x": -150000,
+            "y": -45000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return to base for a fresh load",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 32,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad to refill",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Load the second suppressant canister [F]",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 30,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Approach the east fire front",
+          "location": {
+            "x": 352.372,
+            "y": 0,
+            "z": 243.665
+          },
+          "radius": 48,
+          "site": "eastern-fire-front",
+          "worldLocation": {
+            "x": 135000,
+            "y": -105000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Deploy suppressant over the eastern front [X]",
+          "location": {
+            "x": 352.372,
+            "y": 0,
+            "z": 243.665
+          },
+          "radius": 52,
+          "site": "eastern-fire-front",
+          "worldLocation": {
+            "x": 135000,
+            "y": -105000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Inspect the church evacuation perimeter",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 66,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Verify the fuel depot is outside the fire line",
+          "location": {
+            "x": 623.543,
+            "y": 0,
+            "z": 163.995
+          },
+          "radius": 58,
+          "site": "eastern-depot",
+          "worldLocation": {
+            "x": 240690,
+            "y": -65229,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 36,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 4,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "recon",
+      "title": "Silent Watch",
+      "callsign": "SENTINEL",
+      "type": "recon",
+      "difficulty": 3,
+      "weather": "clear",
+      "time": "night",
+      "timeTarget": 720,
+      "reward": 460,
+      "unlock": 1000,
+      "briefing": "Unknown logistics vehicles are coordinating across the island. Take the OH-58 Kiowa along the full observation route. At each point, find the parked Ural with the mast sensor and hold a clean lock long enough to record the contact. Do not engage. Return the completed reconnaissance record to base.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the Kiowa and bring the mast radar online [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Lift and begin the Silent Watch observation route"
+        },
+        {
+          "kind": "designate-recon",
+          "text": "Hold sensor lock on the coastal checkpoint Ural",
+          "target": "unarmed Ural observation truck ALPHA",
+          "location": {
+            "x": -827.861,
+            "y": 0,
+            "z": -16.754
+          },
+          "radius": 42,
+          "site": "western-coast-checkpoint",
+          "worldLocation": {
+            "x": -325000,
+            "y": 25000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "designate-recon",
+          "text": "Hold sensor lock on the radio tower Ural",
+          "target": "unarmed Ural observation truck BRAVO",
+          "location": {
+            "x": -14.691,
+            "y": 0,
+            "z": 49.481
+          },
+          "radius": 45,
+          "site": "central-town",
+          "worldLocation": {
+            "x": -8064,
+            "y": -8064,
+            "z": 0
+          }
+        },
+        {
+          "kind": "designate-recon",
+          "text": "Hold sensor lock on the fuel depot Ural",
+          "target": "unarmed Ural observation truck CHARLIE",
+          "location": {
+            "x": 623.543,
+            "y": 0,
+            "z": 163.995
+          },
+          "radius": 45,
+          "site": "eastern-depot",
+          "worldLocation": {
+            "x": 240690,
+            "y": -65229,
+            "z": 0
+          }
+        },
+        {
+          "kind": "designate-recon",
+          "text": "Hold sensor lock on the southern radar Ural",
+          "target": "unarmed Ural observation truck DELTA",
+          "location": {
+            "x": -109.459,
+            "y": 0,
+            "z": 524.117
+          },
+          "radius": 64,
+          "site": "southern-radar",
+          "worldLocation": {
+            "x": -45000,
+            "y": -245000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "designate-recon",
+          "text": "Hold sensor lock on the summit Ural",
+          "target": "unarmed Ural observation truck ECHO",
+          "location": {
+            "x": 455.001,
+            "y": 0,
+            "z": -76.851
+          },
+          "radius": 68,
+          "site": "eastern-air-defense",
+          "worldLocation": {
+            "x": 175000,
+            "y": 55000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "designate-recon",
+          "text": "Hold sensor lock on the church corridor Ural",
+          "target": "unarmed Ural observation truck FOXTROT",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 76,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return intelligence to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 34,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 5,
+      "recommendedCraft": "recon",
+      "requiresWeapons": false
+    },
+    {
+      "id": "recovery",
+      "title": "Broken Bird",
+      "callsign": "RECOVER",
+      "type": "recovery",
+      "difficulty": 4,
+      "weather": "overcast",
+      "time": "night",
+      "timeTarget": 780,
+      "reward": 600,
+      "unlock": 1450,
+      "briefing": "A scout aircraft went down somewhere beyond the ridge. Triangulate its intermittent beacon, recover the pilot, deliver them to the field hospital, and bring the assigned aircraft home.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Sweep the western checkpoint for the beacon",
+          "location": {
+            "x": -827.861,
+            "y": 0,
+            "z": -16.754
+          },
+          "radius": 52,
+          "site": "western-coast-checkpoint",
+          "worldLocation": {
+            "x": -325000,
+            "y": 25000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Search the southern valley for the second pulse",
+          "location": {
+            "x": 4.716,
+            "y": 0,
+            "z": 671.354
+          },
+          "radius": 68,
+          "site": "south-valley-lz",
+          "worldLocation": {
+            "x": -500,
+            "y": -318500,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Triangulate the signal from the summit tower",
+          "location": {
+            "x": 36.459,
+            "y": 0,
+            "z": -11.005
+          },
+          "radius": 58,
+          "site": "summit-service",
+          "worldLocation": {
+            "x": 11872,
+            "y": 22130,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Locate the crash beacon",
+          "location": {
+            "x": 502.559,
+            "y": 0,
+            "z": -184.56
+          },
+          "radius": 58,
+          "site": "eastern-wreck-lz",
+          "worldLocation": {
+            "x": 193536,
+            "y": 108768,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the marked clearing beside the wreckage",
+          "location": {
+            "x": 516.814,
+            "y": 0,
+            "z": -201.217
+          },
+          "radius": 28,
+          "site": "eastern-wreck-clearing",
+          "worldLocation": {
+            "x": 199092,
+            "y": 117083,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Recover the downed pilot [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 516.814,
+            "y": 0,
+            "z": -201.217
+          },
+          "radius": 40,
+          "site": "eastern-wreck-clearing",
+          "worldLocation": {
+            "x": 199092,
+            "y": 117083,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Transport the pilot to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 50,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 25,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the pilot to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 30,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return the aircraft to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 36,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 6,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "sanctuary",
+      "title": "Sanctuary Run",
+      "callsign": "SHEPHERD",
+      "type": "evacuation",
+      "difficulty": 4,
+      "weather": "wind",
+      "time": "sunset",
+      "timeTarget": 960,
+      "reward": 700,
+      "unlock": 0,
+      "briefing": "Hostile armor and an active SAM battery have split eight civilians between the western church and the north-shore relief camp. The MD-500 can carry four passengers. Evacuate the church group, then cross the island for the second group before recovering to base. Stay below 22 meters to break SAM tracking; enemy crews will not fire into marked sanctuary zones.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Reach the church evacuation zone",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 75,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the church clearing",
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 35,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Board the first four civilians [F]",
+          "rescueCount": 4,
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 42,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Evacuate the first group to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 52,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the first group to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 31,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Cross north to the relief camp for the second group",
+          "location": {
+            "x": 174.249,
+            "y": 0,
+            "z": -326.941
+          },
+          "radius": 75,
+          "site": "north-relief",
+          "worldLocation": {
+            "x": 65576,
+            "y": 179844,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the north relief clearing",
+          "location": {
+            "x": 199.413,
+            "y": 0,
+            "z": -330.85
+          },
+          "radius": 35,
+          "site": "north-relief-lz",
+          "worldLocation": {
+            "x": 75384,
+            "y": 181795,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Board the final four civilians [F]",
+          "rescueCount": 4,
+          "location": {
+            "x": 199.413,
+            "y": 0,
+            "z": -330.85
+          },
+          "radius": 42,
+          "site": "north-relief-lz",
+          "worldLocation": {
+            "x": 75384,
+            "y": 181795,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Evacuate the final group to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 52,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land safely with the final group",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the final civilians to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 31,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Recover the aircraft to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 7,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "island-hop",
+      "title": "Island Hop",
+      "callsign": "WAYFARER",
+      "type": "island-hop",
+      "difficulty": 3,
+      "weather": "wind",
+      "time": "sunset",
+      "timeTarget": 900,
+      "reward": 650,
+      "unlock": 0,
+      "briefing": "Three communities need one continuous logistics circuit. Deliver relief supplies to the ridge cabin, collect medicine from the field hospital, carry it to the western church, then collect the depot maintenance log before recovering. Every completed handoff establishes a recovery checkpoint.",
+      "objectives": [
+        {
+          "kind": "interact",
+          "text": "Load ridge relief supplies at base [F]",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 30,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the island to the ridge cabin",
+          "location": {
+            "x": 499.244,
+            "y": 0,
+            "z": -229.564
+          },
+          "radius": 52,
+          "site": "ridge-cabin",
+          "worldLocation": {
+            "x": 192244,
+            "y": 131234,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the cabin pad",
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 27,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Unload ridge relief supplies [F]",
+          "cargoDeliveryCount": 1,
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 31,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Continue to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 50,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Load medicine for the western church [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 31,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Carry medicine to the western church",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 68,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the church clearing",
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 36,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Deliver the medicine [F]",
+          "cargoDeliveryCount": 1,
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 42,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Continue east to the fuel depot",
+          "location": {
+            "x": 623.543,
+            "y": 0,
+            "z": 163.995
+          },
+          "radius": 56,
+          "site": "eastern-depot",
+          "worldLocation": {
+            "x": 240690,
+            "y": -65229,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land at the depot service point",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 30,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Collect the maintenance log [F]",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 34,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Complete the circuit and return to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 8,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "blackout",
+      "title": "Blackout",
+      "callsign": "LAMPLIGHT",
+      "type": "relay",
+      "difficulty": 4,
+      "weather": "overcast",
+      "time": "night",
+      "timeTarget": 900,
+      "reward": 800,
+      "unlock": 500,
+      "briefing": "Coordinated sabotage knocked three relay sites offline. Carry one repair kit through the western lowlands, summit station, and eastern depot relay, then verify the restored emergency net at three remote receivers before returning home.",
+      "objectives": [
+        {
+          "kind": "interact",
+          "text": "Load relay repair equipment at base [F]",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 30,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Locate the western relay",
+          "location": {
+            "x": -492.829,
+            "y": 0,
+            "z": -105
+          },
+          "radius": 54,
+          "site": "western-relay",
+          "worldLocation": {
+            "x": -194420,
+            "y": 69052,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the western service clearing",
+          "location": {
+            "x": -505.411,
+            "y": 0,
+            "z": -103.047
+          },
+          "radius": 30,
+          "site": "western-relay-lz",
+          "worldLocation": {
+            "x": -199324,
+            "y": 68077,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Restore the western relay [F]",
+          "location": {
+            "x": -505.411,
+            "y": 0,
+            "z": -103.047
+          },
+          "radius": 34,
+          "site": "western-relay-lz",
+          "worldLocation": {
+            "x": -199324,
+            "y": 68077,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Climb to the summit relay",
+          "location": {
+            "x": 36.459,
+            "y": 0,
+            "z": -11.005
+          },
+          "radius": 58,
+          "site": "summit-service",
+          "worldLocation": {
+            "x": 11872,
+            "y": 22130,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land at the summit service point",
+          "location": {
+            "x": 43.587,
+            "y": 0,
+            "z": -2.677
+          },
+          "radius": 30,
+          "site": "summit-service-lz",
+          "worldLocation": {
+            "x": 14650,
+            "y": 17973,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Restore the summit relay [F]",
+          "location": {
+            "x": 43.587,
+            "y": 0,
+            "z": -2.677
+          },
+          "radius": 34,
+          "site": "summit-service-lz",
+          "worldLocation": {
+            "x": 14650,
+            "y": 17973,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Proceed to the eastern depot relay",
+          "location": {
+            "x": 623.543,
+            "y": 0,
+            "z": 163.995
+          },
+          "radius": 56,
+          "site": "eastern-depot",
+          "worldLocation": {
+            "x": 240690,
+            "y": -65229,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the eastern service clearing",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 30,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Restore the eastern relay [F]",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 34,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Verify the hospital emergency receiver",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 54,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Confirm the western church receiver",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 70,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Confirm the ridge cabin receiver",
+          "location": {
+            "x": 499.244,
+            "y": 0,
+            "z": -229.564
+          },
+          "radius": 56,
+          "site": "ridge-cabin",
+          "worldLocation": {
+            "x": 192244,
+            "y": 131234,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return to base through the blackout",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 9,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "two-down",
+      "title": "Two Callsigns Down",
+      "callsign": "ANGEL TWO",
+      "type": "double-rescue",
+      "difficulty": 4,
+      "weather": "overcast",
+      "time": "sunset",
+      "timeTarget": 780,
+      "reward": 950,
+      "unlock": 900,
+      "briefing": "A scout pilot is down beyond the eastern ridge and a search team member is stranded in the southern valley. Recover both survivors in one sortie, deliver them to the field hospital, then return to base.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Locate the downed scout aircraft",
+          "location": {
+            "x": 502.559,
+            "y": 0,
+            "z": -184.56
+          },
+          "radius": 62,
+          "site": "eastern-wreck-lz",
+          "worldLocation": {
+            "x": 193536,
+            "y": 108768,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the clearing beside the wreckage",
+          "location": {
+            "x": 516.814,
+            "y": 0,
+            "z": -201.217
+          },
+          "radius": 30,
+          "site": "eastern-wreck-clearing",
+          "worldLocation": {
+            "x": 199092,
+            "y": 117083,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Recover the scout pilot [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 516.814,
+            "y": 0,
+            "z": -201.217
+          },
+          "radius": 40,
+          "site": "eastern-wreck-clearing",
+          "worldLocation": {
+            "x": 199092,
+            "y": 117083,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Search the southern valley for the second survivor",
+          "location": {
+            "x": 4.716,
+            "y": 0,
+            "z": 671.354
+          },
+          "radius": 54,
+          "site": "south-valley-lz",
+          "worldLocation": {
+            "x": -500,
+            "y": -318500,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land near the stranded searcher",
+          "location": {
+            "x": 15.382,
+            "y": 0,
+            "z": 665.789
+          },
+          "radius": 29,
+          "site": "south-valley-inland-lz",
+          "worldLocation": {
+            "x": 3657,
+            "y": -315722,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Bring the second survivor aboard [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 15.382,
+            "y": 0,
+            "z": 665.789
+          },
+          "radius": 34,
+          "site": "south-valley-inland-lz",
+          "worldLocation": {
+            "x": 3657,
+            "y": -315722,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Transport both survivors to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 52,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer both survivors to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 32,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return the aircraft to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 10,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "gauntlet",
+      "title": "Gauntlet",
+      "callsign": "LONGSWORD",
+      "type": "gauntlet",
+      "difficulty": 5,
+      "weather": "wind",
+      "time": "night",
+      "timeTarget": 840,
+      "reward": 1200,
+      "unlock": 1400,
+      "briefing": "Map the hostile air-defense corridor from west to east, then continue north to extract the liaison team from the relief camp. Deliver the wounded to the southeast field hospital before recovering to base. Terrain masking and checkpoint discipline are essential.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Identify the western radar position",
+          "location": {
+            "x": -725.232,
+            "y": 0,
+            "z": -136.947
+          },
+          "radius": 56,
+          "site": "western-radar",
+          "worldLocation": {
+            "x": -285000,
+            "y": 85000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Map the summit air-defense site",
+          "location": {
+            "x": 36.459,
+            "y": 0,
+            "z": -11.005
+          },
+          "radius": 58,
+          "site": "summit-service",
+          "worldLocation": {
+            "x": 11872,
+            "y": 22130,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Confirm the eastern air-defense site",
+          "location": {
+            "x": 455.001,
+            "y": 0,
+            "z": -76.851
+          },
+          "radius": 58,
+          "site": "eastern-air-defense",
+          "worldLocation": {
+            "x": 175000,
+            "y": 55000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Break north and reach the relief-camp sanctuary",
+          "location": {
+            "x": 174.249,
+            "y": 0,
+            "z": -326.941
+          },
+          "radius": 78,
+          "site": "north-relief",
+          "worldLocation": {
+            "x": 65576,
+            "y": 179844,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the north relief clearing",
+          "location": {
+            "x": 199.413,
+            "y": 0,
+            "z": -330.85
+          },
+          "radius": 36,
+          "site": "north-relief-lz",
+          "worldLocation": {
+            "x": 75384,
+            "y": 181795,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Board the liaison team [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": 199.413,
+            "y": 0,
+            "z": -330.85
+          },
+          "radius": 43,
+          "site": "north-relief-lz",
+          "worldLocation": {
+            "x": 75384,
+            "y": 181795,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Run the liaison team to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 54,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the wounded liaison [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 32,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Recover to base through the hostile corridor",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 40,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 11,
+      "recommendedCraft": "attack",
+      "requiresWeapons": false
+    },
+    {
+      "id": "frontline-express",
+      "title": "Frontline Express",
+      "callsign": "MULE TRAIN",
+      "type": "cargo-run",
+      "difficulty": 3,
+      "weather": "wind",
+      "time": "sunset",
+      "timeTarget": 900,
+      "reward": 850,
+      "unlock": 0,
+      "briefing": "Two exposed outposts need one continuous logistics run. Carry replacement parts to the eastern fuel depot, collect medicine from the hospital, deliver it to the western church, then collect the ridge cabin backhaul before recovering. The cargo is replaceable. The aircraft is not.",
+      "objectives": [
+        {
+          "kind": "interact",
+          "text": "Load depot replacement parts at base [F]",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 30,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Run the parts across the island to the fuel depot",
+          "location": {
+            "x": 623.543,
+            "y": 0,
+            "z": 163.995
+          },
+          "radius": 54,
+          "site": "eastern-depot",
+          "worldLocation": {
+            "x": 240690,
+            "y": -65229,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land at the eastern depot service point",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 30,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Unload the replacement parts [F]",
+          "cargoDeliveryCount": 1,
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 34,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Continue to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 50,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Load medicine for the western church [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 31,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Carry the medicine through the hostile corridor",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 68,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the church clearing",
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 36,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Deliver the medicine [F]",
+          "cargoDeliveryCount": 1,
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 42,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Continue to the ridge cabin for the backhaul",
+          "location": {
+            "x": 499.244,
+            "y": 0,
+            "z": -229.564
+          },
+          "radius": 54,
+          "site": "ridge-cabin",
+          "worldLocation": {
+            "x": 192244,
+            "y": 131234,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the cabin pad",
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 28,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Collect the maintenance backhaul [F]",
+          "location": {
+            "x": 487.393,
+            "y": 0,
+            "z": -225.732
+          },
+          "radius": 32,
+          "site": "ridge-cabin-lz",
+          "worldLocation": {
+            "x": 187625,
+            "y": 129321,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Break contact and return to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 12,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "cut-the-wire",
+      "title": "Cut the Wire",
+      "callsign": "SABER ONE",
+      "type": "strike",
+      "difficulty": 4,
+      "weather": "clear",
+      "time": "day",
+      "timeTarget": 840,
+      "reward": 1000,
+      "unlock": 0,
+      "briefing": "Three linked air-defense nodes are coordinating fire across the island. Destroy the western radar, summit flak battery, and southern radar vehicle, then land at the eastern depot to collect the strike assessment before exiting through the western corridor. You have one spare rocket.",
+      "objectives": [
+        {
+          "kind": "reach",
+          "text": "Approach the western radar below the ridgeline",
+          "location": {
+            "x": -725.232,
+            "y": 0,
+            "z": -136.947
+          },
+          "radius": 72,
+          "site": "western-radar",
+          "worldLocation": {
+            "x": -285000,
+            "y": 85000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the western radar vehicle [R1 / SPACE]",
+          "location": {
+            "x": -718.105,
+            "y": 0,
+            "z": -145.275
+          },
+          "radius": 80,
+          "target": "enemy-radar-a",
+          "site": "western-radar-emplacement",
+          "worldLocation": {
+            "x": -282222,
+            "y": 89157,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Climb toward the summit battery",
+          "location": {
+            "x": 36.459,
+            "y": 0,
+            "z": -11.005
+          },
+          "radius": 72,
+          "site": "summit-service",
+          "worldLocation": {
+            "x": 11872,
+            "y": 22130,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the summit flak battery [R1 / SPACE]",
+          "location": {
+            "x": 38.961,
+            "y": 0,
+            "z": -1.181
+          },
+          "radius": 85,
+          "target": "enemy-flak-summit",
+          "site": "summit-flak-emplacement",
+          "worldLocation": {
+            "x": 12847,
+            "y": 17226,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Drop south toward the second radar",
+          "location": {
+            "x": -109.459,
+            "y": 0,
+            "z": 524.117
+          },
+          "radius": 72,
+          "site": "southern-radar",
+          "worldLocation": {
+            "x": -45000,
+            "y": -245000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the southern radar vehicle [R1 / SPACE]",
+          "location": {
+            "x": -120.124,
+            "y": 0,
+            "z": 529.682
+          },
+          "radius": 80,
+          "target": "enemy-radar-b",
+          "site": "southern-radar-emplacement",
+          "worldLocation": {
+            "x": -49157,
+            "y": -247778,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Proceed to the eastern depot for assessment",
+          "location": {
+            "x": 623.543,
+            "y": 0,
+            "z": 163.995
+          },
+          "radius": 58,
+          "site": "eastern-depot",
+          "worldLocation": {
+            "x": 240690,
+            "y": -65229,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land at the depot service point",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 30,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Download the strike assessment [F]",
+          "location": {
+            "x": 616.036,
+            "y": 0,
+            "z": 193.466
+          },
+          "radius": 34,
+          "site": "eastern-depot-lz",
+          "worldLocation": {
+            "x": 237764,
+            "y": -79941,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Exit through the north-shore gap",
+          "location": {
+            "x": -67.125,
+            "y": 0,
+            "z": -395.209
+          },
+          "radius": 76,
+          "site": "north-staging",
+          "worldLocation": {
+            "x": -28500.4,
+            "y": 213922.8,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Exit the defense corridor and return to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 13,
+      "recommendedCraft": "attack",
+      "requiresWeapons": true
+    },
+    {
+      "id": "mercy-corridor",
+      "title": "Mercy Corridor",
+      "callsign": "DUSTOFF",
+      "type": "combat-rescue",
+      "difficulty": 4,
+      "weather": "overcast",
+      "time": "sunset",
+      "timeTarget": 700,
+      "reward": 1100,
+      "unlock": 0,
+      "briefing": "A wounded liaison team is pinned down at the western church. Knock out the flak battery blocking the approach, enter the sanctuary, extract the team, and run them to the hospital before recovering to base.",
+      "objectives": [
+        {
+          "kind": "destroy",
+          "text": "Destroy the western flak battery [R1 / SPACE]",
+          "location": {
+            "x": -189.363,
+            "y": 0,
+            "z": -476.626
+          },
+          "radius": 90,
+          "target": "enemy-flak-west",
+          "site": "northwest-flak-emplacement",
+          "worldLocation": {
+            "x": -76143,
+            "y": 254566,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Push into the church sanctuary",
+          "location": {
+            "x": -580.751,
+            "y": 0,
+            "z": -305.356
+          },
+          "radius": 78,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land in the church clearing",
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 36,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Board the wounded liaison team [F]",
+          "rescueCount": 1,
+          "location": {
+            "x": -569.412,
+            "y": 0,
+            "z": -296.503
+          },
+          "radius": 43,
+          "site": "western-church-lz",
+          "worldLocation": {
+            "x": -224268.3,
+            "y": 164649.5,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Evacuate the team to the field hospital",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 54,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the hospital helipad",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 26,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the wounded team to medics [F]",
+          "location": {
+            "x": 578.055,
+            "y": 0,
+            "z": 365.327
+          },
+          "radius": 32,
+          "site": "field-hospital",
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return the aircraft to base",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 38,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 14,
+      "recommendedCraft": "attack",
+      "requiresWeapons": true
+    },
+    {
+      "id": "no-second-shot",
+      "title": "No Second Shot",
+      "callsign": "DEADEYE",
+      "type": "strike",
+      "difficulty": 5,
+      "weather": "overcast",
+      "time": "night",
+      "timeTarget": 760,
+      "reward": 1500,
+      "unlock": 0,
+      "briefing": "Four priority threats must disappear in one sortie: the western, summit, and eastern flak batteries, followed by a missile-equipped attack helicopter. Confirm every lock and keep enough rockets in reserve for the gunship.",
+      "objectives": [
+        {
+          "kind": "destroy",
+          "text": "Destroy the western flak battery [R1 / SPACE]",
+          "location": {
+            "x": -189.363,
+            "y": 0,
+            "z": -476.626
+          },
+          "radius": 90,
+          "target": "enemy-flak-west",
+          "site": "northwest-flak-emplacement",
+          "worldLocation": {
+            "x": -76143,
+            "y": 254566,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the summit flak battery [R1 / SPACE]",
+          "location": {
+            "x": 38.961,
+            "y": 0,
+            "z": -1.181
+          },
+          "radius": 90,
+          "target": "enemy-flak-summit",
+          "site": "summit-flak-emplacement",
+          "worldLocation": {
+            "x": 12847,
+            "y": 17226,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the eastern flak battery [R1 / SPACE]",
+          "location": {
+            "x": 464.073,
+            "y": 0,
+            "z": -83.934
+          },
+          "radius": 90,
+          "target": "enemy-flak-east",
+          "site": "eastern-flak-emplacement",
+          "worldLocation": {
+            "x": 178536,
+            "y": 58536,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the enemy rocket gunship [R1 / SPACE]",
+          "location": {
+            "x": 827.031,
+            "y": 0,
+            "z": -407.383
+          },
+          "radius": 110,
+          "target": "enemy-apache",
+          "site": "north-air-patrol",
+          "worldLocation": {
+            "x": 320000,
+            "y": 220000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return to base with the corridor cleared",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 40,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land on the home pad",
+          "location": {
+            "x": -600.01,
+            "y": 0,
+            "z": 420.005
+          },
+          "radius": 26,
+          "site": "home",
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 15,
+      "recommendedCraft": "attack",
+      "requiresWeapons": true
+    },
+    {
+      "id": "razor-gorge",
+      "title": "Breakwater Run",
+      "callsign": "TIDE KNIFE",
+      "type": "combat-evacuation",
+      "difficulty": 5,
+      "weather": "wind",
+      "time": "sunset",
+      "timeTarget": 660,
+      "reward": 1800,
+      "unlock": 0,
+      "briefing": "Six harbor engineers were cut off at an abandoned coast-guard station beyond the defended port approach. Launch from north-shore staging and sweep south along the exposed eastern shoreline. After the pickup, do not retrace the coast: break inland through the central valley, cross the eastern plateau, and recover through the north-shore relief corridor. Four rockets are available, but the evacuees—not the gun line—are the mission.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the turbine at North Shore Staging [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Lift from the north-shore staging pad"
+        },
+        {
+          "kind": "reach",
+          "text": "Join the eastern shoreline",
+          "location": {
+            "x": 264.752,
+            "y": 0,
+            "z": -282.181
+          },
+          "radius": 52,
+          "site": "east-north-join",
+          "worldLocation": {
+            "x": 100850,
+            "y": 157500,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Drop below the radar horizon before the first flak site",
+          "location": {
+            "x": 314.065,
+            "y": 0,
+            "z": -233.984
+          },
+          "radius": 48,
+          "maxAltitude": 82,
+          "site": "east-outer-north",
+          "worldLocation": {
+            "x": 120070,
+            "y": 133440,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Skim the outer tree line",
+          "location": {
+            "x": 334.489,
+            "y": 0,
+            "z": -173.727
+          },
+          "radius": 46,
+          "maxAltitude": 90,
+          "site": "east-shore-high",
+          "worldLocation": {
+            "x": 128030,
+            "y": 103360,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the alternating flak lanes",
+          "location": {
+            "x": 370.434,
+            "y": 0,
+            "z": -113.47
+          },
+          "radius": 46,
+          "maxAltitude": 92,
+          "site": "east-shore-mid",
+          "worldLocation": {
+            "x": 142040,
+            "y": 73280,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Hold the coast through the gunship patrol zone",
+          "location": {
+            "x": 303.623,
+            "y": 0,
+            "z": -61.827
+          },
+          "radius": 44,
+          "maxAltitude": 74,
+          "site": "east-shore-low",
+          "worldLocation": {
+            "x": 116000,
+            "y": 47500,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Round the southern headland",
+          "location": {
+            "x": 239.762,
+            "y": 0,
+            "z": 7.044
+          },
+          "radius": 46,
+          "maxAltitude": 88,
+          "site": "harbor-outer",
+          "worldLocation": {
+            "x": 91110,
+            "y": 13120,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Stay low through the defended port approach",
+          "location": {
+            "x": 285.945,
+            "y": 0,
+            "z": 82.786
+          },
+          "radius": 42,
+          "maxAltitude": 47,
+          "site": "port-approach",
+          "worldLocation": {
+            "x": 109110,
+            "y": -24690,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Locate the stranded harbor engineers",
+          "location": {
+            "x": 347.317,
+            "y": 0,
+            "z": 161.974
+          },
+          "radius": 58,
+          "site": "coast-guard-inbound",
+          "worldLocation": {
+            "x": 133030,
+            "y": -64220,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land at the abandoned coast-guard station",
+          "location": {
+            "x": 389.883,
+            "y": 0,
+            "z": 175.866
+          },
+          "radius": 20,
+          "site": "coast-guard-lz",
+          "worldLocation": {
+            "x": 149620,
+            "y": -71155,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Bring all six evacuees aboard [F]",
+          "rescueCount": 6,
+          "location": {
+            "x": 389.883,
+            "y": 0,
+            "z": 175.866
+          },
+          "radius": 32,
+          "site": "coast-guard-lz",
+          "worldLocation": {
+            "x": 149620,
+            "y": -71155,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Break inland through the central valley",
+          "location": {
+            "x": -14.691,
+            "y": 0,
+            "z": 49.481
+          },
+          "radius": 42,
+          "maxAltitude": 47,
+          "site": "central-town",
+          "worldLocation": {
+            "x": -8064,
+            "y": -8064,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the eastern plateau below the ridge line",
+          "location": {
+            "x": 502.559,
+            "y": 0,
+            "z": -184.56
+          },
+          "radius": 44,
+          "maxAltitude": 74,
+          "site": "eastern-wreck-lz",
+          "worldLocation": {
+            "x": 193536,
+            "y": 108768,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Clear the north-shore relief corridor",
+          "location": {
+            "x": 174.249,
+            "y": 0,
+            "z": -326.941
+          },
+          "radius": 54,
+          "site": "north-relief",
+          "worldLocation": {
+            "x": 65576,
+            "y": 179844,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land safely with the harbor engineers",
+          "location": {
+            "x": -64.623,
+            "y": 0,
+            "z": -405.033
+          },
+          "radius": 20,
+          "site": "north-staging-lz",
+          "worldLocation": {
+            "x": -27525,
+            "y": 218827,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Transfer the evacuees to the relief team [F]",
+          "location": {
+            "x": -64.623,
+            "y": 0,
+            "z": -405.033
+          },
+          "radius": 34,
+          "site": "north-staging-lz",
+          "worldLocation": {
+            "x": -27525,
+            "y": 218827,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 16,
+      "recommendedCraft": "support",
+      "requiresWeapons": false
+    },
+    {
+      "id": "kiowa-recon-strike",
+      "title": "Hunter's Mark",
+      "callsign": "SCOUT ONE",
+      "type": "recon-strike",
+      "difficulty": 5,
+      "weather": "clear",
+      "time": "dusk",
+      "timeTarget": 480,
+      "reward": 2200,
+      "unlock": 0,
+      "briefing": "An EBRC Jaguar command vehicle is coordinating hostile forces from the eastern highlands. Take the OH-58 Kiowa on a five-point reconnaissance sweep across Kestrel Reach, manage fuel, then locate the concealed priority target with the mast sensor and hold a clean designation. Do not engage. An allied Bell 222 strike aircraft will accept the target reference, execute the attack, confirm the kill, and egress.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the Kiowa and bring the mast radar online [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Lift and begin the five-point reconnaissance sweep"
+        },
+        {
+          "kind": "reach",
+          "text": "Sweep reconnaissance point ALPHA // western coast",
+          "location": {
+            "x": -812.5,
+            "y": 0,
+            "z": 62.5
+          },
+          "radius": 75,
+          "site": "western-coast-checkpoint",
+          "worldLocation": {
+            "x": -325000,
+            "y": 25000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Sweep reconnaissance point BRAVO // church ridge",
+          "location": {
+            "x": -571.71925,
+            "y": 0,
+            "z": 422.67225
+          },
+          "radius": 75,
+          "site": "western-church",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Hold over the church ridge and confirm the reconnaissance picture [F]",
+          "location": {
+            "x": -571.71925,
+            "y": 0,
+            "z": 422.67225
+          },
+          "radius": 70,
+          "site": "western-church-confirm",
+          "worldLocation": {
+            "x": -228687.7,
+            "y": 169068.9,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Sweep reconnaissance point CHARLIE // north staging",
+          "location": {
+            "x": -71.251,
+            "y": 0,
+            "z": 534.807
+          },
+          "radius": 75,
+          "site": "north-staging",
+          "worldLocation": {
+            "x": -28500.4,
+            "y": 213922.8,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Sweep reconnaissance point DELTA // eastern highlands",
+          "location": {
+            "x": 252.125,
+            "y": 0,
+            "z": 393.75
+          },
+          "radius": 75,
+          "site": "east-north-join",
+          "worldLocation": {
+            "x": 100850,
+            "y": 157500,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Sweep reconnaissance point ECHO // air-defense overlook",
+          "location": {
+            "x": 437.5,
+            "y": 0,
+            "z": 137.5
+          },
+          "radius": 75,
+          "site": "eastern-air-defense",
+          "worldLocation": {
+            "x": 175000,
+            "y": 55000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "designate-strike",
+          "text": "Identify and designate the EBRC Jaguar priority command vehicle",
+          "target": "EBRC Jaguar priority command vehicle",
+          "location": {
+            "x": 175,
+            "y": 0,
+            "z": 50
+          },
+          "radius": 100,
+          "site": "jaguar-priority-target",
+          "worldLocation": {
+            "x": 70000,
+            "y": 20000,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 17,
+      "recommendedCraft": "recon",
+      "requiresWeapons": false
+    },
+    {
+      "id": "final-discovery",
+      "title": "The Hidden Machine",
+      "callsign": "LAST LIGHT",
+      "type": "final-discovery",
+      "briefing": "The attack has exposed one final secret. Open the Jeep crate, cross the island, and follow the trail to the cave hidden inside the mesa. Find the aircraft the enemy came to steal, fly it out of the summit, and return the Bell 222 safely to the airport.",
+      "weather": "overcast",
+      "time": "day",
+      "difficulty": 2,
+      "timeTarget": 900,
+      "reward": 20,
+      "unlock": 0,
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Enter the hidden Bell 222 and bring both turbines online"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Fly the Bell 222 out of the lair and clear the mesa"
+        },
+        {
+          "kind": "reach",
+          "text": "Fly the Bell 222 clear of the summit and establish the airport return route",
+          "site": "bell-discovery-flight",
+          "radius": 90,
+          "location": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "worldLocation": {
+            "x": -20000,
+            "y": 120000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the central valley and continue southwest",
+          "site": "bell-return-central-valley",
+          "radius": 85,
+          "worldLocation": {
+            "x": -8064,
+            "y": -8064,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Join the western airport approach",
+          "site": "bell-return-airport-approach",
+          "radius": 90,
+          "worldLocation": {
+            "x": -150000,
+            "y": -110000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land the recovered Bell 222 safely on the airport pad",
+          "site": "bell-discovery-airport-recovery",
+          "radius": 24,
+          "worldLocation": {
+            "x": -236194.1,
+            "y": -193027.5,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 18,
+      "recommendedCraft": "ground",
+      "requiresWeapons": false
+    },
+    {
+      "id": "bell-counterstrike",
+      "title": "Wolf at the Door",
+      "callsign": "NIGHT WOLF",
+      "type": "bell-counterstrike",
+      "briefing": "Rotorline finally has the Bell 222, and the enemy knows it. Enemy forces are striking the harbor relief district and opening an attack corridor across the island. Launch the Bell, race to the harbor, and break the counterattack by destroying the attacking Hind, HIMARS battery, Apache hunter-killer flight, and western HAWK site. Bring the Bell home when the island corridor is secure.",
+      "weather": "overcast",
+      "time": "day",
+      "difficulty": 5,
+      "timeTarget": 1100,
+      "reward": 3200,
+      "unlock": 0,
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the Bell 222 at the airport and bring the weapon system online [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Launch from the airport and race to the harbor relief district"
+        },
+        {
+          "kind": "reach",
+          "text": "Reach the harbor relief district before the enemy attack closes in",
+          "site": "bell-counterstrike-relief",
+          "radius": 110,
+          "worldLocation": {
+            "x": 208000,
+            "y": -124000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Intercept the Hind gunship attacking the harbor exit",
+          "target": "Mi-24 Hind gunship",
+          "site": "bell-counterstrike-hind",
+          "radius": 110,
+          "worldLocation": {
+            "x": 155000,
+            "y": -70000,
+            "z": 6500
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the HIMARS rocket artillery battery",
+          "target": "HIMARS rocket artillery battery",
+          "site": "bell-counterstrike-himars",
+          "radius": 100,
+          "worldLocation": {
+            "x": 95000,
+            "y": 15000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Defeat the Apache hunter-killer flight over the central ridge",
+          "target": "AH-64 Apache gunship",
+          "site": "bell-counterstrike-apache",
+          "radius": 110,
+          "worldLocation": {
+            "x": 15000,
+            "y": 85000,
+            "z": 7000
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Eliminate the HAWK radar missile site covering the western return lane",
+          "target": "MIM-23 HAWK radar missile site",
+          "site": "bell-counterstrike-hawk",
+          "radius": 100,
+          "worldLocation": {
+            "x": -85000,
+            "y": 30000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Clear the western ridge and establish the airport approach",
+          "site": "bell-counterstrike-return",
+          "radius": 90,
+          "worldLocation": {
+            "x": -165000,
+            "y": -105000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land the Bell 222 safely at the airport",
+          "site": "bell-counterstrike-airport",
+          "radius": 24,
+          "worldLocation": {
+            "x": -236194.1,
+            "y": -193027.5,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 19,
+      "recommendedCraft": "bell_222x",
+      "requiresWeapons": true,
+      "maxConcurrentEnemyHelicopters": 3
+    },
+    {
+      "id": "rooftop-extraction",
+      "title": "Rooftop Retrieval",
+      "callsign": "SKYHOOK",
+      "type": "combat-extraction",
+      "difficulty": 5,
+      "weather": "overcast",
+      "time": "day",
+      "timeTarget": 780,
+      "reward": 2400,
+      "unlock": 0,
+      "briefing": "A four-person allied fireteam is trapped on the hospital tower while an enemy gunship closes on the district. Take the MD-500 through the central ridge, clear the aerial threat, hold a tight hover over the rooftop team, bring them aboard, and recover to the airport.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the MD-500 and bring the extraction systems online [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Lift from the airport in the MD-500"
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the central ridge toward the hospital district",
+          "site": "rooftop-extraction-ingress",
+          "radius": 85,
+          "worldLocation": {
+            "x": 80000,
+            "y": -75000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the Hind gunship sweeping the rooftop",
+          "target": "Mi-24 Hind gunship",
+          "site": "rooftop-extraction-hind",
+          "radius": 110,
+          "worldLocation": {
+            "x": 155000,
+            "y": -110000,
+            "z": 6500
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Descend into a close hover over the rooftop extraction team",
+          "site": "rooftop-extraction-team",
+          "radius": 28,
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "interact",
+          "text": "Hold position and bring the four-person team aboard [F]",
+          "rescueCount": 4,
+          "site": "rooftop-extraction-team",
+          "radius": 34,
+          "worldLocation": {
+            "x": 222961,
+            "y": -165733,
+            "z": 0
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Break west through the central valley with the team aboard",
+          "site": "rooftop-extraction-egress",
+          "radius": 85,
+          "worldLocation": {
+            "x": -80000,
+            "y": -140000,
+            "z": 0
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return the extraction team to the airport",
+          "site": "home",
+          "radius": 42,
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land safely on the home pad to complete the extraction",
+          "site": "home",
+          "radius": 26,
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 20,
+      "recommendedCraft": "attack",
+      "requiresWeapons": true,
+      "maxConcurrentEnemyHelicopters": 2
+    },
+    {
+      "id": "enemy-foothold",
+      "title": "Enemy Foothold",
+      "callsign": "TIDAL HAMMER",
+      "type": "base-assault",
+      "difficulty": 5,
+      "weather": "clear",
+      "time": "day",
+      "timeTarget": 1200,
+      "reward": 3800,
+      "unlock": 0,
+      "briefing": "Reconnaissance has located the enemy staging island far northeast of Rotorline. The airfield is feeding every assault against the island. Launch the Bell 222 with a full fuel load, cross the island and the long open-water gap, break the air-defense network, destroy the parked flight line and armor concentration, defeat each helicopter reinforcement wave, and protect enough fuel for the return to base.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the Bell 222 and arm the strike package [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Launch from the airport and turn northeast across the island"
+        },
+        {
+          "kind": "reach",
+          "text": "Cross the water and reach the enemy-island attack corridor",
+          "site": "enemy-island-ingress",
+          "radius": 110,
+          "worldLocation": {
+            "x": 530000,
+            "y": 405000,
+            "z": 2800
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the MIM-23 HAWK site guarding the airfield",
+          "target": "MIM-23 HAWK enemy-island air-defense site",
+          "site": "enemy-island-hawk",
+          "radius": 100,
+      "worldLocation": {
+        "x": 632000,
+        "y": 513000,
+        "z": 1200
+      }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the parked aircraft flight line before it can launch",
+          "target": "parked aircraft flight line",
+          "site": "enemy-island-flight-line",
+          "radius": 100,
+      "worldLocation": {
+        "x": 650000,
+        "y": 493500,
+        "z": 1280
+      }
+        },
+        {
+          "kind": "destroy",
+          "text": "Break the northern tank squad protecting the hangars",
+          "target": "northern enemy-island tank squad",
+          "site": "enemy-island-north-armor",
+          "radius": 95,
+      "worldLocation": {
+        "x": 648000,
+        "y": 515500,
+        "z": 1200
+      }
+        },
+        {
+          "kind": "destroy",
+          "text": "Defeat the MD-500 light-gunship reinforcement wave",
+          "target": "MD500 enemy light gunship",
+          "site": "enemy-island-md500-wave",
+          "radius": 110,
+          "worldLocation": {
+            "x": 635000,
+            "y": 460000,
+            "z": 6000
+          }
+        },
+        {
+          "kind": "destroy",
+      "text": "Destroy the HIMARS battery beside the water-storage compound",
+          "target": "enemy-island HIMARS rocket artillery battery",
+          "site": "enemy-island-himars",
+          "radius": 100,
+      "worldLocation": {
+        "x": 673000,
+        "y": 490000,
+        "z": 1200
+      }
+        },
+        {
+          "kind": "destroy",
+          "text": "Defeat the Apache hunter-killer reinforcement wave",
+          "target": "AH-64 Apache enemy gunship",
+          "site": "enemy-island-apache-wave",
+          "radius": 110,
+          "worldLocation": {
+            "x": 687000,
+            "y": 492000,
+            "z": 7000
+          }
+        },
+        {
+          "kind": "destroy",
+          "text": "Destroy the southern tank squad covering the runway",
+          "target": "southern enemy-island tank squad",
+          "site": "enemy-island-south-armor",
+          "radius": 95,
+      "worldLocation": {
+        "x": 644000,
+        "y": 485000,
+        "z": 1200
+      }
+        },
+        {
+          "kind": "destroy",
+          "text": "Eliminate the mobile flak battery at the command apron",
+          "target": "enemy-island flak battery",
+          "site": "enemy-island-flak",
+          "radius": 95,
+      "worldLocation": {
+        "x": 667000,
+        "y": 515000,
+        "z": 1200
+      }
+        },
+        {
+          "kind": "destroy",
+          "text": "Defeat the Mi-24 Hind heavy-gunship reinforcement wave",
+          "target": "Mi-24 Hind enemy gunship",
+          "site": "enemy-island-hind-wave",
+          "radius": 110,
+          "worldLocation": {
+            "x": 653000,
+            "y": 544000,
+            "z": 7500
+          }
+        },
+        {
+          "kind": "reach",
+          "text": "Clear the enemy island and establish the eastbound recovery lane",
+          "site": "enemy-island-egress",
+          "radius": 110,
+          "worldLocation": {
+            "x": 530000,
+            "y": 410000,
+            "z": 3000
+          }
+        },
+        {
+          "kind": "return",
+          "text": "Return to the Rotorline airport",
+          "site": "home",
+          "radius": 52,
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        },
+        {
+          "kind": "land",
+          "text": "Land safely at the airport to complete the enemy-island strike",
+          "site": "home",
+          "radius": 26,
+          "worldLocation": {
+            "x": -236194,
+            "y": -193028,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 21,
+      "recommendedCraft": "bell_222x",
+      "requiresWeapons": true,
+      "maxConcurrentEnemyHelicopters": 1
+    },
+    {
+      "id": "cabin-supply-convoy",
+      "title": "Warehouse Supply Run",
+      "callsign": "RIDGELINE FREIGHT",
+      "type": "convoy-escort",
+      "difficulty": 4,
+      "weather": "overcast",
+      "time": "day",
+      "timeTarget": 720,
+      "reward": 2600,
+      "unlock": 0,
+      "briefing": "A six-vehicle supply column is leaving the Rotorline airfield with emergency stores for temporary storage at the warehouse. Escort the column along the established road, keep the route clear, and remain overhead until every vehicle is parked at the warehouse. The convoy does not travel to the harbor.",
+      "objectives": [
+        {
+          "kind": "start-engine",
+          "text": "Start the aircraft while the warehouse supply column forms [I]"
+        },
+        {
+          "kind": "takeoff",
+          "text": "Lift from the airfield and establish convoy overwatch"
+        },
+        {
+          "kind": "escort-cabin-convoy",
+          "text": "Escort the supply column along the road to the warehouse",
+          "site": "ridge-warehouse",
+          "radius": 90,
+          "worldLocation": {
+            "x": 192243.6,
+            "y": 131234.1,
+            "z": 0
+          }
+        }
+      ],
+      "sourceOrder": 22,
+      "recommendedCraft": "ah64_apache",
+      "requiresWeapons": true,
+      "maxConcurrentEnemyHelicopters": 1
+    },
+    {
+      "id": "survivor-extraction",
+      "title": "Last Lift",
+      "callsign": "SHELTER LIFT",
+      "type": "rescue",
+      "difficulty": 4,
+      "weather": "overcast",
+      "time": "day",
+      "timeTarget": 1200,
+      "reward": 3000,
+      "unlock": 0,
+      "briefing": "Fly one continuous Chinook evacuation circuit. Land at the church, hospital, and cabin resupply pads, board every survivor group, then return everyone safely to the Rotorline airfield.",
+      "objectives": [
+        {"kind":"start-engine","text":"Start the Chinook and receive the survivor circuit briefing [I]"},
+        {"kind":"takeoff","text":"Lift from the airfield and begin the evacuation circuit"},
+        {"kind":"land","text":"Land at the western church resupply pad","site":"western-church-lz","radius":36,"worldLocation":{"x":-224268.3,"y":164649.5,"z":0}},
+        {"kind":"interact","text":"Bring the western survivors aboard [F]","rescueCount":1,"site":"western-church-lz","radius":42,"worldLocation":{"x":-224268.3,"y":164649.5,"z":0}},
+        {"kind":"land","text":"Land at the field hospital resupply pad","site":"field-hospital","radius":28,"worldLocation":{"x":222961,"y":-165733,"z":0}},
+        {"kind":"interact","text":"Bring the hospital survivors aboard [F]","rescueCount":1,"site":"field-hospital","radius":34,"worldLocation":{"x":222961,"y":-165733,"z":0}},
+        {"kind":"land","text":"Land at the cabin resupply pad","site":"ridge-cabin-lz","radius":30,"worldLocation":{"x":187625,"y":129321,"z":0}},
+        {"kind":"interact","text":"Bring the final survivors aboard [F]","rescueCount":1,"site":"ridge-cabin-lz","radius":36,"worldLocation":{"x":187625,"y":129321,"z":0}},
+        {"kind":"return","text":"Return all survivors to the Rotorline airfield","site":"home","radius":52,"worldLocation":{"x":-236194,"y":-193028,"z":0}},
+        {"kind":"land","text":"Land safely at base with every survivor aboard","site":"home","radius":26,"worldLocation":{"x":-236194,"y":-193028,"z":0}}
+      ],
+      "sourceOrder": 23,
+      "recommendedCraft": "ch47_chinook",
+      "requiresWeapons": false,
+      "maxConcurrentEnemyHelicopters": 0
+    },
+    {
+      "id": "final-evacuation",
+      "title": "Final Evacuation",
+      "callsign": "LAST LIGHT",
+      "type": "cargo-run",
+      "difficulty": 5,
+      "weather": "overcast",
+      "time": "sunset",
+      "timeTarget": 1500,
+      "reward": 5000,
+      "unlock": 0,
+      "briefing": "Move the island's final aircraft shipping container to the offshore carrier in one run. Once clear of the airfield, expect a full enemy air-and-ground gauntlet across the island. Survive the crossing and deliver the single load to Pacific Dawn.",
+      "objectives": [
+        {"kind":"start-engine","text":"Start the Chinook for Rotorline's final evacuation [I]"},
+        {"kind":"interact","text":"Secure the aircraft shipping container at base [F]","site":"home","radius":32,"worldLocation":{"x":-236194,"y":-193028,"z":0}},
+        {"kind":"reach","text":"Run the gauntlet and carry the container to Pacific Dawn","site":"carrier","radius":150,"worldLocation":{"x":530000,"y":405000,"z":0}},
+        {"kind":"interact","text":"Deliver the aircraft shipping container on the carrier deck [F]","cargoDeliveryCount":1,"slingLoadDelivery":true,"site":"carrier","radius":170,"worldLocation":{"x":530000,"y":405000,"z":0}},
+        {"kind":"final-cinematic","text":"Hold position on Pacific Dawn and watch the island","site":"carrier","radius":180,"worldLocation":{"x":530000,"y":405000,"z":0}}
+      ],
+      "sourceOrder": 24,
+      "recommendedCraft": "ch47_chinook",
+      "requiresWeapons": false,
+      "maxConcurrentEnemyHelicopters": 6
+    }
+  ]
+}

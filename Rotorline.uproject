@@ -1,0 +1,24 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Games",
+  "Description": "Rotorline - a large-world helicopter operations game.",
+  "Modules": [
+    { "Name": "Rotorline", "Type": "Runtime", "LoadingPhase": "Default" },
+    { "Name": "RotorlineEditor", "Type": "Editor", "LoadingPhase": "Default" }
+  ],
+  "Plugins": [
+    { "Name": "PythonScriptPlugin", "Enabled": true },
+    { "Name": "EditorScriptingUtilities", "Enabled": true },
+    { "Name": "Water", "Enabled": true },
+    { "Name": "PCG", "Enabled": true },
+    { "Name": "Landmass", "Enabled": true },
+    { "Name": "ChaosNiagara", "Enabled": true },
+    { "Name": "NiagaraFluids", "Enabled": true },
+    { "Name": "MeshPartition", "Enabled": true },
+    { "Name": "MeshPartitionWater", "Enabled": true },
+    { "Name": "PCGMeshPartitionInterop", "Enabled": true },
+    { "Name": "MeshTerrainMode", "Enabled": true },
+    { "Name": "GameInputWindows", "Enabled": true, "SupportedTargetPlatforms": ["Win64"] }
+  ]
+}
