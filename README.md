@@ -6,7 +6,20 @@
 
 Project Rotorline is a helicopter-focused Unreal Engine 5.8 action game created by Keith League (Rooster). Its current Alpha campaign spans 25 missions across rescue, reconnaissance, escort, strike, extraction, heavy-lift, and final evacuation operations.
 
-## Source Snapshot and Alpha Download Status
+## Download and Play
+
+[**Download ProjectRotorlineAlphaSetup.exe**](https://github.com/MilsimRooster/ProjectRotorline/releases/download/alpha-windows-v1/ProjectRotorlineAlphaSetup.exe)
+
+Run the setup application and select **Install and Play**. It downloads the
+complete current Alpha from the same `alpha-windows-v1` release, verifies every
+payload hash, installs the required Microsoft runtimes, replaces an older
+installation with rollback protection, creates the desktop shortcut, and
+launches the game. Nothing points to an older Rotorline repository or release.
+
+Windows may display a security warning because this Alpha installer is not
+code-signed.
+
+## Standalone Source Snapshot
 
 This repository is a standalone Project Rotorline source snapshot. It is a
 normal independent repository, not a fork, submodule, redirect, or pointer back
@@ -15,13 +28,8 @@ to an older Rotorline repository.
 Licensed binary assets are intentionally excluded, so a fresh clone is not a
 build-complete Unreal project and is not presented as a playable distribution.
 
-The playable Windows Alpha download is temporarily unavailable while the final
-single-release package and installer complete verification. OH-58/Kiowa
-distribution permission is confirmed, and Keith League created and owns the
-original Project Rotorline audio; neither is a publication blocker.
-
-Older installer and payload links are intentionally not offered because they do
-not represent the current verified Alpha.
+OH-58/Kiowa distribution permission is confirmed, and Keith League created and
+owns the original Project Rotorline audio.
 
 ## Alpha Highlights
 
@@ -47,9 +55,9 @@ not represent the current verified Alpha.
 ## Current Status
 
 Project Rotorline remains in Alpha. The current development campaign reaches
-Mission 25. The new public playable package is completing the verification
-described above. Testing, optimization, content polish, accessibility, and
-hardware coverage are ongoing.
+Mission 25. The current public Windows package is the verified
+`alpha-windows-v1` release described above. Testing, optimization, content
+polish, accessibility, and hardware coverage are ongoing.
 
 Performance targets and minimum requirements are provisional. Testing has included an RTX 2060-class system at approximately 30 FPS under reduced settings, but results vary by mission, resolution, and hardware.
 
