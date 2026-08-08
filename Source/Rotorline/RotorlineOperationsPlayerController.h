@@ -475,6 +475,7 @@ private:
     FVector LastTelemetryLocation = FVector::ZeroVector;
     FVector LastTelemetryVelocity = FVector::ZeroVector;
     float CurrentStableHoverSeconds = 0.0f;
+    float CurrentStableHoverBreakSeconds = 0.0f;
     float LastTelemetryAltitudeAgl = 0.0f;
     float LastAirborneVerticalSpeedMps = 0.0f;
     float ObstacleTraceAccumulator = 0.0f;

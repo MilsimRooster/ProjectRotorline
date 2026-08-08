@@ -65,6 +65,27 @@ namespace RotorlineOperations
     const FRotator SpawnRotation(0.0, 8.0, 0.0);
     bool bIntroPlayedThisProcess = false;
 
+    // Smooth Operator must recognize the low, controlled hover players use at
+    // pickup and landing pads. AGL is skid clearance, so 2 m proves the craft
+    // is airborne without imposing the old, undocumented 6 m floor.
+    constexpr float StableHoverMinimumAglMeters = 2.0f;
+    constexpr float StableHoverMaximumHorizontalSpeedMps = 2.5f;
+    constexpr float StableHoverMaximumVerticalSpeedMps = 1.0f;
+    constexpr float StableHoverMaximumAttitudeDegrees = 10.0f;
+    constexpr float StableHoverBreakGraceSeconds = 0.75f;
+
+    bool IsStableHoverState(const FRotorlineAwardsFlightState& Flight)
+    {
+        const float HorizontalSpeedMps = Flight.Velocity.Size2D() / 100.0f;
+        const float VerticalSpeedMps = FMath::Abs(Flight.Velocity.Z) / 100.0f;
+        const float AttitudeDegrees = FMath::Max(FMath::Abs(Flight.PitchDegrees), FMath::Abs(Flight.RollDegrees));
+        return Flight.bEnginePowerAvailable && !Flight.bAircraftDying && !Flight.bMissionFailed &&
+            Flight.AltitudeAglMeters >= StableHoverMinimumAglMeters &&
+            HorizontalSpeedMps <= StableHoverMaximumHorizontalSpeedMps &&
+            VerticalSpeedMps <= StableHoverMaximumVerticalSpeedMps &&
+            AttitudeDegrees <= StableHoverMaximumAttitudeDegrees;
+    }
+
     void WriteAlphaRuntimeProbe(const TCHAR* Status, const TCHAR* Reason)
     {
         FString ProbePath;
@@ -5197,6 +5218,7 @@ void ARotorlineOperationsPlayerController::ResetMissionResults(const TCHAR* Reas
     LastTelemetryLocation = FVector::ZeroVector;
     LastTelemetryVelocity = FVector::ZeroVector;
     CurrentStableHoverSeconds = 0.0f;
+    CurrentStableHoverBreakSeconds = 0.0f;
     LastTelemetryAltitudeAgl = 0.0f;
     LastAirborneVerticalSpeedMps = 0.0f;
     ObstacleTraceAccumulator = 0.0f;
@@ -8032,16 +8054,29 @@ void ARotorlineOperationsPlayerController::UpdateMissionTelemetry(float DeltaTim
     {
         MissionResults.TimeBelowSafeAltitudeSeconds += DeltaTime;
     }
-    if (bAirborne && HorizontalSpeedMps < 2.0f && FMath::Abs(VerticalSpeedMps) < 0.75f && Attitude < 7.0f)
+    if (RotorlineOperations::IsStableHoverState(Flight))
     {
+        CurrentStableHoverBreakSeconds = 0.0f;
+        const float PreviousBestHoverSeconds = MissionResults.StableHoverSeconds;
         CurrentStableHoverSeconds += DeltaTime;
         MissionResults.StableHoverSeconds = FMath::Max(
             MissionResults.StableHoverSeconds,
             CurrentStableHoverSeconds);
+        if (PreviousBestHoverSeconds < 10.0f && MissionResults.StableHoverSeconds >= 10.0f)
+        {
+            UE_LOG(LogTemp, Display,
+                TEXT("ROTORLINE_AWARDS_TELEMETRY|HOVER_QUALIFIED|mission=%s|seconds=%.2f|agl=%.2f|horizontal=%.2f|vertical=%.2f|attitude=%.2f"),
+                *MissionResults.MissionId, MissionResults.StableHoverSeconds, Flight.AltitudeAglMeters,
+                HorizontalSpeedMps, FMath::Abs(VerticalSpeedMps), Attitude);
+        }
     }
     else
     {
-        CurrentStableHoverSeconds = 0.0f;
+        CurrentStableHoverBreakSeconds += DeltaTime;
+        if (CurrentStableHoverBreakSeconds > RotorlineOperations::StableHoverBreakGraceSeconds)
+        {
+            CurrentStableHoverSeconds = 0.0f;
+        }
     }
     if (Attitude > 27.0f || FVector::Distance(Flight.Velocity, LastTelemetryVelocity) / 100.0f > 8.0f)
     {
@@ -8229,6 +8264,8 @@ void ARotorlineOperationsPlayerController::EvaluateMissionAwards()
 {
     NewlyEarnedAwards.Reset();
     if (!ProfileSave || AwardSystem.GetDefinitions().IsEmpty()) return;
+    const FRotorlinePlayerAwardRecord* ExistingSmoothRecord = GetAwardRecord(TEXT("smooth_operator"));
+    const bool bSmoothAlreadyEarned = ExistingSmoothRecord && ExistingSmoothRecord->TimesEarned > 0;
     ProfileSave->CareerStatistics.AwardsEarned = ProfileSave->AwardRecords.Num();
     NewlyEarnedAwards = AwardSystem.Evaluate(
         MissionResults,
@@ -8243,6 +8280,24 @@ void ARotorlineOperationsPlayerController::EvaluateMissionAwards()
             TEXT("ROTORLINE_AWARDS|UNLOCK|id=%s|name=%s|new=%d|reason=%s|stat=%.2f"),
             *Evaluation.AwardId, Definition ? *Definition->DisplayName : TEXT("UNKNOWN"),
             Evaluation.bNewlyUnlocked ? 1 : 0, *Evaluation.Reason, Evaluation.AssociatedStatValue);
+    }
+    if (!bSmoothAlreadyEarned)
+    {
+        const FRotorlinePlayerAwardRecord* SmoothRecord = GetAwardRecord(TEXT("smooth_operator"));
+        const bool bSmoothUnlocked = SmoothRecord && SmoothRecord->TimesEarned > 0;
+        const FRotorlineAwardDefinition* SmoothDefinition = AwardSystem.FindDefinition(TEXT("smooth_operator"));
+        const FString Explanation = SmoothDefinition
+            ? AwardSystem.ExplainAward(*SmoothDefinition, MissionResults, ProfileSave->CareerStatistics)
+            : TEXT("award definition missing");
+        UE_LOG(LogTemp, Display,
+            TEXT("ROTORLINE_AWARDS|SMOOTH_OPERATOR_CHECK|result=%s|success=%d|safe_landing=%d|damage=%.2f|stable_hover=%.2f|stars=%d|reason=%s"),
+            bSmoothUnlocked ? TEXT("UNLOCKED") : TEXT("LOCKED"),
+            MissionResults.bMissionSucceeded ? 1 : 0,
+            MissionResults.bSafeLanding ? 1 : 0,
+            MissionResults.DamageTaken,
+            MissionResults.StableHoverSeconds,
+            MissionResults.StarRating,
+            *Explanation);
     }
     BeginAwardPresentation();
 }
@@ -8534,6 +8589,21 @@ void ARotorlineOperationsPlayerController::RunAwardsSelfTest()
     Smooth.StableHoverSeconds = 9.9f;
     Results = AwardSystem.Evaluate(Smooth, Career, Empty, false);
     Check(!HasAward(Results, TEXT("smooth_operator")), TEXT("shorter hover cannot unlock Smooth Operator"));
+
+    FRotorlineAwardsFlightState PracticalHover;
+    PracticalHover.bEnginePowerAvailable = true;
+    PracticalHover.AltitudeAglMeters = 2.0f;
+    PracticalHover.Velocity = FVector(240.0f, 0.0f, 95.0f);
+    PracticalHover.PitchDegrees = 9.5f;
+    Check(RotorlineOperations::IsStableHoverState(PracticalHover),
+        TEXT("low controlled pad hover qualifies for Smooth Operator telemetry"));
+    PracticalHover.AltitudeAglMeters = 1.9f;
+    Check(!RotorlineOperations::IsStableHoverState(PracticalHover),
+        TEXT("ground-level rotor operation does not count as a hover"));
+    PracticalHover.AltitudeAglMeters = 2.0f;
+    PracticalHover.Velocity = FVector(260.0f, 0.0f, 0.0f);
+    Check(!RotorlineOperations::IsStableHoverState(PracticalHover),
+        TEXT("excess horizontal drift does not count as a stable hover"));
 
     FRotorlineMissionResults Needle = Base;
     Needle.MissionId = TEXT("final-discovery");

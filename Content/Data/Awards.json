@@ -168,8 +168,8 @@
       "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.id", "op": "equalsText", "text": "final-discovery"}, {"stat": "mission.bCrashed", "op": "eq", "value": 0}]}]
     },
     {
-      "id": "smooth_operator", "name": "Smooth Operator", "description": "Complete any mission with a safe landing, zero damage, ten stable-hover seconds, and at least four stars.",
-      "hint": "Succeed, land safely, take 0 damage, hold a stable hover for 10 seconds, and earn 4+ stars.", "patchAsset": "/Game/Awards/Patches/smooth_operator.smooth_operator",
+      "id": "smooth_operator", "name": "Smooth Operator", "description": "Complete any mission with a safe landing, zero damage, a verified ten-second hover, and at least four stars.",
+      "hint": "Hold a 10-second hover at 2+ m AGL: horizontal drift <= 9 km/h (2.5 m/s), vertical speed <= 1.0 m/s, and pitch/roll <= 10 degrees. Then succeed with 0 damage, a safe landing, and 4+ stars.", "patchAsset": "/Game/Awards/Patches/smooth_operator.smooth_operator",
       "category": "Flight", "rarity": "Elite", "hidden": false, "repeatable": false, "associatedStat": "mission.StarRating",
       "groups": [{"mode": "all", "conditions": [{"stat": "mission.bMissionSucceeded", "op": "eq", "value": 1}, {"stat": "mission.bSafeLanding", "op": "eq", "value": 1}, {"stat": "mission.DamageTaken", "op": "eq", "value": 0, "text": "damage taken"}, {"stat": "mission.StableHoverSeconds", "op": "gte", "value": 10, "text": "stable-hover time"}, {"stat": "mission.StarRating", "op": "gte", "value": 4, "text": "mission rating"}]}]
     },

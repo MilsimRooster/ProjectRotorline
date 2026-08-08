@@ -991,6 +991,8 @@ void ARotorlineOperationsHUD::DrawMissionCompleteOverlay()
     LeftStats.Add(FString::Printf(TEXT("ENEMY HELICOPTERS DESTROYED   %d"), Results.EnemyHelicoptersDestroyed));
     LeftStats.Add(FString::Printf(TEXT("GROUND ENEMIES DESTROYED      %d"), Results.GroundEnemiesDestroyed));
     LeftStats.Add(FString::Printf(TEXT("DAMAGE TAKEN                 %.0f"), Results.DamageTaken));
+    LeftStats.Add(FString::Printf(TEXT("LANDING / STABLE HOVER        %s / %.1f SEC"),
+        Results.bSafeLanding ? TEXT("SAFE") : TEXT("NOT SAFE"), Results.StableHoverSeconds));
     if (Results.OptionalObjectivesTotal > 0)
     {
         LeftStats.Add(FString::Printf(TEXT("OPTIONAL OBJECTIVES            %d / %d"), Results.OptionalObjectivesCompleted, Results.OptionalObjectivesTotal));
@@ -1022,7 +1024,7 @@ void ARotorlineOperationsHUD::DrawMissionCompleteOverlay()
     RightStats.Add(FString::Printf(TEXT("MISSION RATING                 %d / 5"), Results.StarRating));
 
     const float StatStartY = StatPanelY + 55.0f * Scale;
-    for (int32 Index = 0; Index < LeftStats.Num() && Index < 4; ++Index)
+    for (int32 Index = 0; Index < LeftStats.Num() && Index < 5; ++Index)
     {
         DrawText(LeftStats[Index], White, PanelX + 66.0f * Scale,
             StatStartY + Index * 35.0f * Scale, GEngine->GetSmallFont(), 0.69f * ReadableTextScale);
