@@ -12,14 +12,14 @@
 
 Dedicated to CW5 J.V. Spahn, Callsign Fro.
 
-## Publication holds
+## Publication rights status
 
-- **OH-58 Kiowa source:** the embedded model metadata says `COPYRIGHT TO Sujal
-  Patil`; it does not provide a redistribution license. Public release rights
-  must be cleared or this model must be replaced before distributing the alpha.
-- Source and license provenance must still be confirmed for the supplied
-  environment ambience, Bell Huey engine recordings, MD-500 engine recordings,
-  and startup mission briefing before public distribution.
+- Keith League created the environment ambience, Bell Huey engine recordings,
+  MD-500 engine recordings, and startup mission briefing for Project Rotorline
+  and owns the rights to that original audio. Public distribution in Project
+  Rotorline is authorized by the creator and project owner.
+- OH-58/Kiowa use and public-distribution permission is confirmed below.
+- No publication hold remains for these assets as of August 8, 2026.
 
 ## Asset credits
 
@@ -61,12 +61,13 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 ## Environment ambience recordings
 
-- Files: coastal wind, distant gulls, harbor machinery, meadow insects, and
-  ocean surf supplied by Project Rotorline.
+- Creator and rights holder: Keith League.
+- Files: original Project Rotorline coastal wind, distant gulls, harbor
+  machinery, meadow insects, and ocean surf recordings.
 - Changes: DC correction, boundary crossfade, normalization, and conversion to
   48 kHz PCM16 runtime loops. Original 24-bit WAV files are preserved.
-- Release note: source and license metadata were not embedded in the supplied
-  WAV files and must be confirmed before public distribution.
+- Rights status: cleared for Project Rotorline public distribution by the
+  creator and project owner.
 
 ## Bell Huey helicopter
 
@@ -79,13 +80,14 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 ## Bell Huey engine recordings
 
-- Files: Bell engine startup and Bell takeoff/flying recordings supplied by
-  Project Rotorline.
+- Creator and rights holder: Keith League.
+- Files: original Project Rotorline Bell engine startup and Bell
+  takeoff/flying recordings.
 - Changes: DC correction, level matching, PCM16 runtime conversion, startup
   edge fades, and a four-second boundary crossfade for the continuous flight
   loop. Original 48 kHz stereo 24-bit WAV files are preserved.
-- Release note: source and license metadata were not embedded in the supplied
-  WAV files and must be confirmed before public distribution.
+- Rights status: cleared for Project Rotorline public distribution by the
+  creator and project owner.
 
 ## MD-500 Defender helicopter
 
@@ -97,14 +99,15 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 ## MD-500 engine recordings
 
-- Files: MD-500 startup, takeoff, and inflight recordings supplied by
-  Project Rotorline.
+- Creator and rights holder: Keith League.
+- Files: original Project Rotorline MD-500 startup, takeoff, and inflight
+  recordings.
 - Changes: DC correction, level matching, PCM16 runtime conversion, short
   startup/takeoff edge fades, and a four-second boundary crossfade for the
   continuous inflight loop. Original 48 kHz stereo 24-bit WAV files are
   preserved.
-- Release note: source and license metadata were not embedded in the supplied
-  WAV files and must be confirmed before public distribution.
+- Rights status: cleared for Project Rotorline public distribution by the
+  creator and project owner.
 
 ## AH-64 Apache
 
@@ -147,11 +150,13 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 - Creator: [Sujal Patil](https://sketchfab.com/sujalpatil150)
 - Source: [Helicopter](https://sketchfab.com/3d-models/helicopter-81c02919782f4b6d986eb76c11d0e5fd)
-- Rights notice: embedded metadata states `COPYRIGHT TO Sujal Patil`; no
-  redistribution license is supplied.
+- Rights notice: embedded metadata states `COPYRIGHT TO Sujal Patil`. Project
+  owner Keith League confirmed on August 8, 2026 that permission to use and
+  publicly distribute this model in Project Rotorline has been granted;
+  permission evidence is retained by the project owner.
 - Changes: body and rotor parts prepared for the active OH-58 Kiowa airframe.
-- **Release status:** blocked pending explicit public-release rights or model
-  replacement.
+- **Release status:** cleared for Project Rotorline distribution by project-owner
+  confirmation.
 
 ## Bell 222
 
@@ -195,11 +200,12 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 ## Startup mission briefing
 
-- File: startup mission-command briefing supplied by Project Rotorline.
+- Creator and rights holder: Keith League.
+- File: original Project Rotorline startup mission-command briefing.
 - Changes: DC correction, voice level matching, PCM16 runtime conversion, and
   short edge protection. The original 59.208-second timing is unchanged.
-- Release note: source and license metadata were not embedded in the supplied
-  WAV file and must be confirmed before public distribution.
+- Rights status: cleared for Project Rotorline public distribution by the
+  creator and project owner.
 
 ## Mission-world models used at runtime
 

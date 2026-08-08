@@ -15,11 +15,10 @@ to an older Rotorline repository.
 Licensed binary assets are intentionally excluded, so a fresh clone is not a
 build-complete Unreal project and is not presented as a playable distribution.
 
-The playable Windows Alpha download is temporarily withheld. There is no
-currently supported public installer or game-package link. Binary distribution
-will resume only after the OH-58 model rights and unresolved supplied-audio
-provenance are cleared and the final installer, manifest, package, prerequisites,
-shortcut, and launch flow pass release verification together.
+The playable Windows Alpha download is temporarily unavailable while the final
+single-release package and installer complete verification. OH-58/Kiowa
+distribution permission is confirmed, and Keith League created and owns the
+original Project Rotorline audio; neither is a publication blocker.
 
 Older installer and payload links are intentionally not offered because they do
 not represent the current verified Alpha.
@@ -48,9 +47,9 @@ not represent the current verified Alpha.
 ## Current Status
 
 Project Rotorline remains in Alpha. The current development campaign reaches
-Mission 25, but the public playable package is withheld as described above.
-Testing, optimization, content polish, accessibility, and hardware coverage are
-ongoing.
+Mission 25. The new public playable package is completing the verification
+described above. Testing, optimization, content polish, accessibility, and
+hardware coverage are ongoing.
 
 Performance targets and minimum requirements are provisional. Testing has included an RTX 2060-class system at approximately 30 FPS under reduced settings, but results vary by mission, resolution, and hardware.
 

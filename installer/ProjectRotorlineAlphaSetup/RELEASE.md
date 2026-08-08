@@ -4,9 +4,10 @@ The setup executable, manifest, core archive, and every UCAS part belong to one
 GitHub release tag. `ReleaseConfiguration.ReleaseTag` is the installer source of
 truth; the downloaded manifest must contain the same tag or installation stops.
 
-Public binary distribution is currently withheld. Do not publish or link a
-playable build until the OH-58 source rights and the unresolved supplied-audio
-provenance are cleared and the final package passes the complete release test.
+OH-58/Kiowa distribution permission is confirmed. Keith League created and owns
+the original Project Rotorline audio identified during the audit. No rights hold
+remains for those assets. Do not publish or link a playable build until the final
+package passes the complete release test.
 
 ## Required release assets
 
@@ -62,7 +63,7 @@ operator-entered values.
 
 Before uploading anything:
 
-1. Clear every publication hold documented in the project credits.
+1. Confirm the project credits still record the project owner's rights clearance.
 2. Build the final Shipping package and include the exact x64 VC and GameInput
    prerequisite installers at the required paths.
 3. Generate the manifest and build the setup for the same single release tag.
