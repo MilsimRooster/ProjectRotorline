@@ -222,12 +222,15 @@ namespace RotorlineHelicopter
     const TCHAR* SurvivorExtractionMissionBriefPath = TEXT("/Game/Audio/Missions/SurvivorExtraction/VO_M24_Startup.VO_M24_Startup");
     const TCHAR* FinalEvacuationMissionBriefPath = TEXT("/Game/Audio/Missions/FinalEvacuation/VO_M25_Startup.VO_M25_Startup");
 
-    const TCHAR* MD500BodyPath = TEXT("/Game/Vehicles/Playable/MH6/SM_SM_MH6_LittleBird_Body.SM_SM_MH6_LittleBird_Body");
-    const TCHAR* MD500MainRotorPath = TEXT("/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_08_-_Default_0.Rot_08_-_Default_0");
-    const TCHAR* MD500MainRotorSecondaryPath = TEXT("/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_09_-_Default_0.Rot_09_-_Default_0");
-    const TCHAR* MD500MainRotorHubPath = TEXT("/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Cylinder001_09_-_Default_0.Cylinder001_09_-_Default_0");
-    const TCHAR* MD500TailRotorPath = TEXT("/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot2_08_-_Default_0.Rot2_08_-_Default_0");
-    const TCHAR* MD500RotorAnimationPath = TEXT("/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/mh-6_little_bird_helicopter_animated_Anim.mh-6_little_bird_helicopter_animated_Anim");
+    const TCHAR* MD500BodyPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Fuselage.SM_MH6_Superior_Fuselage");
+    const TCHAR* MD500AccessoryPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Accessories.SM_MH6_Superior_Accessories");
+    const TCHAR* MD500WeaponPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Weapons.SM_MH6_Superior_Weapons");
+    const TCHAR* MD500CockpitPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Interior.SM_MH6_Superior_Interior");
+    const TCHAR* MD500GlassPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Glass.SM_MH6_Superior_Glass");
+    const TCHAR* MD500MainRotorMountPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_MainRotorMount.SM_MH6_Superior_MainRotorMount");
+    const TCHAR* MD500MainRotorRotatingPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_MainRotorRotating.SM_MH6_Superior_MainRotorRotating");
+    const TCHAR* MD500TailRotorMountPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_TailRotorMount.SM_MH6_Superior_TailRotorMount");
+    const TCHAR* MD500TailRotorRotatingPath = TEXT("/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_TailRotorRotating.SM_MH6_Superior_TailRotorRotating");
     const TCHAR* MD500EngineStartupPath = TEXT("/Game/Audio/Vehicles/MD500/SFX_MD500_EngineStart.SFX_MD500_EngineStart");
     const TCHAR* MD500EngineTakeoffPath = TEXT("/Game/Audio/Vehicles/MD500/SFX_MD500_Takeoff.SFX_MD500_Takeoff");
     const TCHAR* MD500EngineFlightLoopPath = TEXT("/Game/Audio/Vehicles/MD500/SC_MD500_EngineInFlight_Loop.SC_MD500_EngineInFlight_Loop");
@@ -614,40 +617,63 @@ ARotorlineHelicopterPawn::ARotorlineHelicopterPawn()
     TailRotorMesh->SetRelativeLocation(FVector(-16.9f, 555.8f, -193.7f));
     TailRotorMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 
+    MD500SuperiorRoot = CreateDefaultSubobject<USceneComponent>(TEXT("MD500SuperiorRoot"));
+    MD500SuperiorRoot->SetupAttachment(MeshAlignment);
+
     MD500BodyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500BodyMesh"));
-    MD500BodyMesh->SetupAttachment(MeshAlignment);
+    MD500BodyMesh->SetupAttachment(MD500SuperiorRoot);
     MD500BodyMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     MD500BodyMesh->SetVisibility(false, true);
 
+    MD500AccessoryMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500AccessoryMesh"));
+    MD500AccessoryMesh->SetupAttachment(MD500SuperiorRoot);
+    MD500AccessoryMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    MD500AccessoryMesh->SetVisibility(false, true);
+
+    MD500WeaponMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500WeaponMesh"));
+    MD500WeaponMesh->SetupAttachment(MD500SuperiorRoot);
+    MD500WeaponMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    MD500WeaponMesh->SetVisibility(false, true);
+
     MD500CockpitMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500CockpitMesh"));
-    MD500CockpitMesh->SetupAttachment(MeshAlignment);
+    MD500CockpitMesh->SetupAttachment(MD500SuperiorRoot);
     MD500CockpitMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     MD500CockpitMesh->SetVisibility(false, true);
 
     MD500GlassMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500GlassMesh"));
-    MD500GlassMesh->SetupAttachment(MeshAlignment);
+    MD500GlassMesh->SetupAttachment(MD500SuperiorRoot);
     MD500GlassMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     MD500GlassMesh->SetVisibility(false, true);
 
-    MD500MainRotorMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MD500MainRotorMesh"));
-    MD500MainRotorMesh->SetupAttachment(MeshAlignment);
-    MD500MainRotorMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-    MD500MainRotorMesh->SetVisibility(false, true);
+    MD500MainRotorPivot = CreateDefaultSubobject<USceneComponent>(TEXT("MD500MainRotorPivot"));
+    MD500MainRotorPivot->SetupAttachment(MD500SuperiorRoot);
+    MD500MainRotorPivot->SetRelativeLocation(FVector(32.9767f, 0.0850f, -40.2828f));
 
-    MD500MainRotorMeshSecondary = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MD500MainRotorMeshSecondary"));
-    MD500MainRotorMeshSecondary->SetupAttachment(MeshAlignment);
-    MD500MainRotorMeshSecondary->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-    MD500MainRotorMeshSecondary->SetVisibility(false, true);
+    MD500MainRotorMountMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500MainRotorMountMesh"));
+    MD500MainRotorMountMesh->SetupAttachment(MD500SuperiorRoot);
+    MD500MainRotorMountMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    MD500MainRotorMountMesh->SetVisibility(false, true);
 
-    MD500MainRotorHubMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MD500MainRotorHubMesh"));
-    MD500MainRotorHubMesh->SetupAttachment(MeshAlignment);
-    MD500MainRotorHubMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-    MD500MainRotorHubMesh->SetVisibility(false, true);
+    MD500MainRotorRotatingMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500MainRotorRotatingMesh"));
+    MD500MainRotorRotatingMesh->SetupAttachment(MD500MainRotorPivot);
+    MD500MainRotorRotatingMesh->SetRelativeLocation(FVector(-32.9767f, -0.0850f, 40.2828f));
+    MD500MainRotorRotatingMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    MD500MainRotorRotatingMesh->SetVisibility(false, true);
 
-    MD500TailRotorMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("MD500TailRotorMesh"));
-    MD500TailRotorMesh->SetupAttachment(MeshAlignment);
-    MD500TailRotorMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-    MD500TailRotorMesh->SetVisibility(false, true);
+    MD500TailRotorPivot = CreateDefaultSubobject<USceneComponent>(TEXT("MD500TailRotorPivot"));
+    MD500TailRotorPivot->SetupAttachment(MD500SuperiorRoot);
+    MD500TailRotorPivot->SetRelativeLocation(FVector(-79.0857f, -5.4154f, -62.2113f));
+
+    MD500TailRotorMountMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500TailRotorMountMesh"));
+    MD500TailRotorMountMesh->SetupAttachment(MD500SuperiorRoot);
+    MD500TailRotorMountMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    MD500TailRotorMountMesh->SetVisibility(false, true);
+
+    MD500TailRotorRotatingMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500TailRotorRotatingMesh"));
+    MD500TailRotorRotatingMesh->SetupAttachment(MD500TailRotorPivot);
+    MD500TailRotorRotatingMesh->SetRelativeLocation(FVector(79.0857f, 5.4154f, 62.2113f));
+    MD500TailRotorRotatingMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    MD500TailRotorRotatingMesh->SetVisibility(false, true);
 
     CatalogBodyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CatalogBodyMesh"));
     CatalogBodyMesh->SetupAttachment(MeshAlignment);
@@ -822,11 +848,14 @@ ARotorlineHelicopterPawn::ARotorlineHelicopterPawn()
     static ConstructorHelpers::FObjectFinder<USoundBase> MissionBriefFinder(RotorlineHelicopter::MissionBriefPath);
     static ConstructorHelpers::FObjectFinder<USoundBase> Mission1BriefFinder(RotorlineHelicopter::Mission1BriefPath);
     static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500BodyFinder(RotorlineHelicopter::MD500BodyPath);
-    static ConstructorHelpers::FObjectFinder<USkeletalMesh> MD500MainRotorFinder(RotorlineHelicopter::MD500MainRotorPath);
-    static ConstructorHelpers::FObjectFinder<USkeletalMesh> MD500MainRotorSecondaryFinder(RotorlineHelicopter::MD500MainRotorSecondaryPath);
-    static ConstructorHelpers::FObjectFinder<USkeletalMesh> MD500MainRotorHubFinder(RotorlineHelicopter::MD500MainRotorHubPath);
-    static ConstructorHelpers::FObjectFinder<USkeletalMesh> MD500TailRotorFinder(RotorlineHelicopter::MD500TailRotorPath);
-    static ConstructorHelpers::FObjectFinder<UAnimSequence> MD500AnimationFinder(RotorlineHelicopter::MD500RotorAnimationPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500AccessoryFinder(RotorlineHelicopter::MD500AccessoryPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500WeaponFinder(RotorlineHelicopter::MD500WeaponPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500CockpitFinder(RotorlineHelicopter::MD500CockpitPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500GlassFinder(RotorlineHelicopter::MD500GlassPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500MainRotorMountFinder(RotorlineHelicopter::MD500MainRotorMountPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500MainRotorRotatingFinder(RotorlineHelicopter::MD500MainRotorRotatingPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500TailRotorMountFinder(RotorlineHelicopter::MD500TailRotorMountPath);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> MD500TailRotorRotatingFinder(RotorlineHelicopter::MD500TailRotorRotatingPath);
     static ConstructorHelpers::FObjectFinder<USoundBase> MD500EngineStartupFinder(RotorlineHelicopter::MD500EngineStartupPath);
     static ConstructorHelpers::FObjectFinder<USoundBase> MD500EngineTakeoffFinder(RotorlineHelicopter::MD500EngineTakeoffPath);
     static ConstructorHelpers::FObjectFinder<USoundBase> MD500EngineFlightLoopFinder(RotorlineHelicopter::MD500EngineFlightLoopPath);
@@ -863,11 +892,14 @@ ARotorlineHelicopterPawn::ARotorlineHelicopterPawn()
         RotorAnimation = AnimationFinder.Object;
     }
     if (MD500BodyFinder.Succeeded()) MD500BodyMesh->SetStaticMesh(MD500BodyFinder.Object);
-    if (MD500MainRotorFinder.Succeeded()) MD500MainRotorMesh->SetSkeletalMeshAsset(MD500MainRotorFinder.Object);
-    if (MD500MainRotorSecondaryFinder.Succeeded()) MD500MainRotorMeshSecondary->SetSkeletalMeshAsset(MD500MainRotorSecondaryFinder.Object);
-    if (MD500MainRotorHubFinder.Succeeded()) MD500MainRotorHubMesh->SetSkeletalMeshAsset(MD500MainRotorHubFinder.Object);
-    if (MD500TailRotorFinder.Succeeded()) MD500TailRotorMesh->SetSkeletalMeshAsset(MD500TailRotorFinder.Object);
-    if (MD500AnimationFinder.Succeeded()) MD500RotorAnimation = MD500AnimationFinder.Object;
+    if (MD500AccessoryFinder.Succeeded()) MD500AccessoryMesh->SetStaticMesh(MD500AccessoryFinder.Object);
+    if (MD500WeaponFinder.Succeeded()) MD500WeaponMesh->SetStaticMesh(MD500WeaponFinder.Object);
+    if (MD500CockpitFinder.Succeeded()) MD500CockpitMesh->SetStaticMesh(MD500CockpitFinder.Object);
+    if (MD500GlassFinder.Succeeded()) MD500GlassMesh->SetStaticMesh(MD500GlassFinder.Object);
+    if (MD500MainRotorMountFinder.Succeeded()) MD500MainRotorMountMesh->SetStaticMesh(MD500MainRotorMountFinder.Object);
+    if (MD500MainRotorRotatingFinder.Succeeded()) MD500MainRotorRotatingMesh->SetStaticMesh(MD500MainRotorRotatingFinder.Object);
+    if (MD500TailRotorMountFinder.Succeeded()) MD500TailRotorMountMesh->SetStaticMesh(MD500TailRotorMountFinder.Object);
+    if (MD500TailRotorRotatingFinder.Succeeded()) MD500TailRotorRotatingMesh->SetStaticMesh(MD500TailRotorRotatingFinder.Object);
     if (EngineStartupFinder.Succeeded()) HueyEngineStartupSound = EngineStartupFinder.Object;
     if (EngineFlightLoopFinder.Succeeded()) HueyEngineFlightLoopSound = EngineFlightLoopFinder.Object;
     if (MissionBriefFinder.Succeeded()) HueyMissionBriefSound = MissionBriefFinder.Object;
@@ -1046,12 +1078,14 @@ void ARotorlineHelicopterPawn::ApplyCraftConfiguration()
     MainRotorMesh->SetVisibility(bUseHuey, true);
     TailRotorMesh->SetVisibility(bUseHuey, true);
     MD500BodyMesh->SetVisibility(bUseMD500, true);
+    MD500AccessoryMesh->SetVisibility(bUseMD500, true);
+    MD500WeaponMesh->SetVisibility(bUseMD500, true);
     MD500CockpitMesh->SetVisibility(bUseMD500, true);
     MD500GlassMesh->SetVisibility(bUseMD500, true);
-    MD500MainRotorMesh->SetVisibility(bUseMD500, true);
-    MD500MainRotorMeshSecondary->SetVisibility(bUseMD500, true);
-    MD500MainRotorHubMesh->SetVisibility(bUseMD500, true);
-    MD500TailRotorMesh->SetVisibility(bUseMD500, true);
+    MD500MainRotorMountMesh->SetVisibility(bUseMD500, true);
+    MD500MainRotorRotatingMesh->SetVisibility(bUseMD500, true);
+    MD500TailRotorMountMesh->SetVisibility(bUseMD500, true);
+    MD500TailRotorRotatingMesh->SetVisibility(bUseMD500, true);
     CatalogBodyMesh->SetVisibility(false, true);
     CatalogSkeletalBodyMesh->SetVisibility(false, true);
     for (UStaticMeshComponent* Rotor : CatalogStaticRotors) Rotor->SetVisibility(false, true);
@@ -1077,11 +1111,53 @@ void ARotorlineHelicopterPawn::ApplyCraftConfiguration()
     if (bUseMD500)
     {
         MeshAlignment->SetRelativeScale3D(FVector(0.0133f));
+        // The body, mounts, hubs and blades now share one model-native root.
+        // Pivots are authored at the supplied shaft centers; the previous
+        // borrowed tail rotor was 52 cm away from the actual tail gearbox.
+        MD500SuperiorRoot->SetRelativeLocation(FVector(-1189.0f, -10454.0f, 34720.0f));
+        MD500SuperiorRoot->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
+        MD500SuperiorRoot->SetRelativeScale3D(FVector(330.0f));
+        MD500MainRotorPivot->SetRelativeRotation(FRotator::ZeroRotator);
+        MD500TailRotorPivot->SetRelativeRotation(FRotator::ZeroRotator);
+        MD500MainRotorIntegratedDegrees = 0.0f;
+        MD500TailRotorIntegratedDegrees = 0.0f;
         EngineStartupSound = MD500EngineStartupSound;
         EngineTakeoffSound = MD500EngineTakeoffSound;
         EngineFlightLoopSound = MD500EngineFlightLoopSound;
         MissionBriefSound = nullptr;
-        RotorAnimation = MD500RotorAnimation;
+        RotorAnimation = nullptr;
+        const FVector MainRotorPivotLocation(32.9767f, 0.0850f, -40.2828f);
+        const FVector TailRotorPivotLocation(-79.0857f, -5.4154f, -62.2113f);
+        const bool bRotorAttachmentPass =
+            MD500MainRotorPivot->GetAttachParent() == MD500SuperiorRoot &&
+            MD500TailRotorPivot->GetAttachParent() == MD500SuperiorRoot &&
+            MD500MainRotorMountMesh->GetAttachParent() == MD500SuperiorRoot &&
+            MD500TailRotorMountMesh->GetAttachParent() == MD500SuperiorRoot &&
+            MD500MainRotorRotatingMesh->GetAttachParent() == MD500MainRotorPivot &&
+            MD500TailRotorRotatingMesh->GetAttachParent() == MD500TailRotorPivot &&
+            MD500MainRotorPivot->GetRelativeLocation().Equals(MainRotorPivotLocation, 0.01f) &&
+            MD500TailRotorPivot->GetRelativeLocation().Equals(TailRotorPivotLocation, 0.01f) &&
+            MD500MainRotorRotatingMesh->GetRelativeLocation().Equals(-MainRotorPivotLocation, 0.01f) &&
+            MD500TailRotorRotatingMesh->GetRelativeLocation().Equals(-TailRotorPivotLocation, 0.01f);
+        const bool bStationaryMountPass =
+            MD500MainRotorMountMesh->GetRelativeLocation().IsNearlyZero(0.01f) &&
+            MD500TailRotorMountMesh->GetRelativeLocation().IsNearlyZero(0.01f) &&
+            MD500MainRotorMountMesh->GetRelativeRotation().IsNearlyZero(0.01f) &&
+            MD500TailRotorMountMesh->GetRelativeRotation().IsNearlyZero(0.01f);
+        UE_LOG(
+            LogTemp,
+            Display,
+            TEXT("ROTORLINE_MH6_ROTORS|CONFIG|assets=%d/4|main_mount=%d|main_rotating=%d|tail_mount=%d|tail_rotating=%d|legacy_rotors=0|attachment_pass=%d|stationary_pass=%d|main_pivot=32.977,0.085,-40.283|tail_pivot=-79.086,-5.415,-62.211"),
+            (MD500MainRotorMountMesh->GetStaticMesh() ? 1 : 0) +
+                (MD500MainRotorRotatingMesh->GetStaticMesh() ? 1 : 0) +
+                (MD500TailRotorMountMesh->GetStaticMesh() ? 1 : 0) +
+                (MD500TailRotorRotatingMesh->GetStaticMesh() ? 1 : 0),
+            MD500MainRotorMountMesh->GetStaticMesh() ? 1 : 0,
+            MD500MainRotorRotatingMesh->GetStaticMesh() ? 1 : 0,
+            MD500TailRotorMountMesh->GetStaticMesh() ? 1 : 0,
+            MD500TailRotorRotatingMesh->GetStaticMesh() ? 1 : 0,
+            bRotorAttachmentPass ? 1 : 0,
+            bStationaryMountPass ? 1 : 0);
         CollisionBox->SetBoxExtent(FVector(350.0f, 90.0f, 105.0f));
         MaxForwardSpeed = 8500.0f;
         MaxReverseSpeed = 3500.0f;
@@ -3202,18 +3278,20 @@ TArray<USkeletalMeshComponent*> ARotorlineHelicopterPawn::GetActiveRotors() cons
     }
     if (SelectedCraft == ERotorlineCraftType::AttackMD500)
     {
-        return {
-            MD500MainRotorMesh.Get(),
-            MD500MainRotorMeshSecondary.Get(),
-            MD500MainRotorHubMesh.Get(),
-            MD500TailRotorMesh.Get()
-        };
+        // The superior MH-6 uses model-native static assemblies driven by
+        // dedicated pivots, not imported skeletal clips.
+        return {};
     }
     return { MainRotorMesh.Get(), TailRotorMesh.Get() };
 }
 
 void ARotorlineHelicopterPawn::ApplyActiveRotorAnimationRates()
 {
+    if (!bUseCatalogAircraft && SelectedCraft == ERotorlineCraftType::AttackMD500)
+    {
+        return;
+    }
+
     // The standard Huey uses the same frame-continuous component driver as the
     // Marine Huey. Leave its imported animation paused; it contains an end hold
     // that causes a visible hitch during the low-RPM startup ramp.
@@ -3251,6 +3329,31 @@ void ARotorlineHelicopterPawn::UpdateHueyRotorAnimation(float DeltaSeconds)
         FQuat(FVector::UpVector, FMath::DegreesToRadians(MainSpinDegrees)));
     HueyTailRotorPivot->AddLocalRotation(
         FQuat(FVector::ForwardVector, FMath::DegreesToRadians(TailSpinDegrees)));
+}
+
+void ARotorlineHelicopterPawn::UpdateMD500RotorAnimation(float DeltaSeconds)
+{
+    if (bUseCatalogAircraft ||
+        SelectedCraft != ERotorlineCraftType::AttackMD500 ||
+        CurrentRotorPlayRate <= 0.0f ||
+        !MD500MainRotorPivot ||
+        !MD500TailRotorPivot)
+    {
+        return;
+    }
+
+    const float RotorPower = FMath::Clamp(
+        CurrentRotorPlayRate / FMath::Max(0.01f, RotorFlightPlayRate),
+        0.0f,
+        1.0f);
+    const float MainSpinDegrees = DeltaSeconds * 2160.0f * RotorPower;
+    const float TailSpinDegrees = DeltaSeconds * 8640.0f * RotorPower;
+    MD500MainRotorPivot->AddLocalRotation(
+        FQuat(FVector::UpVector, FMath::DegreesToRadians(MainSpinDegrees)));
+    MD500TailRotorPivot->AddLocalRotation(
+        FQuat(FVector::RightVector, FMath::DegreesToRadians(TailSpinDegrees)));
+    MD500MainRotorIntegratedDegrees += MainSpinDegrees;
+    MD500TailRotorIntegratedDegrees += TailSpinDegrees;
 }
 
 void ARotorlineHelicopterPawn::UpdateCatalogRotorVisuals(float DeltaSeconds)
@@ -3910,6 +4013,7 @@ void ARotorlineHelicopterPawn::Tick(float DeltaSeconds)
     {
         UpdateTutorialHelicopterKillQualification();
         UpdateCamera(DeltaSeconds);
+        UpdateMD500RotorAnimation(DeltaSeconds);
         UpdateCatalogRotorVisuals(DeltaSeconds);
         UpdateEngineAudio(DeltaSeconds);
         UpdateRotorDownwash(DeltaSeconds);
@@ -3919,6 +4023,7 @@ void ARotorlineHelicopterPawn::Tick(float DeltaSeconds)
     {
         UpdateEnemyHelicopterEncounterGateQualification();
         UpdateCamera(DeltaSeconds);
+        UpdateMD500RotorAnimation(DeltaSeconds);
         UpdateCatalogRotorVisuals(DeltaSeconds);
         UpdateEngineAudio(DeltaSeconds);
         UpdateRotorDownwash(DeltaSeconds);
@@ -3956,6 +4061,7 @@ void ARotorlineHelicopterPawn::Tick(float DeltaSeconds)
     UpdateEngineStartup(DeltaSeconds);
     UpdateFinalMissionCargoSling(DeltaSeconds);
     UpdateHueyRotorAnimation(DeltaSeconds);
+    UpdateMD500RotorAnimation(DeltaSeconds);
     UpdateNightOpsLights();
     UpdateCatalogRotorVisuals(DeltaSeconds);
     if (!bHawkRidgeQualificationMode)
@@ -4413,9 +4519,23 @@ void ARotorlineHelicopterPawn::UpdateFleetQualification(float DeltaSeconds)
         }
         else
         {
-            for (USkeletalMeshComponent* Part : GetActiveRotors())
+            if (SelectedCraft == ERotorlineCraftType::AttackMD500)
             {
-                if (Part && Part->IsVisible()) ++VisibleRotorComponents;
+                if (MD500MainRotorRotatingMesh && MD500MainRotorRotatingMesh->IsVisible())
+                {
+                    ++VisibleRotorComponents;
+                }
+                if (MD500TailRotorRotatingMesh && MD500TailRotorRotatingMesh->IsVisible())
+                {
+                    ++VisibleRotorComponents;
+                }
+            }
+            else
+            {
+                for (USkeletalMeshComponent* Part : GetActiveRotors())
+                {
+                    if (Part && Part->IsVisible()) ++VisibleRotorComponents;
+                }
             }
         }
         const bool bMovementPassed = FleetQualificationMaxDisplacementMeters >= 5.0f &&
@@ -4447,7 +4567,7 @@ void ARotorlineHelicopterPawn::UpdateFleetQualification(float DeltaSeconds)
         UE_LOG(
             LogTemp,
             Display,
-            TEXT("ROTORLINE_FLEET_TEST|COMPLETE|id=%s|possessed=%d|body_asset=%s|catalog=%d|static_parts=%d|skeletal_parts=%d|visible_rotors=%d|rotor_rate=%.2f|rotor_pass=%d|max_displacement_m=%.1f|max_attitude_deg=%.1f|movement_pass=%d|armed=%d|weapon_pass=%d|countermeasure_pass=%d|countermeasures=%d/%d|ammo=%d"),
+            TEXT("ROTORLINE_FLEET_TEST|COMPLETE|id=%s|possessed=%d|body_asset=%s|catalog=%d|static_parts=%d|skeletal_parts=%d|visible_rotors=%d|rotor_rate=%.2f|rotor_pass=%d|mh6_main_turns=%.2f|mh6_tail_turns=%.2f|max_displacement_m=%.1f|max_attitude_deg=%.1f|movement_pass=%d|armed=%d|weapon_pass=%d|countermeasure_pass=%d|countermeasures=%d/%d|ammo=%d"),
             *SelectedAircraftId,
             bPossessed ? 1 : 0,
             *SelectedAircraftDefinition.BodyAsset,
@@ -4457,6 +4577,8 @@ void ARotorlineHelicopterPawn::UpdateFleetQualification(float DeltaSeconds)
             VisibleRotorComponents,
             CurrentRotorPlayRate,
             bRotorPassed ? 1 : 0,
+            MD500MainRotorIntegratedDegrees / 360.0f,
+            MD500TailRotorIntegratedDegrees / 360.0f,
             FleetQualificationMaxDisplacementMeters,
             FleetQualificationMaxAttitudeDegrees,
             bMovementPassed ? 1 : 0,
@@ -6116,6 +6238,7 @@ void ARotorlineHelicopterPawn::UpdatePlayerDestruction(float DeltaSeconds)
     PlayerDeathElapsed += DeltaSeconds;
     CurrentRotorPlayRate = FMath::Max(0.0f, CurrentRotorPlayRate - DeltaSeconds * 0.85f);
     ApplyActiveRotorAnimationRates();
+    UpdateMD500RotorAnimation(DeltaSeconds);
 
     if (bPlayerCrashImpact)
     {

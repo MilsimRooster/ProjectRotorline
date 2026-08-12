@@ -628,6 +628,20 @@ void ARotorlineOperationsPlayerController::BeginPlay()
         }
     }
 
+    if (FParse::Param(FCommandLine::Get(), TEXT("RotorlineFleetCapture")))
+    {
+        FTimerHandle CaptureTimer;
+        GetWorldTimerManager().SetTimer(CaptureTimer, []()
+        {
+            const FString ScreenshotPath = FPaths::Combine(
+                FPaths::ProjectSavedDir(), TEXT("Screenshots/FleetQualificationRuntime.png"));
+            IFileManager::Get().MakeDirectory(*FPaths::GetPath(ScreenshotPath), true);
+            FScreenshotRequest::RequestScreenshot(ScreenshotPath, false, false);
+            UE_LOG(LogTemp, Display,
+                TEXT("ROTORLINE_FLEET_TEST|CAPTURE_REQUESTED|path=%s"), *ScreenshotPath);
+        }, 8.0f, false);
+    }
+
     if (FParse::Param(FCommandLine::Get(), TEXT("RotorlineFlightControllerTest")))
     {
         GetWorldTimerManager().SetTimerForNextTick(
@@ -3414,15 +3428,23 @@ void ARotorlineOperationsPlayerController::RefreshHangarPreview()
     {
         BodyPaths.Add(SelectedAircraft->BodyAsset);
     }
+    TArray<FString> PreviewRotorPaths = SelectedAircraft->RotorAssets;
+    TArray<FRotorlineAircraftRotorGroup> PreviewRotorGroups = SelectedAircraft->RotorGroups;
+    TArray<FString> PreviewStationaryRotorPaths = SelectedAircraft->StationaryRotorAssets;
+    const bool bGroundVehicle =
+        SelectedAircraft->DeploymentClass.Equals(TEXT("ground"), ESearchCase::IgnoreCase);
+    const bool bUseProceduralRotorFallback =
+        !bGroundVehicle &&
+        !SelectedAircraft->Id.Equals(TEXT("md500_defender"), ESearchCase::IgnoreCase);
     // Use the catalog calibration for the Jeep. Ground vehicles are framed
     // separately by the preview actor and must not be inflated to aircraft size.
     const float HangarPresentationScale = SelectedAircraft->PresentationScale;
     HangarPreviewActor->ConfigureAircraft(
         BodyPaths,
-        SelectedAircraft->RotorAssets,
-        SelectedAircraft->RotorGroups,
-        SelectedAircraft->StationaryRotorAssets,
-        !SelectedAircraft->DeploymentClass.Equals(TEXT("ground"), ESearchCase::IgnoreCase),
+        PreviewRotorPaths,
+        PreviewRotorGroups,
+        PreviewStationaryRotorPaths,
+        bUseProceduralRotorFallback,
         FVector(HangarPresentationScale),
         FRotator(
             SelectedAircraft->PresentationPitch,
@@ -3457,6 +3479,7 @@ void ARotorlineOperationsPlayerController::DeploySelectedAircraft()
     }
     if (Missions.IsValidIndex(SelectedMissionIndex) &&
         Missions[SelectedMissionIndex].Id.Equals(TEXT("tutorial"), ESearchCase::IgnoreCase) &&
+        !bFleetQualificationMode &&
         !SelectedAircraft->Id.Equals(TEXT("uh1_huey"), ESearchCase::IgnoreCase))
     {
         CatalogError = TEXT("MISSION 01 REQUIRES UH-1 HUEY");

@@ -255,6 +255,7 @@ private:
     void UpdateCatalogRotorVisuals(float DeltaSeconds);
     void ApplyActiveRotorAnimationRates();
     void UpdateHueyRotorAnimation(float DeltaSeconds);
+    void UpdateMD500RotorAnimation(float DeltaSeconds);
     void ConfigureAircraftExhaust();
     void ResetAircraftExhaust();
     void UpdateAircraftExhaust(float DeltaSeconds);
@@ -403,7 +404,16 @@ private:
     TObjectPtr<USceneComponent> HueyTailRotorPivot;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
+    TObjectPtr<USceneComponent> MD500SuperiorRoot;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
     TObjectPtr<UStaticMeshComponent> MD500BodyMesh;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
+    TObjectPtr<UStaticMeshComponent> MD500AccessoryMesh;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
+    TObjectPtr<UStaticMeshComponent> MD500WeaponMesh;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
     TObjectPtr<UStaticMeshComponent> MD500CockpitMesh;
@@ -412,16 +422,22 @@ private:
     TObjectPtr<UStaticMeshComponent> MD500GlassMesh;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
-    TObjectPtr<USkeletalMeshComponent> MD500MainRotorMesh;
+    TObjectPtr<USceneComponent> MD500MainRotorPivot;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
-    TObjectPtr<USkeletalMeshComponent> MD500MainRotorMeshSecondary;
+    TObjectPtr<UStaticMeshComponent> MD500MainRotorMountMesh;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
-    TObjectPtr<USkeletalMeshComponent> MD500MainRotorHubMesh;
+    TObjectPtr<UStaticMeshComponent> MD500MainRotorRotatingMesh;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
-    TObjectPtr<USkeletalMeshComponent> MD500TailRotorMesh;
+    TObjectPtr<USceneComponent> MD500TailRotorPivot;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
+    TObjectPtr<UStaticMeshComponent> MD500TailRotorMountMesh;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
+    TObjectPtr<UStaticMeshComponent> MD500TailRotorRotatingMesh;
 
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
     TObjectPtr<UStaticMeshComponent> CatalogBodyMesh;
@@ -699,9 +715,6 @@ private:
 
     UPROPERTY()
     TObjectPtr<UAnimSequence> HueyRotorAnimation;
-
-    UPROPERTY()
-    TObjectPtr<UAnimSequence> MD500RotorAnimation;
 
     UPROPERTY()
     TObjectPtr<ARotorlineMissionObjectiveActor> ActiveObjectiveActor;
@@ -1071,6 +1084,8 @@ private:
     float EngineSpoolDuration = 0.1f;
     double EngineReadyTime = -1.0;
     float CurrentRotorPlayRate = 0.0f;
+    float MD500MainRotorIntegratedDegrees = 0.0f;
+    float MD500TailRotorIntegratedDegrees = 0.0f;
     int32 LastSpoolMilestone = -1;
     bool bRotorSpoolStageActive = false;
     bool bExhaustWasRunning = false;

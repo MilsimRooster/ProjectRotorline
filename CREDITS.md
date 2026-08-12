@@ -89,13 +89,21 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 - Rights status: cleared for Project Rotorline public distribution by the
   creator and project owner.
 
-## MD-500 Defender helicopter
+## MH-6 Little Bird helicopter
 
-- Creator: [OmegaRedZA](https://sketchfab.com/OmegaRedZA)
-- Source: [MH-6 Little Bird Helicopter Animated](https://sketchfab.com/3d-models/mh-6-little-bird-helicopter-animated-ff51e655d05d4a05b2c0d9b274c00ed7)
-- License: [Sketchfab Standard License](https://sketchfab.com/licenses)
-- Changes: imported and used by Rotorline's active `md500_defender` roster
-  entry; supplied rotor animation is used at runtime.
+- Flight model source: Fab asset supplied by the Project Rotorline owner.
+- License: [Fab Standard License](https://www.fab.com/eula).
+- Attribution: publisher credit is not required by the Fab Standard License.
+- Changes: separated and imported the fuselage, cockpit/interior, weapons,
+  accessories, glass, and hangar rotor geometry; aligned them to Rotorline's
+  established `md500_defender` flight implementation. Original authoring files
+  remain local and are not redistributed as standalone assets.
+- Previous-alpha rotor source: [OmegaRedZA](https://sketchfab.com/OmegaRedZA),
+  [MH-6 Little Bird Helicopter Animated](https://sketchfab.com/3d-models/mh-6-little-bird-helicopter-animated-ff51e655d05d4a05b2c0d9b274c00ed7),
+  under the [Sketchfab Standard License](https://sketchfab.com/licenses).
+- Rotor changes: the old animated rotor assets are no longer used by the active
+  MH-6. All visible mounts, hubs, and blades now come from the Fab model and are
+  driven around its model-native shaft centers.
 
 ## MD-500 engine recordings
 

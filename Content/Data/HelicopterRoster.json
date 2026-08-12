@@ -122,8 +122,8 @@
                      },
                      {
                          "id":  "md500_defender",
-                         "displayName":  "MD-500 DEFENDER",
-                         "manufacturer":  "Hughes / McDonnell Douglas",
+                         "displayName":  "MH-6 LITTLE BIRD",
+                         "manufacturer":  "Boeing / MD Helicopters",
                          "role":  "Light attack / scout",
                          "summary":  "Fast, highly responsive attack helicopter built for low-level strikes and armed reconnaissance.",
                          "fuelEnduranceMinutes":  9.5,
@@ -147,45 +147,95 @@
                                                     "escort":  4
                                                 },
                          "source":  {
-                                        "preferredGlb":  "assets/actors/vehicles/mh-6_little_bird_helicopter_animated.glb",
+                                        "preferredGlb":  "assets/actors/vehicles/mh6_superior_20260812/attack_military_helicopter_mh6_little_bird.glb",
                                         "variants":  [
-                                                         "assets/actors/vehicles/mh-6_little_bird_helicopter_animated.glb"
+                                                         "assets/actors/vehicles/mh6_superior_20260812/attack_military_helicopter_mh6_little_bird.glb"
                                                      ],
-                                        "license":  "Sketchfab Standard",
-                                        "credit":  "OmegaRedZA",
-                                        "sourceUrl":  "https://sketchfab.com/3d-models/mh-6-little-bird-helicopter-animated-ff51e655d05d4a05b2c0d9b274c00ed7"
+                                        "license":  "Fab Standard License",
+                                        "credit":  "Fab Standard-licensed MH-6 asset; publisher credit not required",
+                                        "sourceUrl":  "https://www.fab.com/eula",
+                                        "externalAuthoringSource":  true
                                     },
                          "model":  {
-                                       "axis":  "Imported MH-6 authored axes",
-                                       "expectedAnimations":  1,
+                                       "axis":  "Superior MH-6 +X forward with model-native main and tail rotor pivots",
+                                       "expectedAnimations":  0,
                                        "rotorNodeHints":  [
-                                                               "Rot_08 - Default_0",
-                                                               "Rot_09 - Default_0",
-                                                               "Cylinder001_09 - Default_0",
-                                                               "Rot2_08 - Default_0"
+                                                               "Vrtule.001"
                                                           ],
-                                       "presentationScale":  0.0133,
-                                       "presentationYaw":  0
+                                       "presentationScale":  4.389,
+                                       "presentationYaw":  90
                                    },
                          "unreal":  {
-                                        "assetRoot":  "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated",
-                                        "bodyAsset":  "/Game/Vehicles/Playable/MH6/SM_SM_MH6_LittleBird_Body.SM_SM_MH6_LittleBird_Body",
+                                        "assetRoot":  "/Game/Vehicles/Playable/MH6Superior",
+                                        "bodyAsset":  "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Fuselage.SM_MH6_Superior_Fuselage",
+                                        "bodyAssets":  [
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Fuselage.SM_MH6_Superior_Fuselage",
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Accessories.SM_MH6_Superior_Accessories",
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Weapons.SM_MH6_Superior_Weapons",
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Interior.SM_MH6_Superior_Interior",
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_Glass.SM_MH6_Superior_Glass",
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_MainRotorMount.SM_MH6_Superior_MainRotorMount",
+                                                           "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_TailRotorMount.SM_MH6_Superior_TailRotorMount"
+                                                       ],
+                                        "replacementPartTransform":  {
+                                                                          "location":  [
+                                                                                           -1189.0,
+                                                                                           -10454.0,
+                                                                                           34720.0
+                                                                                       ],
+                                                                          "rotation":  [
+                                                                                           0.0,
+                                                                                           90.0,
+                                                                                           0.0
+                                                                                       ],
+                                                                          "scale":  330.0
+                                                                      },
                                         "rotorAssets":  [
-                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_08_-_Default_0.Rot_08_-_Default_0",
-                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_09_-_Default_0.Rot_09_-_Default_0",
-                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Cylinder001_09_-_Default_0.Cylinder001_09_-_Default_0",
-                                                            "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot2_08_-_Default_0.Rot2_08_-_Default_0"
+                                                            "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_MainRotorRotating.SM_MH6_Superior_MainRotorRotating",
+                                                            "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_TailRotorRotating.SM_MH6_Superior_TailRotorRotating"
                                                         ],
                                         "rotorGroups":  [
-
-                                                        ],
-                                        "animationAsset":  "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/mh-6_little_bird_helicopter_animated_Anim.mh-6_little_bird_helicopter_animated_Anim",
+                                                             {
+                                                                 "role":  "main",
+                                                                 "spinAxis":  "Z",
+                                                                 "pivot":  [
+                                                                                 32.9767,
+                                                                                 0.085,
+                                                                                 -40.2828
+                                                                             ],
+                                                                 "meshPivot":  [
+                                                                                     32.9767,
+                                                                                     0.085,
+                                                                                     -40.2828
+                                                                                 ],
+                                                                 "assets":  [
+                                                                                "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_MainRotorRotating.SM_MH6_Superior_MainRotorRotating"
+                                                                            ]
+                                                             },
+                                                             {
+                                                                 "role":  "tail",
+                                                                 "spinAxis":  "Y",
+                                                                 "pivot":  [
+                                                                                 -79.0857,
+                                                                                 -5.4154,
+                                                                                 -62.2113
+                                                                             ],
+                                                                 "meshPivot":  [
+                                                                                     -79.0857,
+                                                                                     -5.4154,
+                                                                                     -62.2113
+                                                                                 ],
+                                                                 "assets":  [
+                                                                                "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_TailRotorRotating.SM_MH6_Superior_TailRotorRotating"
+                                                                            ]
+                                                             }
+                                                         ],
+                                        "animationAsset":  "",
+                                        "allowProceduralRotorFallback":  false,
                                         "readyForHangar":  true,
                                         "stationaryRotorAssets":  [
-                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_08_-_Default_0.Rot_08_-_Default_0",
-                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot_09_-_Default_0.Rot_09_-_Default_0",
-                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Cylinder001_09_-_Default_0.Cylinder001_09_-_Default_0",
-                                                                      "/Game/Qualification/LittleBird/Imported/mh-6_little_bird_helicopter_animated/SkeletalMeshes/Rot2_08_-_Default_0.Rot2_08_-_Default_0"
+                                                                      "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_MainRotorMount.SM_MH6_Superior_MainRotorMount",
+                                                                      "/Game/Vehicles/Playable/MH6Superior/SM_MH6_Superior_TailRotorMount.SM_MH6_Superior_TailRotorMount"
                                                                   ]
                                     },
                          "exhaust":  {
@@ -1476,7 +1526,7 @@
                                         "variants":  [
                                                          "assets/actors/helicopter.glb"
                                                      ],
-                                        "license":  "COPYRIGHT TO Sujal Patil - public release rights unresolved",
+                                        "license":  "COPYRIGHT TO Sujal Patil; Project Rotorline public-distribution permission confirmed by project owner",
                                         "credit":  "Sujal Patil",
                                         "sourceUrl":  "https://sketchfab.com/3d-models/helicopter-81c02919782f4b6d986eb76c11d0e5fd"
                                     },
