@@ -25,8 +25,8 @@ This repository is a standalone Project Rotorline source snapshot. It is a
 normal independent repository, not a fork, submodule, redirect, or pointer back
 to an older Rotorline repository.
 
-The current snapshot is synchronized from the verified canonical superior-MH-6
-implementation checkpoint `7d6b053`.
+The current snapshot is synchronized from the owner-accepted canonical
+implementation checkpoint `75729c0`.
 
 Licensed binary assets are intentionally excluded, so a fresh clone is not a
 build-complete Unreal project and is not presented as a playable distribution.
@@ -39,6 +39,8 @@ owns the original Project Rotorline audio.
 - 25-mission campaign with progression and aircraft unlocks
 - Multiple flyable aircraft including the UH-1 Huey, high-detail MH-6 Little Bird, OH-58 Kiowa, AH-64 Apache, Bell 222, and CH-47 Chinook
 - Model-native MH-6 main and tail rotor mounts, hubs, blades, and animation in the hangar and in flight
+- MH-6 miniguns aligned to the inboard mounts and rockets/missiles aligned to the outboard pods
+- Tightly parked three-aircraft A-10 formation centered safely on the main airfield apron
 - Helicopter-focused flight, combat, countermeasures, resupply, extraction, convoy, and sling-load gameplay
 - Handcrafted island, summit, hidden lair, enemy island, offshore carrier, airfields, towns, roads, and mission locations
 - Controller-first input with in-game calibration and remapping

@@ -635,6 +635,24 @@ ARotorlineHelicopterPawn::ARotorlineHelicopterPawn()
     MD500WeaponMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     MD500WeaponMesh->SetVisibility(false, true);
 
+    // These stations come from the supplied model's actual weapon geometry,
+    // not the pawn collision box.  The paired guns are the inboard assemblies
+    // nearest the fuselage; the rocket/missile pods are the outboard stations.
+    // Coordinates remain in the same model-native space as every superior
+    // MH-6 mesh, so the shared root keeps them seated through all alignment.
+    MD500LeftGunMuzzle = CreateDefaultSubobject<USceneComponent>(TEXT("MD500LeftGunMuzzle"));
+    MD500RightGunMuzzle = CreateDefaultSubobject<USceneComponent>(TEXT("MD500RightGunMuzzle"));
+    MD500LeftRocketMuzzle = CreateDefaultSubobject<USceneComponent>(TEXT("MD500LeftRocketMuzzle"));
+    MD500RightRocketMuzzle = CreateDefaultSubobject<USceneComponent>(TEXT("MD500RightRocketMuzzle"));
+    MD500LeftGunMuzzle->SetupAttachment(MD500SuperiorRoot);
+    MD500RightGunMuzzle->SetupAttachment(MD500SuperiorRoot);
+    MD500LeftRocketMuzzle->SetupAttachment(MD500SuperiorRoot);
+    MD500RightRocketMuzzle->SetupAttachment(MD500SuperiorRoot);
+    MD500LeftGunMuzzle->SetRelativeLocation(FVector(59.5f, -21.16f, -81.10f));
+    MD500RightGunMuzzle->SetRelativeLocation(FVector(59.5f, 21.37f, -81.10f));
+    MD500LeftRocketMuzzle->SetRelativeLocation(FVector(54.8f, -33.91f, -85.60f));
+    MD500RightRocketMuzzle->SetRelativeLocation(FVector(54.8f, 34.12f, -85.60f));
+
     MD500CockpitMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MD500CockpitMesh"));
     MD500CockpitMesh->SetupAttachment(MD500SuperiorRoot);
     MD500CockpitMesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -1158,6 +1176,30 @@ void ARotorlineHelicopterPawn::ApplyCraftConfiguration()
             MD500TailRotorRotatingMesh->GetStaticMesh() ? 1 : 0,
             bRotorAttachmentPass ? 1 : 0,
             bStationaryMountPass ? 1 : 0);
+        const bool bWeaponStationAttachmentPass =
+            MD500LeftGunMuzzle && MD500RightGunMuzzle &&
+            MD500LeftRocketMuzzle && MD500RightRocketMuzzle &&
+            MD500LeftGunMuzzle->GetAttachParent() == MD500SuperiorRoot &&
+            MD500RightGunMuzzle->GetAttachParent() == MD500SuperiorRoot &&
+            MD500LeftRocketMuzzle->GetAttachParent() == MD500SuperiorRoot &&
+            MD500RightRocketMuzzle->GetAttachParent() == MD500SuperiorRoot;
+        const bool bWeaponStationLocationPass = bWeaponStationAttachmentPass &&
+            MD500LeftGunMuzzle->GetRelativeLocation().Equals(FVector(59.5f, -21.16f, -81.10f), 0.01f) &&
+            MD500RightGunMuzzle->GetRelativeLocation().Equals(FVector(59.5f, 21.37f, -81.10f), 0.01f) &&
+            MD500LeftRocketMuzzle->GetRelativeLocation().Equals(FVector(54.8f, -33.91f, -85.60f), 0.01f) &&
+            MD500RightRocketMuzzle->GetRelativeLocation().Equals(FVector(54.8f, 34.12f, -85.60f), 0.01f);
+        const float GunStationSeparationCm = FVector::Distance(
+            MD500LeftGunMuzzle->GetComponentLocation(), MD500RightGunMuzzle->GetComponentLocation());
+        const float RocketStationSeparationCm = FVector::Distance(
+            MD500LeftRocketMuzzle->GetComponentLocation(), MD500RightRocketMuzzle->GetComponentLocation());
+        UE_LOG(
+            LogTemp,
+            Display,
+            TEXT("ROTORLINE_MH6_WEAPONS|CONFIG|guns=2/2|rockets=2/2|attachment_pass=%d|location_pass=%d|gun_separation_cm=%.1f|rocket_separation_cm=%.1f"),
+            bWeaponStationAttachmentPass ? 1 : 0,
+            bWeaponStationLocationPass ? 1 : 0,
+            GunStationSeparationCm,
+            RocketStationSeparationCm);
         CollisionBox->SetBoxExtent(FVector(350.0f, 90.0f, 105.0f));
         MaxForwardSpeed = 8500.0f;
         MaxReverseSpeed = 3500.0f;
@@ -4437,8 +4479,19 @@ void ARotorlineHelicopterPawn::UpdateFleetQualification(float DeltaSeconds)
         {
         const int32 RocketAmmoBefore = RocketAmmo;
         const int32 CannonAmmoBefore = ApacheCannonAmmo;
+        const bool bMH6WeaponQualification =
+            SelectedAircraftId.Equals(TEXT("md500_defender"), ESearchCase::IgnoreCase);
         FireMissionRocket();
-        const bool bRocketPassed = RocketAmmo == RocketAmmoBefore - 1;
+        if (bMH6WeaponQualification)
+        {
+            // Exercise both physical pods in one bounded qualification. Normal
+            // gameplay keeps the 0.75 s cadence; only this automated proof
+            // advances the cooldown so the second shot must use the other pod.
+            LastRocketFireTime = GetWorld()->GetTimeSeconds() - 1.0;
+            FireMissionRocket();
+        }
+        const int32 ExpectedRocketShots = bMH6WeaponQualification ? 2 : 1;
+        const bool bRocketPassed = RocketAmmo == RocketAmmoBefore - ExpectedRocketShots;
         const bool bApacheQualification = HasAttackCombatPackage();
         bool bCannonPassed = true;
         if (bApacheQualification)
@@ -4450,11 +4503,12 @@ void ARotorlineHelicopterPawn::UpdateFleetQualification(float DeltaSeconds)
         UE_LOG(
             LogTemp,
             Display,
-            TEXT("ROTORLINE_FLEET_TEST|WEAPON|id=%s|armed=1|rocket_before=%d|rocket_after=%d|rocket_fired=%d|cannon_required=%d|cannon_before=%d|cannon_after=%d|cannon_fired=%d|passed=%d"),
+            TEXT("ROTORLINE_FLEET_TEST|WEAPON|id=%s|armed=1|rocket_before=%d|rocket_after=%d|rocket_fired=%d|rocket_expected=%d|cannon_required=%d|cannon_before=%d|cannon_after=%d|cannon_fired=%d|passed=%d"),
             *SelectedAircraftId,
             RocketAmmoBefore,
             RocketAmmo,
-            bRocketPassed ? 1 : 0,
+            RocketAmmoBefore - RocketAmmo,
+            ExpectedRocketShots,
             bApacheQualification ? 1 : 0,
             CannonAmmoBefore,
             ApacheCannonAmmo,
@@ -9968,12 +10022,31 @@ void ARotorlineHelicopterPawn::FireMissionRocket()
     }
 
     const FVector CollisionExtent = CollisionBox->GetScaledBoxExtent();
-    const float LaunchForward = FMath::Max(430.0f, CollisionExtent.X * 0.90f);
-    const float LaunchLateral = FMath::Max(150.0f, CollisionExtent.Y * 0.62f);
-    const float LaunchSide = (RocketAmmo % 2 == 0) ? -LaunchLateral : LaunchLateral;
-    const FVector LaunchLocation = GetActorLocation() + GetActorForwardVector() * LaunchForward +
-        GetActorRightVector() * LaunchSide - FVector::UpVector * FMath::Max(35.0f, CollisionExtent.Z * 0.15f);
-    FVector LaunchDirection = GetActorForwardVector().GetSafeNormal();
+    const bool bMH6WeaponStations =
+        SelectedAircraftId.Equals(TEXT("md500_defender"), ESearchCase::IgnoreCase) &&
+        MD500LeftRocketMuzzle && MD500RightRocketMuzzle;
+    const bool bLaunchLeftStation = (RocketAmmo % 2) == 0;
+    FString LaunchStation = TEXT("GENERIC_RACK");
+    FVector LaunchLocation;
+    if (bMH6WeaponStations)
+    {
+        USceneComponent* Station = bLaunchLeftStation
+            ? MD500LeftRocketMuzzle.Get()
+            : MD500RightRocketMuzzle.Get();
+        LaunchLocation = Station->GetComponentLocation();
+        LaunchStation = bLaunchLeftStation ? TEXT("MH6_LEFT_POD") : TEXT("MH6_RIGHT_POD");
+    }
+    else
+    {
+        const float LaunchForward = FMath::Max(430.0f, CollisionExtent.X * 0.90f);
+        const float LaunchLateral = FMath::Max(150.0f, CollisionExtent.Y * 0.62f);
+        const float LaunchSide = bLaunchLeftStation ? -LaunchLateral : LaunchLateral;
+        LaunchLocation = GetActorLocation() + GetActorForwardVector() * LaunchForward +
+            GetActorRightVector() * LaunchSide - FVector::UpVector * FMath::Max(35.0f, CollisionExtent.Z * 0.15f);
+    }
+    FVector LaunchDirection = bMH6WeaponStations
+        ? VisualRoot->GetForwardVector().GetSafeNormal()
+        : GetActorForwardVector().GetSafeNormal();
     bool bReticleAimedUnguidedRocket = false;
     if (!LockTarget && bApacheSelected)
     {
@@ -10016,13 +10089,14 @@ void ARotorlineHelicopterPawn::FireMissionRocket()
     {
         GEngine->AddOnScreenDebugMessage(7111, 1.5f, FColor(255, 200, 75), FString::Printf(TEXT("ROCKET AWAY  //  %s  //  %d REMAINING"), LockTarget ? TEXT("TARGET TRACKING") : TEXT("UNGUIDED"), RocketAmmo));
     }
-    UE_LOG(LogTemp, Display, TEXT("ROTORLINE_WEAPON|ROCKET|state=FIRED|ammo=%d|distance=%.0f|homing=%d|reticle_aim=%d|mode=%s|launch_dot_nose=%.4f"),
+    UE_LOG(LogTemp, Display, TEXT("ROTORLINE_WEAPON|ROCKET|state=FIRED|ammo=%d|distance=%.0f|homing=%d|reticle_aim=%d|mode=%s|launch_dot_nose=%.4f|station=%s"),
         RocketAmmo,
         DistanceMeters,
         LockTarget ? 1 : 0,
         bReticleAimedUnguidedRocket ? 1 : 0,
         bApacheMissileLockMode ? TEXT("MISSILE_LOCK") : TEXT("ATTACK_CANNON"),
-        FVector::DotProduct(LaunchDirection, GetActorForwardVector().GetSafeNormal()));
+        FVector::DotProduct(LaunchDirection, GetActorForwardVector().GetSafeNormal()),
+        *LaunchStation);
 }
 
 bool ARotorlineHelicopterPawn::GetApacheWeaponAimSolution(
@@ -10198,20 +10272,23 @@ void ARotorlineHelicopterPawn::FireApacheCannon()
     SpawnParams.Owner = this;
     const bool bTwinLittleBirdMiniguns =
         SelectedAircraftId.Equals(TEXT("md500_defender"), ESearchCase::IgnoreCase);
+    const bool bUsingModelWeaponStations = bTwinLittleBirdMiniguns &&
+        MD500LeftGunMuzzle && MD500RightGunMuzzle;
+    if (bTwinLittleBirdMiniguns && !bUsingModelWeaponStations)
+    {
+        StopApacheCannonAudio(TEXT("MH6_MUZZLES_UNAVAILABLE"));
+        UE_LOG(LogTemp, Error, TEXT("ROTORLINE_MH6_WEAPONS|GUN|state=BLOCKED|reason=MUZZLES_UNAVAILABLE"));
+        return;
+    }
     const int32 MuzzleCount = bTwinLittleBirdMiniguns ? 2 : 1;
     bool bSpawnedProjectile = false;
     for (int32 MuzzleIndex = 0; MuzzleIndex < MuzzleCount; ++MuzzleIndex)
     {
-        // Preserve the MH-6's two visible projectile streams while keeping
-        // them parallel and symmetric around the shared boresight. The old
-        // +/-72 cm offsets were excessive; zero offset hid one stream behind
-        // the other.
-        constexpr float TwinStreamHalfSeparationCm = 24.0f;
-        const float LateralOffset = bTwinLittleBirdMiniguns
-            ? (MuzzleIndex == 0 ? -TwinStreamHalfSeparationCm : TwinStreamHalfSeparationCm)
-            : 0.0f;
-        const FVector ShotMuzzle = MuzzleLocation +
-            VisualRoot->GetRightVector().GetSafeNormal() * LateralOffset;
+        const FVector ShotMuzzle = bUsingModelWeaponStations
+            ? (MuzzleIndex == 0
+                ? MD500LeftGunMuzzle->GetComponentLocation()
+                : MD500RightGunMuzzle->GetComponentLocation())
+            : MuzzleLocation;
         // Each physical muzzle must converge on the world-space impact point
         // represented by the HUD reticle. Parallel streams only agree with
         // the sight at extreme range and fall visibly below it during steep,
@@ -10262,10 +10339,12 @@ void ARotorlineHelicopterPawn::FireApacheCannon()
     }
     PlayerController->PlayDynamicForceFeedback(0.34f, 0.055f, true, true, true, true);
     UE_LOG(LogTemp, Display,
-        TEXT("ROTORLINE_WEAPON|APACHE_30MM|state=FIRED|ammo=%d|heat=%.1f|blocked=%d"),
+        TEXT("ROTORLINE_WEAPON|APACHE_30MM|state=FIRED|ammo=%d|heat=%.1f|blocked=%d|muzzles=%d|model_stations=%d"),
         ApacheCannonAmmo,
         ApacheCannonHeat,
-        bBlockingHit ? 1 : 0);
+        bBlockingHit ? 1 : 0,
+        MuzzleCount,
+        bUsingModelWeaponStations ? 1 : 0);
 }
 
 void ARotorlineHelicopterPawn::StartApacheCannonAudio(const TCHAR* Reason)

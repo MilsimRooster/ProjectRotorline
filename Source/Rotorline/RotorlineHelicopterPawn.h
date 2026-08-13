@@ -415,6 +415,18 @@ private:
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
     TObjectPtr<UStaticMeshComponent> MD500WeaponMesh;
 
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Weapons")
+    TObjectPtr<USceneComponent> MD500LeftGunMuzzle;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Weapons")
+    TObjectPtr<USceneComponent> MD500RightGunMuzzle;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Weapons")
+    TObjectPtr<USceneComponent> MD500LeftRocketMuzzle;
+
+    UPROPERTY(VisibleAnywhere, Category = "Rotorline|Weapons")
+    TObjectPtr<USceneComponent> MD500RightRocketMuzzle;
+
     UPROPERTY(VisibleAnywhere, Category = "Rotorline|Helicopter")
     TObjectPtr<UStaticMeshComponent> MD500CockpitMesh;
 
