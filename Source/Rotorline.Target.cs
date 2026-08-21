@@ -10,7 +10,7 @@ public class RotorlineTarget : TargetRules
         IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_8;
         // The installed UE binary engine uses a shared Shipping environment;
         // project-side Shipping logging would be ABI-incompatible with its
-        // precompiled log categories. The alpha gate uses an app-owned probe
+        // precompiled log categories. The startup check uses a runtime probe
         // file plus exact-process survival and any runtime log that is present.
         ExtraModuleNames.Add("Rotorline");
     }

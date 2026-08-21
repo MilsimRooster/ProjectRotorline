@@ -2666,7 +2666,7 @@ void ARotorlineOperationsPlayerController::ConfigureGameWindow()
     DesiredHeight = FMath::Clamp(DesiredHeight, 540, 4320);
 
     // Keep the standalone build advancing when focus temporarily moves to
-    // Codex, a capture utility, or another desktop window.  Unreal's default
+    // A capture utility or another desktop window. Unreal's default
     // background idle can otherwise present as rotors repeatedly stopping and
     // starting even though the simulation itself has not been paused.
     IConsoleVariable* IdleWhenNotForeground =

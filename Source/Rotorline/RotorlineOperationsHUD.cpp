@@ -44,7 +44,6 @@ namespace
             {TEXT("DEVELOPMENT"), ERotorlineCreditStyle::Section},
             {TEXT("ROTORLINE PROJECT"), ERotorlineCreditStyle::Name},
             {TEXT("GAMEPLAY SYSTEMS  //  WORLD BUILDING  //  UI  //  AUDIO INTEGRATION"), ERotorlineCreditStyle::Detail},
-            {TEXT("DEVELOPMENT SUPPORT  //  OPENAI CODEX"), ERotorlineCreditStyle::Detail},
             {TEXT("BUILT WITH UNREAL ENGINE 5"), ERotorlineCreditStyle::Detail},
             {TEXT(""), ERotorlineCreditStyle::Spacer},
 
