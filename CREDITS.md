@@ -5,21 +5,11 @@
 - Creator and creative lead: Keith League
 - Callsign: Rooster
 - Game concept, design, direction, and production: Keith League
-- Development support: OpenAI Codex
 - Engine: Unreal Engine 5 by Epic Games
 
 ## Dedication
 
 Dedicated to CW5 J.V. Spahn, Callsign Fro.
-
-## Publication rights status
-
-- Keith League created the environment ambience, Bell Huey engine recordings,
-  MD-500 engine recordings, and startup mission briefing for Project Rotorline
-  and owns the rights to that original audio. Public distribution in Project
-  Rotorline is authorized by the creator and project owner.
-- OH-58/Kiowa use and public-distribution permission is confirmed below.
-- No publication hold remains for these assets as of August 8, 2026.
 
 ## Asset credits
 
@@ -66,8 +56,6 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
   machinery, meadow insects, and ocean surf recordings.
 - Changes: DC correction, boundary crossfade, normalization, and conversion to
   48 kHz PCM16 runtime loops. Original 24-bit WAV files are preserved.
-- Rights status: cleared for Project Rotorline public distribution by the
-  creator and project owner.
 
 ## Bell Huey helicopter
 
@@ -86,8 +74,6 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 - Changes: DC correction, level matching, PCM16 runtime conversion, startup
   edge fades, and a four-second boundary crossfade for the continuous flight
   loop. Original 48 kHz stereo 24-bit WAV files are preserved.
-- Rights status: cleared for Project Rotorline public distribution by the
-  creator and project owner.
 
 ## MH-6 Little Bird helicopter
 
@@ -114,8 +100,6 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
   startup/takeoff edge fades, and a four-second boundary crossfade for the
   continuous inflight loop. Original 48 kHz stereo 24-bit WAV files are
   preserved.
-- Rights status: cleared for Project Rotorline public distribution by the
-  creator and project owner.
 
 ## AH-64 Apache
 
@@ -158,13 +142,9 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 
 - Creator: [Sujal Patil](https://sketchfab.com/sujalpatil150)
 - Source: [Helicopter](https://sketchfab.com/3d-models/helicopter-81c02919782f4b6d986eb76c11d0e5fd)
-- Rights notice: embedded metadata states `COPYRIGHT TO Sujal Patil`. Project
-  owner Keith League confirmed on August 8, 2026 that permission to use and
-  publicly distribute this model in Project Rotorline has been granted;
-  permission evidence is retained by the project owner.
+- Rights notice: embedded metadata states `COPYRIGHT TO Sujal Patil`. Used in
+  Project Rotorline with permission.
 - Changes: body and rotor parts prepared for the active OH-58 Kiowa airframe.
-- **Release status:** cleared for Project Rotorline distribution by project-owner
-  confirmation.
 
 ## Bell 222
 
@@ -212,8 +192,6 @@ their retained source attribution remains in `Docs/VEHICLE_ASSET_CATALOG.md`.
 - File: original Project Rotorline startup mission-command briefing.
 - Changes: DC correction, voice level matching, PCM16 runtime conversion, and
   short edge protection. The original 59.208-second timing is unchanged.
-- Rights status: cleared for Project Rotorline public distribution by the
-  creator and project owner.
 
 ## Mission-world models used at runtime
 

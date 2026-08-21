@@ -10,29 +10,19 @@ Project Rotorline is a helicopter-focused Unreal Engine 5.8 action game created 
 
 [**Download ProjectRotorlineAlphaSetup.exe**](https://github.com/MilsimRooster/ProjectRotorline/releases/download/alpha-windows-v1/ProjectRotorlineAlphaSetup.exe)
 
-Run the setup application and select **Install and Play**. It downloads the
-complete current Alpha from the same `alpha-windows-v1` release, verifies every
-payload hash, installs the required Microsoft runtimes, replaces an older
-installation with rollback protection, creates the desktop shortcut, and
-launches the game. Nothing points to an older Rotorline repository or release.
+Run the setup application and select **Install and Play**. The installer
+downloads the current Alpha, installs the required Microsoft runtimes, creates
+a desktop shortcut, and launches the game.
 
 Windows may display a security warning because this Alpha installer is not
 code-signed.
 
-## Standalone Source Snapshot
+## Source Snapshot
 
-This repository is a standalone Project Rotorline source snapshot. It is a
-normal independent repository, not a fork, submodule, redirect, or pointer back
-to an older Rotorline repository.
-
-The current snapshot is synchronized from the owner-accepted canonical
-implementation checkpoint `75729c0`.
+This repository contains a source snapshot of Project Rotorline.
 
 Licensed binary assets are intentionally excluded, so a fresh clone is not a
 build-complete Unreal project and is not presented as a playable distribution.
-
-OH-58/Kiowa distribution permission is confirmed, and Keith League created and
-owns the original Project Rotorline audio.
 
 ## Alpha Highlights
 
@@ -60,10 +50,9 @@ owns the original Project Rotorline audio.
 
 ## Current Status
 
-Project Rotorline remains in Alpha. The current development campaign reaches
-Mission 25. The current public Windows package is the verified
-`alpha-windows-v1` release described above. Testing, optimization, content
-polish, accessibility, and hardware coverage are ongoing.
+Project Rotorline remains in Alpha. The current campaign reaches Mission 25.
+Testing, optimization, content polish, accessibility, and hardware coverage
+are ongoing.
 
 Performance targets and minimum requirements are provisional. Testing has included an RTX 2060-class system at approximately 30 FPS under reduced settings, but results vary by mission, resolution, and hardware.
 
